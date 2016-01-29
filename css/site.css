@@ -1839,18 +1839,22 @@ body {
 }
 
 .logo {
-  max-width: 130px;
-  margin: 0 auto;
-  display: block;
-  margin-top: 34vh;
+    max-width: 130px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 34vh;
+    margin-bottom: 17px;
 }
 
 .title {
-  font-weight: 700;
-  color: #5dba8e;
-  margin-top: 0.5em;
-  font-size: 1.1em;
-  letter-spacing: 5px;
+    font-weight: 700;
+    color: #5dba8e;
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    width: 113px;
+    height: 28px;
+    margin: 0 auto;
+    display: block;
 }
 
 .tag {

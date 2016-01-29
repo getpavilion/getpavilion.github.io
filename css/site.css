@@ -1859,6 +1859,6 @@ body {
 
 .tag {
   font-weight: 400;
-  color: #A9A9A9;
+  color: rgba(0, 0, 0, 0.28);
   font-size: 0.8em;
 }

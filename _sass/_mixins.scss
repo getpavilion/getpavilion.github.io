@@ -1,0 +1,61 @@
+/* Mixins
+   ========================================================================== */
+
+/*
+ * Container
+ */
+
+@mixin container {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+/**
+  * Button
+  */
+
+@mixin button {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: $small-radius;
+    font-family: inherit;
+    padding: 0 1.5rem;
+    line-height: $line-height-normal * 1.65;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    i.fa {
+        margin: 0 0 0 0.3rem;
+        /* for font awesome icons in buttons, fix margin */
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+/**
+  * Clearfix
+  */
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

@@ -6,7 +6,7 @@
   */
 
 $remsize-normal: 15px; /* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */
-$emsize-normal: 18px;  /* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/
+$emsize-normal: 16px;  /* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/
 
 $remsize-small: 10px; /* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */
 $emsize-small: 16px;  /* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/
@@ -33,10 +33,10 @@ $breakmargin: 20px;              /* Margin that add ups to the breakpoints, you 
   */
 
 $body-copy-color: #333;
-$soft-gray: #E1E1E1;
 $hard-gray: #565656;
-$primary-color: #5DBA8E;
+$primary-color: #426AFB;
 $accent-color: #2980b9;
+$soft-gray: lighten($primary-color, 35%);
 
 /**
   * Border radius
@@ -49,13 +49,16 @@ $large-radius: 10px; /* Not used, but will come in handy */
   * Font-weights, you can set your own values to match your font.
   */
 
+$font-weight-hairline: 100;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
+$font-weight-black: 900;
 
 /**
   * Base font stack
   */
 
-$base-font-family: "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif !default;
+$base-font-family: "Work Sans", "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif !default;
+$brand-font-family: "Source Code Pro", "Source Sans Pro", sans-serif;
 $mono-font-family: "Lucida Console", Monaco, monospace;

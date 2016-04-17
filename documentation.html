@@ -1,0 +1,13 @@
+---
+layout: documentation
+title: Documentation
+description: Because people like reading bad english
+permalink: /documentation/
+---
+
+{% for post in site.posts %}
+    <div id="{{ post.postid }}" class="documentation-section">
+        <h3>{{ post.title }}</h3>
+        {{ post.content }}
+    </div>
+{% endfor %}

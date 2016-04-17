@@ -1,70 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>Pavilion</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Apr 2016 22:59:59 +0200</pubDate>
-    <lastBuildDate>Sun, 10 Apr 2016 22:59:59 +0200</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 17 Apr 2016 21:44:31 +0200</pubDate>
+    <lastBuildDate>Sun, 17 Apr 2016 21:44:31 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Getting started</title>
+        <description>&lt;p&gt;First of all, thanks for checking out Pavilion! Now let’s get you started. Here are four options to include Pavilion in your project.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h5 id=&quot;download&quot;&gt;Download&lt;/h5&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/getpavilion/pavilion/archive/master.zip&quot; rel=&quot;nofollow&quot;&gt;
+    &lt;button class=&quot;button-default&quot;&gt;Source package&lt;/button&gt;
+&lt;/a&gt;
+&lt;a href=&quot;https://raw.githubusercontent.com/getpavilion/pavilion/master/dist/pavilion.min.css&quot; rel=&quot;nofollow&quot; download=&quot;&quot;&gt;
+    &lt;button class=&quot;button-default&quot;&gt;Compiled CSS&lt;/button&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Sidebar menu --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sidebar-toggle&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;cdn&quot;&gt;CDN&lt;/h5&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- pavilion.min.css --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://cdn.jsdelivr.net/pavilion/latest/pavilion.min.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;npm&quot;&gt;NPM&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;npm install pavilion&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;bower&quot;&gt;Bower&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;bower install pavilion&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;pavilion-source-files&quot;&gt;Pavilion source files&lt;/h5&gt;
+&lt;p&gt;When installing Pavilion with NPM, Bower or the source download, the following structure is delivered.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pavilion/
+├── dist/
+│   ├── pavilion.css
+│   ├── pavilion.min.css
+│   ├── pavilion.min.css.map
+├── demo/
+│   ├── demo project files
+├── scss/
+│   ├── pavilion.scss
+│   └── parts/
+│       ├── _variables.scss
+│       ├── _mixins.scss
+│       ├── _normalize.scss
+│       ├── _grid.scss
+│       ├── _flexbox.scss
+│       ├── _typography.scss
+│       ├── _buttons.scss
+│       ├── _lists.scss
+│       ├── _forms.scss
+│       ├── _tables.scss
+│       └── _helpers.scss
+├── README.md
+├── CHANGELOG.md
+├── license
+├── gruntfile.js
+└── package.json
+&lt;/code&gt;&lt;/pre&gt;
 
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/31/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/31/welcome-to-jekyll.html</guid>
+        <link>/2016/03/31/getting-started.html</link>
+        <guid isPermaLink="true">/2016/03/31/getting-started.html</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>Breakpoints</title>
+        <description>&lt;p&gt;Breakpoint stuff here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/media-queries.html</link>
+        <guid isPermaLink="true">/2016/03/31/media-queries.html</guid>
         
-        <category>update</category>
         
       </item>
     
       <item>
         <title>Containers</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <description>&lt;p&gt;To keep all your elements packed in consistend left and right paddings you should wrap
+them in containers. Basically we have two types of containers.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h5 id=&quot;standard-fixed-width-container&quot;&gt;Standard (fixed width) container&lt;/h5&gt;
+&lt;p&gt;This container has a default max-width of 1140px and is centered in the viewport.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Sidebar menu --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sidebar-toggle&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Container width: 1140px --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+&lt;h5 id=&quot;full-width-container&quot;&gt;Full width container&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container-full-width&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Container width: 100% --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;breakpoint-specific-containers&quot;&gt;Breakpoint specific containers&lt;/h5&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container-tl&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Container width: tablet landscape / 991px --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container-tp&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Container width: tablet portrait / 768px --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container-pl&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Container width: phone landscape / 540px --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Breakpoint specific container are of good use when creating narrow designs. They behave like standard containers but
+have a smaller max-width.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/31/container.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/31/container.html</guid>
+        <link>/2016/03/31/containers.html</link>
+        <guid isPermaLink="true">/2016/03/31/containers.html</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>Grid</title>
+        <description>&lt;p&gt;When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept.&lt;/p&gt;
+
+&lt;h5 id=&quot;grid-basics&quot;&gt;Grid basics&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;.container&lt;/code&gt; wraps elements and provides you with left and right padding to keep the edges of the screen away
+from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
+This is done by placing the columns inside a &lt;code&gt;.row&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h6 class=&quot;mute&quot;&gt;Example&lt;/h6&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Columns go here, inside a row to prevent double paddings --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;rules-of-thumb&quot;&gt;Rules of thumb:&lt;/h5&gt;
+&lt;ol&gt;
+  &lt;li&gt;Always wrap a row in a container&lt;/li&gt;
+  &lt;li&gt;Columns within a container must have a row as their first, immidiate parent&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;rows&quot;&gt;Rows&lt;/h4&gt;
+
+&lt;h4 id=&quot;columns&quot;&gt;Columns&lt;/h4&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/grid.html</link>
+        <guid isPermaLink="true">/2016/03/31/grid.html</guid>
         
-        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Flexbox</title>
+        <description>&lt;p&gt;Flexbox here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/flexbox.html</link>
+        <guid isPermaLink="true">/2016/03/31/flexbox.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Typography</title>
+        <description>&lt;p&gt;typography here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/typo.html</link>
+        <guid isPermaLink="true">/2016/03/31/typo.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Buttons</title>
+        <description>&lt;p&gt;Buttons here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/buttons.html</link>
+        <guid isPermaLink="true">/2016/03/31/buttons.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Lists</title>
+        <description>&lt;p&gt;Lists here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/lists.html</link>
+        <guid isPermaLink="true">/2016/03/31/lists.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Forms</title>
+        <description>&lt;p&gt;Forms here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/forms.html</link>
+        <guid isPermaLink="true">/2016/03/31/forms.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Tables</title>
+        <description>&lt;p&gt;Tables here&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
+        <link>/2016/03/31/tables.html</link>
+        <guid isPermaLink="true">/2016/03/31/tables.html</guid>
+        
         
       </item>
     

@@ -1,0 +1,29 @@
+---
+title:  "Grid"
+date:   2016-03-31 17:06:26 +0200
+postid: grid
+---
+
+When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept.
+
+##### Grid basics
+A `.container` wraps elements and provides you with left and right padding to keep the edges of the screen away
+from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
+This is done by placing the columns inside a `.row`.
+
+<h6 class="mute">Example</h6>
+{% highlight html %}
+<div class="container">
+    <div class="row">
+        <!-- Columns go here, inside a row to prevent double paddings -->
+    </div>
+</div>
+{% endhighlight %}
+
+##### Rules of thumb:
+1. Always wrap a row in a container
+2. Columns within a container must have a row as their first, immidiate parent
+
+#### Rows
+
+#### Columns

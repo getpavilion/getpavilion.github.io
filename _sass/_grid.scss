@@ -77,8 +77,12 @@
   */
 
 .row {
-    margin-right: -1rem;
-    margin-left: -1rem;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    @media(min-width: $tablet-portrait-size) {
+        margin-left: -1rem;
+        margin-right:- 1rem;
+    }
     &:before {
         content: " ";
         display: table;
@@ -90,8 +94,12 @@
     }
     [class^="col-"] {
         position: relative;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        @media(min-width: $tablet-portrait-size) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
         width: 100%;
         float: left;
     }
@@ -264,8 +272,12 @@
     flex: 1;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-right: -1rem;
-    margin-left: -1rem;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    @media(min-width: $tablet-portrait-size) {
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
     &:before {
         content: " ";
         display: table;
@@ -277,17 +289,25 @@
     }
     .col {
         position: relative;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         display: block;
         flex: 1;
+        @media(min-width: $tablet-portrait-size) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     }
     [class^="col-"] {
         position: relative;
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        @media(min-width: $tablet-portrait-size) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     }
     .col-pp-20 {
         flex: 0 0 20%;
@@ -504,7 +524,7 @@
   * Targets all child flex items.
   */
 
-.row-flex {
+.row-flex, .display-flex {
     &.items-top {
         align-items: flex-start;
     }

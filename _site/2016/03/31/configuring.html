@@ -1,0 +1,80 @@
+<p>Download the source files trough NPM, Bower or source download.
+This enables you to customize and configure your build specifically for your project.</p>
+
+<h5 id="variables">Variables</h5>
+<p>Head over to <code>scss/parts</code> and you’ll find the core files for Pavilion.
+<code>_variables.scss</code> holds your project’s base settings which are weaved trough the entire core
+of Pavilion. Extended documentation about each variable can be found in the file itself.</p>
+
+<div class="collapsor">
+<h6 class="mute"><i class="material-icons">arrow_forward</i>File example. Full file and specific documentation in _variables.scss</h6>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/**</span>
+<span class="cm">  * Component &amp; Type sizing, normal and small.</span>
+<span class="cm">  */</span>
+
+<span class="nv">$remsize-normal</span><span class="o">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$emsize-normal</span><span class="o">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="nv">$remsize-small</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$emsize-small</span><span class="o">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * Line-height</span>
+<span class="cm">  */</span>
+
+<span class="nv">$line-height-normal</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * Breakpoints</span>
+<span class="cm">  */</span>
+
+<span class="nv">$phone-landscape-size</span><span class="o">:</span> <span class="mi">540</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$tablet-portrait-size</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$tablet-landscape-size</span><span class="o">:</span> <span class="mi">991</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$desktop-size</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="nv">$breakmargin</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * Colors and tints</span>
+<span class="cm">  */</span>
+
+<span class="nv">$body-copy-color</span><span class="o">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="nv">$soft-gray</span><span class="o">:</span> <span class="mh">#E1E1E1</span><span class="p">;</span>
+<span class="nv">$hard-gray</span><span class="o">:</span> <span class="mh">#565656</span><span class="p">;</span>
+<span class="nv">$primary-color</span><span class="o">:</span> <span class="mh">#4283FB</span><span class="p">;</span>
+<span class="nv">$accent-color</span><span class="o">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * Border radius</span>
+<span class="cm">  */</span>
+
+<span class="nv">$small-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$large-radius</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * Font-weights</span>
+<span class="cm">  */</span>
+
+<span class="nv">$font-weight-light</span><span class="o">:</span> <span class="mi">300</span><span class="p">;</span>
+<span class="nv">$font-weight-normal</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
+<span class="nv">$font-weight-bold</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * Base font stack</span>
+<span class="cm">  */</span>
+
+<span class="nv">$base-font-family</span><span class="o">:</span> <span class="s2">&quot;Segoe UI&quot;</span><span class="o">,</span> <span class="s2">&quot;Ubuntu&quot;</span><span class="o">,</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="no">sans-serif</span> <span class="nv">!default</span><span class="p">;</span>
+<span class="nv">$mono-font-family</span><span class="o">:</span> <span class="s2">&quot;Lucida Console&quot;</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="no">monospace</span><span class="p">;</span></code></pre></figure>
+
+    <div class="uncollapse">
+        Show full example
+    </div>
+</div>
+
+<h5 id="other-files">Other files</h5>
+<p>Feel free to poke around and modify Pavilion to your liking. Note that when you change core files, <strong>your changes could be overwritten</strong> when you update Pavilion as a
+dependency.</p>
+
+<p>You can use the included Grunt.js file to compile your SCSS.</p>

@@ -1,0 +1,24 @@
+<p>When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept.</p>
+
+<h5 id="grid-basics">Grid basics</h5>
+<p>A <code>.container</code> wraps elements and provides you with left and right padding to keep the edges of the screen away
+from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
+This is done by placing the columns inside a <code>.row</code>.</p>
+
+<h6 class="mute">Example</h6>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Columns go here, inside a row to prevent double paddings --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h5 id="rules-of-thumb">Rules of thumb:</h5>
+<ol>
+  <li>Always wrap a row in a container</li>
+  <li>Columns within a container must have a row as their first, immidiate parent</li>
+</ol>
+
+<h4 id="rows">Rows</h4>
+
+<h4 id="columns">Columns</h4>

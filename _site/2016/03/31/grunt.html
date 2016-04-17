@@ -1,0 +1,19 @@
+<p>After you’ve tweaked and configured the desired files you can run Grunt.js to compile your css.
+The Grunt.js file has two tasks. The default task ( <code>grunt</code> ) has the following subtasks:</p>
+
+<ul>
+  <li>grunt-contrib-clean</li>
+  <li>grunt-contrib-sass</li>
+  <li>grunt-autoprefixer</li>
+  <li>grunt-stripcomments</li>
+  <li>grunt-contrib-watch</li>
+</ul>
+
+<p>If you only want to build, and not watch, use <code>grunt dist</code>.
+Both tasks produce the following files in the <code>dist</code> folder:</p>
+
+<pre><code>dist/
+├── pavilion.css
+├── pavilion.min.css
+└── pavilion.min.css.map
+</code></pre>

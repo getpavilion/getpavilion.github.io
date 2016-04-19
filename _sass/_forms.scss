@@ -89,23 +89,23 @@ textarea {
     display: block;
     width: 100% !important;
     background-color: transparent;
-    border: 2px solid $soft-gray;
+    border: 1px solid rgba($body-copy-color, 0.2);
     border-radius: $small-radius;
     box-shadow: none;
     padding: 0 1rem;
     margin-top: 0.3rem;
     margin-bottom: 1.2rem;
     &::-webkit-input-placeholder {
-        color: darken($soft-gray, 20%);
+        color: rgba($body-copy-color, 0.3);
     }
     &::-moz-input-placeholder {
-        color: darken($soft-gray, 20%);
+        color: rgba($body-copy-color, 0.3);
     }
     &:-moz-input-placeholder {
-        color: darken($soft-gray, 20%);
+        color: rgba($body-copy-color, 0.3);
     }
     &:-ms-input-placeholder {
-        color: darken($soft-gray, 20%);
+        color: rgba($body-copy-color, 0.3);
     }
     &:focus {
         border-color: $primary-color;
@@ -123,7 +123,10 @@ textarea {
   */
 
 select {
-    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
     cursor: pointer;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Angle_down_font_awesome.svg/512px-Angle_down_font_awesome.svg.png");
     background-size: 20px;

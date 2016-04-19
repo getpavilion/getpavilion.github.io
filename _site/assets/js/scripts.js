@@ -24,27 +24,27 @@ $(function() {
     smoothScroll.init();
 
     $('.collapsor > .uncollapse').on('click', function() {
-        var _this = $(this)
-        if (!$(this).parent().hasClass('uncollapsed')) {
-            $(this).parent().velocity({
-                maxHeight: 2000
+        
+        var codeHeight = $(this).prev().find('code').outerHeight();
+        
+        if (!$(this).parent().hasClass('open')) {
+            $(this).prev().find('pre').velocity({
+                maxHeight: codeHeight + 50
             }, {
-                duration: 300,
-                easing: "easeInOut"
-            }).addClass('uncollapsed');
-            $(this).text('Show less');
-            setTimeout(function(){
-                _this.parent().css("overflow", "visible");
-            }, 320);
+                duration: 400,
+                easing: "easInOut"
+            });
+            $(this).parent().addClass('open');
+            $(this).text('Close example');
         } else {
-            $(this).parent().velocity({
+            $(this).prev().find('pre').velocity({
                 maxHeight: 250
             }, {
-                duration: 300,
-                easing: "easeInOut"
-            }).removeClass('uncollapsed');
+                duration: 400,
+                easing: "easInOut"
+            });
+            $(this).parent().removeClass('open');
             $(this).text('Show full example');
-            _this.parent().css("overflow", "hidden");
         }
     });
 

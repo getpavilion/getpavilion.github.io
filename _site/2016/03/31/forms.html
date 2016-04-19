@@ -1,1 +1,120 @@
-<p>Forms here</p>
+<p>With forms, Pavilion does some of the heavy lifting for you.
+We’ve normalized the styling and set it up in a way that you can easy style or use them the way you
+see fit.</p>
+
+<h6 class="mute">Form example</h6>
+
+<div class="row">
+<div class="col-tl-60">
+<form action="">
+    <fieldset>
+        
+        <!-- First name -->
+        <label for="firstName">First name</label>
+        <input id="firstName" type="text" placeholder="'John'" />
+        
+        <!-- Last name -->
+        <label for="lastName">Last name</label>
+        <input id="lastName" type="text" placeholder="'Doe'" />
+        
+        <!-- Select interests -->
+        <label for="selectInterests">Select interests</label>
+        <select name="interests" id="selectInterests">
+            <option value="all" selected="true">All interests</option>
+            <option value="drawing">Drawing</option>
+            <option value="cooking">Cooking</option>
+            <option value="gardening">Gardening</option>
+        </select>
+        
+        <!-- Checkbox -->
+        <label for="recieveEmails" class="checkbox">
+            Yes, recieve e-mails about interest related news.
+            <input type="checkbox" id="recieveEmails" checked="true" />
+        </label>
+        
+        <!-- Radio buttons -->
+        <span class="radio-wrapper">
+            <label for="onceMonth" class="radio">
+                Once a month
+                <input type="radio" name="frequency" id="onceMonth" />
+            </label>
+            <label for="twiceMonth" class="radio">
+                Twice a month
+                <input type="radio" name="frequency" id="twiceMonth" />
+            </label>
+            <label for="onceWeek" class="radio">
+                Once a week
+                <input type="radio" name="frequency" id="onceWeek" />
+            </label>
+        </span>
+        
+        <!-- Textarea -->
+        <label for="notes">Notes</label>
+        <textarea id="notes" name=""></textarea>
+        
+    </fieldset>
+    
+    <!-- Send button -->
+    <button type="submit" class="button-default">Send</button>
+
+</form>
+</div>
+</div>
+
+<div class="collapsor">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        
+        <span class="c">&lt;!-- First name --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;firstName&quot;</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;firstName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;John&#39;&quot;</span><span class="nt">&gt;</span>
+        
+        <span class="c">&lt;!-- Last name --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;lastName&quot;</span><span class="nt">&gt;</span>Last name<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;lastName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;Doe&#39;&quot;</span><span class="nt">&gt;</span>
+        
+        <span class="c">&lt;!-- Select interests --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;selectInterests&quot;</span><span class="nt">&gt;</span>Select interests<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">&quot;interests&quot;</span> <span class="na">id=</span><span class="s">&quot;selectInterests&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;all&quot;</span> <span class="na">selected=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>All interests<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;drawing&quot;</span><span class="nt">&gt;</span>Drawing<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;cooking&quot;</span><span class="nt">&gt;</span>Cooking<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;gardening&quot;</span><span class="nt">&gt;</span>Gardening<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+        
+        <span class="c">&lt;!-- Checkbox --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;recieveEmails&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+            Yes, recieve e-mails about interest related news.
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;recieveEmails&quot;</span> <span class="na">checked=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        
+        <span class="c">&lt;!-- Radio buttons --&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;radio-wrapper&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;onceMonth&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                Once a month
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;onceMonth&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;twiceMonth&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                Twice a month
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;twiceMonth&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;onceWeek&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                Once a week
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;onceWeek&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        
+        <span class="c">&lt;!-- Textarea --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;notes&quot;</span><span class="nt">&gt;</span>Notes<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;notes&quot;</span> <span class="na">name=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        
+    <span class="nt">&lt;/fieldset&gt;</span>
+    
+    <span class="c">&lt;!-- Send button --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+    <div class="uncollapse">Show full example</div>
+</div>

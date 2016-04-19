@@ -1,11 +1,8 @@
 /* style default components */
 
-a {
-    text-decoration: none !important;
-    color: $primary-color;
-    &:hover {
-        color: darken($primary-color, 15%);
-    }
+body {
+    // font-size: 16px;
+    // font-family: "Work Sans";
 }
 
 .devider-center {
@@ -13,20 +10,6 @@ a {
     display: block;
     border-top: 1px solid darken($soft-gray, 30%);
     margin: 2rem auto;
-}
-
-figure {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.dropcap {
-    font-size: 3.375em;
-    float: left;
-    margin-top: 4px;
-    margin-right: 6px;
-    line-height: 0.8;
-    margin-left: -4px;
 }
 
 .alert {
@@ -61,10 +44,31 @@ code {
 pre {
     code, kbd {
         border: none;
-        font-size: inherit;
+    }
+}
+
+.highlight {
+    pre {
+        code {
+            color: $body-copy-color;
+        }
     }
 }
 
 .mute {
     opacity: 0.4;
+}
+
+.typo-example-no-margin {
+    overflow:  hidden;
+    h1,h2,h3,h4,h5,h6 {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    margin: 2rem 0;
+}
+
+.spacer {
+    padding: 3rem 0;
+    display: block;
 }

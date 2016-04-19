@@ -3,5 +3,29 @@ title:  "Buttons"
 date:   2016-03-31 17:06:26 +0200
 postid: buttons
 ---
+There are three button variations included. Default, outlined and stripped.
 
-Buttons here
+<button class="button-default">Default button</button> <button class="button-outlined">Outlined button</button> <button class="button-stripped">Stripped button</button>
+
+{% highlight html %}
+<button class="button-default">Default button</button> 
+<button class="button-outlined">Outlined button</button> 
+<button class="button-stripped">Stripped button</button>
+{% endhighlight %}
+
+##### Button sizes
+Just add the contextual heading class to a button, and done.
+
+<button class="button-default h3">h3 button</button>  <br>
+<button class="button-default h4">h4 button</button> <br>
+<button class="button-default h5">h5 button</button> <br>
+<button class="button-default h6">h6 button</button>
+
+{% highlight html %}
+<button class="button-default h1">h1 button</button> 
+<button class="button-default h2">h2 button</button> 
+<button class="button-default h3">h3 button</button> 
+<button class="button-default h4">h4 button</button>
+<button class="button-default h5">h5 button</button> <!-- Same size as a normal button -->
+<button class="button-default h6">h6 button</button>
+{% endhighlight %}

@@ -3,5 +3,84 @@ title:  "Typography"
 date:   2016-03-31 17:06:26 +0200
 postid: typo
 ---
+The headings `h1` trough `h6` are available and accompanied by corresponding classes: `.h1` trough `.h6`.
+These classes come in handy when you want to bump up (or down) an element's textual context to a certain heading size. For instance, giving a button the class `.h3` will give it a text size
+matching that of a `h3` heading.
 
-typography here
+The font-sizes are set in EM's and calculated by [type-scale.com](https://www.type-scale.com).
+
+<div class="typo-example-no-margin">
+
+<h1>h1 Heading</h1> 
+<h2>h2 Heading</h2> 
+<h3>h3 Heading</h3> 
+<h4>h4 Heading</h4> 
+<h5>h5 Heading</h5> 
+<h6>h6 Heading</h6> 
+    
+</div>
+
+{% highlight html %}
+<!-- Heading tags -->
+<h1>h1 Heading</h1> <!-- font-size: 3.157em; margin-top: 0; -->
+<h2>h2 Heading</h2> <!-- font-size: 2.369em; -->
+<h3>h3 Heading</h3> <!-- font-size: 1.777em; -->
+<h4>h4 Heading</h4> <!-- font-size: 1.333em; -->
+<h5>h5 Heading</h5> <!-- font-size: 1em; font-weight: bold; -->
+<h6>h6 Heading</h6> <!-- font-size: 0.75em; -->
+
+<!-- Heading classes -->
+<span class="h1">Heading wannabe</span>
+<span class="h2">Heading wannabe</span>
+<span class="h3">Heading wannabe</span>
+<span class="h4">Heading wannabe</span>
+<span class="h5">Heading wannabe</span>
+<span class="h6">Heading wannabe</span>
+{% endhighlight %}
+
+##### Other typographic elements
+Below you'll find a set of elements that are commonly used in web typography.
+We've also included `.summary` that, when added to a `<p>` element, bumps up the font-size a bit and decreases font-weight.
+Next to that we've included a `.dropcap` which is optional for `<p>` elements and a `.split` class, which cuts your
+parapgraph in half.
+
+##### Summary paragraph 
+
+<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magnam hic ex tenetur amet, recusandae id nulla ullam nostrum cum vitae sunt aliquam atque, unde, veniam, aliquid earum nam corporis.</p>
+{% highlight html %}
+<!-- Bumps up the font-size and decreases font-weight -->
+<p class="summary">Lorem ipsum ...</p>
+{% endhighlight %}
+
+
+##### Paragraphs
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
+{% highlight html %}
+<!-- Standard paragraph -->
+<p>Lorem ipsum ...</p>
+{% endhighlight %}
+
+
+##### Blockquotes 
+<blockquote>Lorem ipsum ...
+    <footer>A.A. Bernansky</footer>
+</blockquote>
+
+{% highlight html %}
+<blockquote>Lorem ipsum ...
+    <footer>A.A. Bernansky</footer>
+</blockquote>
+{% endhighlight %}
+
+##### Dropcaps 
+<p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
+{% highlight html %}
+<p class="dropcap">Lorem ipsum ...</p>
+{% endhighlight %}
+
+##### Split
+<p class="split">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis impedit doloremque aliquam deleniti repellat a quas rerum consectetur rem, temporibus possimus iste fugiat labore dolores commodi nam dolor perferendis voluptatum.</p>
+{% highlight html %}
+<!-- Breaks a text element into two columns until $phone-landscape-size is reached -->
+<p class="split">Lorem ipsum ...</p>
+{% endhighlight %}

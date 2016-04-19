@@ -32,9 +32,30 @@ p {
     font-size: 1em;
 }
 
-.lead {
+.summary {
     font-size: 1.1429em;
     font-weight: $font-weight-light;
+    @media (max-width: $tablet-landscape-size - 1px) {
+        font-size: 1.1em;
+        font-weight: $font-weight-bold;
+    }
+}
+
+.split {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 1rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 1rem; /* Firefox */
+    column-gap: 1rem;
+    @media (max-width: $tablet-landscape-size - 1px) {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+        -webkit-column-gap: 0; /* Chrome, Safari, Opera */
+        -moz-column-gap: 0; /* Firefox */
+        column-gap: 0;
+    }
 }
 
 h1,
@@ -71,9 +92,12 @@ h4, .h4 {
 
 h5, .h5 {
     font-size: 1em;
-    font-weight: $font-weight-bold;
     &:not(.h5) {
+        font-weight: $font-weight-bold;
         margin-top: 2em;
+    }
+    code, kbd, pre {
+        font-weight: $font-weight-normal;
     }
 }
 

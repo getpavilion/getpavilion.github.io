@@ -42,7 +42,7 @@ bower install pavilion
 ##### Pavilion source files
 When installing Pavilion with NPM, Bower or the source download, the following structure is delivered.
 
-```
+{% highlight html %}
 pavilion/
 ├── dist/
 │   ├── pavilion.css
@@ -69,7 +69,7 @@ pavilion/
 ├── license
 ├── gruntfile.js
 └── package.json
-```
+{% endhighlight %}
 
 
 

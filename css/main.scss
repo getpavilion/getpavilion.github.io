@@ -8,14 +8,7 @@
 @import "mixins";
 
 // Core parts
-@import "normalize";
-@import "grid";
-@import "typography";
-@import "helpers";
-@import "buttons";
-@import "lists";
-@import "forms";
-@import "tables";
+@import "custom/pavilion";
 @import "syntax-highlighting";
 
 // Custom parts

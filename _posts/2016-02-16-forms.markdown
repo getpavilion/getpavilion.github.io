@@ -3,5 +3,123 @@ title:  "Forms"
 date:   2016-03-31 17:06:26 +0200
 postid: forms
 ---
+With forms, Pavilion does some of the heavy lifting for you.
+We've normalized the styling and set it up in a way that you can easy style or use them the way you
+see fit.
 
-Forms here
+<h6 class="mute">Form example</h6>
+
+<div class="row">
+<div class="col-tl-60">
+<form action="">
+    <fieldset>
+        
+        <!-- First name -->
+        <label for="firstName">First name</label>
+        <input id="firstName" type="text" placeholder="'John'">
+        
+        <!-- Last name -->
+        <label for="lastName">Last name</label>
+        <input id="lastName" type="text" placeholder="'Doe'">
+        
+        <!-- Select interests -->
+        <label for="selectInterests">Select interests</label>
+        <select name="interests" id="selectInterests">
+            <option value="all" selected="true">All interests</option>
+            <option value="drawing">Drawing</option>
+            <option value="cooking">Cooking</option>
+            <option value="gardening">Gardening</option>
+        </select>
+        
+        <!-- Checkbox -->
+        <label for="recieveEmails" class="checkbox">
+            Yes, recieve e-mails about interest related news.
+            <input type="checkbox" id="recieveEmails" checked="true">
+        </label>
+        
+        <!-- Radio buttons -->
+        <span class="radio-wrapper">
+            <label for="onceMonth" class="radio">
+                Once a month
+                <input type="radio" name="frequency" id="onceMonth">
+            </label>
+            <label for="twiceMonth" class="radio">
+                Twice a month
+                <input type="radio" name="frequency" id="twiceMonth">
+            </label>
+            <label for="onceWeek" class="radio">
+                Once a week
+                <input type="radio" name="frequency" id="onceWeek">
+            </label>
+        </span>
+        
+        <!-- Textarea -->
+        <label for="notes">Notes</label>
+        <textarea id="notes" name=""></textarea>
+        
+    </fieldset>
+    
+    <!-- Send button -->
+    <button type="submit" class="button-default">Send</button>
+
+</form>
+</div>
+</div>
+
+<div class="collapsor">
+{% highlight html %}
+<form action="">
+    <fieldset>
+        
+        <!-- First name -->
+        <label for="firstName">First name</label>
+        <input id="firstName" type="text" placeholder="'John'">
+        
+        <!-- Last name -->
+        <label for="lastName">Last name</label>
+        <input id="lastName" type="text" placeholder="'Doe'">
+        
+        <!-- Select interests -->
+        <label for="selectInterests">Select interests</label>
+        <select name="interests" id="selectInterests">
+            <option value="all" selected="true">All interests</option>
+            <option value="drawing">Drawing</option>
+            <option value="cooking">Cooking</option>
+            <option value="gardening">Gardening</option>
+        </select>
+        
+        <!-- Checkbox -->
+        <label for="recieveEmails" class="checkbox">
+            Yes, recieve e-mails about interest related news.
+            <input type="checkbox" id="recieveEmails" checked="true">
+        </label>
+        
+        <!-- Radio buttons -->
+        <span class="radio-wrapper">
+            <label for="onceMonth" class="radio">
+                Once a month
+                <input type="radio" name="frequency" id="onceMonth">
+            </label>
+            <label for="twiceMonth" class="radio">
+                Twice a month
+                <input type="radio" name="frequency" id="twiceMonth">
+            </label>
+            <label for="onceWeek" class="radio">
+                Once a week
+                <input type="radio" name="frequency" id="onceWeek">
+            </label>
+        </span>
+        
+        <!-- Textarea -->
+        <label for="notes">Notes</label>
+        <textarea id="notes" name=""></textarea>
+        
+    </fieldset>
+    
+    <!-- Send button -->
+    <button type="submit" class="button-default">Send</button>
+
+</form>
+{% endhighlight %}
+    <div class="uncollapse">Show full example</div>
+</div>

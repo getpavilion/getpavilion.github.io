@@ -8,59 +8,61 @@ Download the source files trough NPM, Bower or source download.
 This enables you to customize and configure your build specifically for your project.
 
 ##### Variables
-Head over to `scss/parts` and you'll find the core files for Pavilion.
-`_variables.scss` holds your project's base settings which are weaved trough the entire core
-of Pavilion. Extended documentation about each variable can be found in the file itself.
+Head over to `scss/parts/_variables.scss`. This file holds your project's base settings which are weaved trough the entire core
+of Pavilion. 
 
 <div class="collapsor">
-<h6 class="mute"><i class="material-icons">arrow_forward</i>File example. Full file and specific documentation in _variables.scss</h6>
 {% highlight scss %}
+
+/* Variables
+   ========================================================================== */
+
 /**
   * Component & Type sizing, normal and small.
   */
 
-$remsize-normal: 15px;
-$emsize-normal: 18px;
+$remsize-normal: 15px; /* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */
+$emsize-normal: 18px;  /* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/
 
-$remsize-small: 10px;
-$emsize-small: 16px;
+$remsize-small: 10px; /* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */
+$emsize-small: 16px;  /* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/
 
 /**
   * Line-height
   */
 
-$line-height-normal: 1.5;
+$line-height-normal: 1.5; 
 
 /**
   * Breakpoints
   */
 
-$phone-landscape-size: 540px;
-$tablet-portrait-size: 768px;
-$tablet-landscape-size: 991px;
-$desktop-size: 1200px;
+$phone-landscape-size: 540px;    /* Phone landscape minimum */
+$tablet-portrait-size: 768px;    /* Tablet portrait minimum */
+$tablet-landscape-size: 991px;   /* Tablet landscape minimum */
+$desktop-size: 1200px;           /* Desktop minimum */
 
-$breakmargin: 20px;
+$breakmargin: 20px;              /* Margin added to the breakpoint */
 
 /**
   * Colors and tints
   */
 
 $body-copy-color: #333;
-$soft-gray: #E1E1E1;
+$soft-gray: #EFEFEF;
 $hard-gray: #565656;
-$primary-color: #4283FB;
+$primary-color: #426AFB;
 $accent-color: #2980b9;
 
 /**
   * Border radius
   */
 
-$small-radius: 3px;
-$large-radius: 10px;
+$small-radius: 3px; /* Used on buttons, form elements, etc */
+$large-radius: 10px; /* Not used, but will come in handy */
 
 /**
-  * Font-weights
+  * Font-weights, you can set your own values to match your font.
   */
 
 $font-weight-light: 300;
@@ -74,6 +76,7 @@ $font-weight-bold: 700;
 $base-font-family: "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif !default;
 $mono-font-family: "Lucida Console", Monaco, monospace;
 
+
 {% endhighlight %}
     <div class="uncollapse">
         Show full example
@@ -81,7 +84,7 @@ $mono-font-family: "Lucida Console", Monaco, monospace;
 </div>
 
 ##### Other files
-Feel free to poke around and modify Pavilion to your liking. Note that when you change core files, **your changes could be overwritten** when you update Pavilion as a
+Feel free to poke around and modify Pavilion the way you see fit. Note that when you change core files, **your changes could be overwritten** when you update Pavilion as a
 dependency.
 
 You can use the included Grunt.js file to compile your SCSS.

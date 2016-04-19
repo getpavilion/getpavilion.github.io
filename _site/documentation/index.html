@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#sticky-sticky-wrapper">
+<body data-spy="scroll" data-target="#sticky-sticky-wrapper" data-offset="200">
     <header class="header ">
     <div class="container">
         <a class="site-brand" href="/">
@@ -117,7 +117,7 @@
                 </li>
                 
                 <li class="documentation-list-item">
-                    <a class="documentation-list-link" data-scroll href="#contribute">Contribute</a>
+                    <a class="documentation-list-link" data-scroll href="#support">Support</a>
                 </li>
                 
             </ul>
@@ -155,7 +155,7 @@
 <h5 id="pavilion-source-files">Pavilion source files</h5>
 <p>When installing Pavilion with NPM, Bower or the source download, the following structure is delivered.</p>
 
-<pre><code>pavilion/
+<figure class="highlight"><pre><code class="language-html" data-lang="html">pavilion/
 ├── dist/
 │   ├── pavilion.css
 │   ├── pavilion.min.css
@@ -180,17 +180,18 @@
 ├── CHANGELOG.md
 ├── license
 ├── gruntfile.js
-└── package.json
-</code></pre>
+└── package.json</code></pre></figure>
 
 
     </div>
+    <div class="spacer"></div>
 
     <div id="breakpoints" class="documentation-section">
         <h3>Breakpoints</h3>
         <p>Breakpoint stuff here</p>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="containers" class="documentation-section">
         <h3>Containers</h3>
@@ -229,6 +230,7 @@ have a smaller max-width.</p>
 
 
     </div>
+    <div class="spacer"></div>
 
     <div id="grid" class="documentation-section">
         <h3>Grid</h3>
@@ -258,48 +260,471 @@ This is done by placing the columns inside a <code>.row</code>.</p>
 <h4 id="columns">Columns</h4>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="flexbox" class="documentation-section">
         <h3>Flexbox</h3>
         <p>Flexbox here</p>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="typo" class="documentation-section">
         <h3>Typography</h3>
-        <p>typography here</p>
+        <p>The headings <code>h1</code> trough <code>h6</code> are available and accompanied by corresponding classes: <code>.h1</code> trough <code>.h6</code>.
+These classes come in handy when you want to bump up (or down) an element’s textual context to a certain heading size. For instance, giving a button the class <code>.h3</code> will give it a text size
+matching that of a <code>h3</code> heading.</p>
+
+<p>The font-sizes are set in EM’s and calculated by <a href="https://www.type-scale.com">type-scale.com</a>.</p>
+
+<div class="typo-example-no-margin">
+
+<h1>h1 Heading</h1> 
+<h2>h2 Heading</h2> 
+<h3>h3 Heading</h3> 
+<h4>h4 Heading</h4> 
+<h5>h5 Heading</h5> 
+<h6>h6 Heading</h6> 
+    
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Heading tags --&gt;</span>
+<span class="nt">&lt;h1&gt;</span>h1 Heading<span class="nt">&lt;/h1&gt;</span> <span class="c">&lt;!-- font-size: 3.157em; margin-top: 0; --&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Heading<span class="nt">&lt;/h2&gt;</span> <span class="c">&lt;!-- font-size: 2.369em; --&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Heading<span class="nt">&lt;/h3&gt;</span> <span class="c">&lt;!-- font-size: 1.777em; --&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Heading<span class="nt">&lt;/h4&gt;</span> <span class="c">&lt;!-- font-size: 1.333em; --&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 Heading<span class="nt">&lt;/h5&gt;</span> <span class="c">&lt;!-- font-size: 1em; font-weight: bold; --&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 Heading<span class="nt">&lt;/h6&gt;</span> <span class="c">&lt;!-- font-size: 0.75em; --&gt;</span>
+
+<span class="c">&lt;!-- Heading classes --&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h1&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h2&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h3&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h4&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h6&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h5 id="other-typographic-elements">Other typographic elements</h5>
+<p>Below you’ll find a set of elements that are commonly used in web typography.
+We’ve also included <code>.summary</code> that, when added to a <code>&lt;p&gt;</code> element, bumps up the font-size a bit and decreases font-weight.
+Next to that we’ve included a <code>.dropcap</code> which is optional for <code>&lt;p&gt;</code> elements and a <code>.split</code> class, which cuts your
+parapgraph in half.</p>
+
+<h5 id="summary-paragraph">Summary paragraph</h5>
+
+<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magnam hic ex tenetur amet, recusandae id nulla ullam nostrum cum vitae sunt aliquam atque, unde, veniam, aliquid earum nam corporis.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Bumps up the font-size and decreases font-weight --&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;summary&quot;</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h5 id="paragraphs">Paragraphs</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard paragraph --&gt;</span>
+<span class="nt">&lt;p&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h5 id="blockquotes">Blockquotes</h5>
+<blockquote>Lorem ipsum ...
+    <footer>A.A. Bernansky</footer>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote&gt;</span>Lorem ipsum ...
+    <span class="nt">&lt;footer&gt;</span>A.A. Bernansky<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
+
+<h5 id="dropcaps">Dropcaps</h5>
+<p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;dropcap&quot;</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h5 id="split">Split</h5>
+<p class="split">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis impedit doloremque aliquam deleniti repellat a quas rerum consectetur rem, temporibus possimus iste fugiat labore dolores commodi nam dolor perferendis voluptatum.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Breaks a text element into two columns until $phone-landscape-size is reached --&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;split&quot;</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="buttons" class="documentation-section">
         <h3>Buttons</h3>
-        <p>Buttons here</p>
+        <p>There are three button variations included. Default, outlined and stripped.</p>
+
+<p><button class="button-default">Default button</button> <button class="button-outlined">Outlined button</button> <button class="button-stripped">Stripped button</button></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-outlined&quot;</span><span class="nt">&gt;</span>Outlined button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-stripped&quot;</span><span class="nt">&gt;</span>Stripped button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h5 id="button-sizes">Button sizes</h5>
+<p>Just add the contextual heading class to a button, and done.</p>
+
+<p><button class="button-default h3">h3 button</button>  <br />
+<button class="button-default h4">h4 button</button> <br />
+<button class="button-default h5">h5 button</button> <br />
+<button class="button-default h6">h6 button</button></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h1&quot;</span><span class="nt">&gt;</span>h1 button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h2&quot;</span><span class="nt">&gt;</span>h2 button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h3&quot;</span><span class="nt">&gt;</span>h3 button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h4&quot;</span><span class="nt">&gt;</span>h4 button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h5&quot;</span><span class="nt">&gt;</span>h5 button<span class="nt">&lt;/button&gt;</span> <span class="c">&lt;!-- Same size as a normal button --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h6&quot;</span><span class="nt">&gt;</span>h6 button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="lists" class="documentation-section">
         <h3>Lists</h3>
-        <p>Lists here</p>
+        <p>Well, you know…lists. Who doesn’t use lists. Pavilion comes with three, common, types of lists.
+Unordered, Ordered and Description lists. All three have minimal styling. We’ve notched up the
+unordered list with a circle instead of the dot.</p>
+
+<div class="row">
+    <div class="col-pl-33">
+        <ul>
+            <li>Wheels</li>
+            <li>Doors</li>
+            <li>Windows
+                <ul>
+                    <li>Read</li>
+                    <li>Sides</li>
+                    <li>Front</li>
+                </ul>
+            </li>
+            <li>Bumpers</li>
+            <li>Lights</li>
+        </ul>
+    </div>
+    <div class="col-pl-33">
+        <ol>
+            <li>Water melons</li>
+            <li>Strawberry's</li>
+            <li>Exotic fruits
+                <ol>
+                    <li>Mango's</li>
+                    <li>Bananas</li>
+                    <li>Grapes</li>
+                </ol>
+            </li>
+            <li>Kiwi's</li>
+            <li>Oranges</li>
+        </ol>
+    </div>
+    <div class="col-pl-33">
+        <dl>
+          	<dt>List item 1</dt>
+          	<dt>List item 2</dt>
+          	<dt>List item 3</dt>
+            	<dd>Sub item</dd>
+            	<dd>Sub item</dd>
+            	<dd>Sub item</dd>
+          	<dt>List item 4</dt>
+          	<dt>List item 5</dt>
+        </dl>
+    </div>
+</div>
+<div class="row">
+	<div class="col-pl-33">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Unordered list --&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Wheels<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Doors<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Windows
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Read<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Sides<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Front<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Bumpers<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Lights<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+	</div>
+        <div class="col-pl-33">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Ordered list --&gt;</span>
+<span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Water melons<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Strawberry&#39;s<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Exotic fruits
+        <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Mango&#39;s<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Bananas<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Grapes<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Kiwi&#39;s<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Oranges<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></figure>
 
     </div>
+    <div class="col-pl-33">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Description list --&gt;</span>
+<span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>List item 1<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>List item 2<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>List item 3<span class="nt">&lt;/dt&gt;</span>
+        <span class="nt">&lt;dd&gt;</span>Sub item<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dd&gt;</span>Sub item<span class="nt">&lt;/dd&gt;</span>
+        <span class="nt">&lt;dd&gt;</span>Sub item<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>List item 4<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>List item 5<span class="nt">&lt;/dt&gt;</span>
+<span class="nt">&lt;/dl&gt;</span></code></pre></figure>
+
+    </div>
+</div>
+
+    </div>
+    <div class="spacer"></div>
 
     <div id="forms" class="documentation-section">
         <h3>Forms</h3>
-        <p>Forms here</p>
+        <p>With forms, Pavilion does some of the heavy lifting for you.
+We’ve normalized the styling and set it up in a way that you can easy style or use them the way you
+see fit.</p>
+
+<h6 class="mute">Form example</h6>
+
+<div class="row">
+<div class="col-tl-60">
+<form action="">
+    <fieldset>
+        
+        <!-- First name -->
+        <label for="firstName">First name</label>
+        <input id="firstName" type="text" placeholder="'John'" />
+        
+        <!-- Last name -->
+        <label for="lastName">Last name</label>
+        <input id="lastName" type="text" placeholder="'Doe'" />
+        
+        <!-- Select interests -->
+        <label for="selectInterests">Select interests</label>
+        <select name="interests" id="selectInterests">
+            <option value="all" selected="true">All interests</option>
+            <option value="drawing">Drawing</option>
+            <option value="cooking">Cooking</option>
+            <option value="gardening">Gardening</option>
+        </select>
+        
+        <!-- Checkbox -->
+        <label for="recieveEmails" class="checkbox">
+            Yes, recieve e-mails about interest related news.
+            <input type="checkbox" id="recieveEmails" checked="true" />
+        </label>
+        
+        <!-- Radio buttons -->
+        <span class="radio-wrapper">
+            <label for="onceMonth" class="radio">
+                Once a month
+                <input type="radio" name="frequency" id="onceMonth" />
+            </label>
+            <label for="twiceMonth" class="radio">
+                Twice a month
+                <input type="radio" name="frequency" id="twiceMonth" />
+            </label>
+            <label for="onceWeek" class="radio">
+                Once a week
+                <input type="radio" name="frequency" id="onceWeek" />
+            </label>
+        </span>
+        
+        <!-- Textarea -->
+        <label for="notes">Notes</label>
+        <textarea id="notes" name=""></textarea>
+        
+    </fieldset>
+    
+    <!-- Send button -->
+    <button type="submit" class="button-default">Send</button>
+
+</form>
+</div>
+</div>
+
+<div class="collapsor">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        
+        <span class="c">&lt;!-- First name --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;firstName&quot;</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;firstName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;John&#39;&quot;</span><span class="nt">&gt;</span>
+        
+        <span class="c">&lt;!-- Last name --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;lastName&quot;</span><span class="nt">&gt;</span>Last name<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;lastName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;Doe&#39;&quot;</span><span class="nt">&gt;</span>
+        
+        <span class="c">&lt;!-- Select interests --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;selectInterests&quot;</span><span class="nt">&gt;</span>Select interests<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">&quot;interests&quot;</span> <span class="na">id=</span><span class="s">&quot;selectInterests&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;all&quot;</span> <span class="na">selected=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>All interests<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;drawing&quot;</span><span class="nt">&gt;</span>Drawing<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;cooking&quot;</span><span class="nt">&gt;</span>Cooking<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;gardening&quot;</span><span class="nt">&gt;</span>Gardening<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+        
+        <span class="c">&lt;!-- Checkbox --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;recieveEmails&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+            Yes, recieve e-mails about interest related news.
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;recieveEmails&quot;</span> <span class="na">checked=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        
+        <span class="c">&lt;!-- Radio buttons --&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;radio-wrapper&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;onceMonth&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                Once a month
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;onceMonth&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;twiceMonth&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                Twice a month
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;twiceMonth&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;onceWeek&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+                Once a week
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;onceWeek&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+        
+        <span class="c">&lt;!-- Textarea --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;notes&quot;</span><span class="nt">&gt;</span>Notes<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;notes&quot;</span> <span class="na">name=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        
+    <span class="nt">&lt;/fieldset&gt;</span>
+    
+    <span class="c">&lt;!-- Send button --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+    <div class="uncollapse">Show full example</div>
+</div>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="tables" class="documentation-section">
         <h3>Tables</h3>
-        <p>Tables here</p>
+        <p>Tables are one of the reasons people use CSS frameworks. Not having to style a table is reason enough to use a framework.
+Pavilion ships with a minimalisticly styled table. A one size fits all table. Use <code>&lt;thead&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;tfoot&gt;</code> to emphasize data.</p>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>#</th> 
+            <th>Name</th> 
+            <th>Age</th> 
+            <th>Country</th> 
+            <th>Birthsign</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table footer, must come before the body -->
+    <tfoot> 
+        <tr> 
+            <td>#</td> 
+            <td>Name</td> 
+            <td>Age</td> 
+            <td>Country</td> 
+            <td>Birthsign</td> 
+        </tr> 
+    </tfoot>  
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <th>1</th> 
+            <td>Pete Jackson</td> 
+            <td>26</td> 
+            <td>Netherlands</td> 
+            <td>Libra</td>
+        </tr> 
+        <tr> 
+            <th>2</th> 
+            <td>Yi Sun</td> 
+            <td>23</td> 
+            <td>Japan</td> 
+            <td>Leo</td>
+        </tr> 
+        <tr> 
+            <th>3</th> 
+            <td>André Umstadt</td> 
+            <td>34</td> 
+            <td>Germany</td> 
+            <td>Virgo</td>
+        </tr> 
+    </tbody>
+</table>
+<div class="collapsor">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table&gt;</span> 
+    <span class="c">&lt;!-- Table head --&gt;</span>
+    <span class="nt">&lt;thead&gt;</span> 
+        <span class="nt">&lt;tr&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>#<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>Name<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>Age<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>Country<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>Birthsign<span class="nt">&lt;/th&gt;</span> 
+        <span class="nt">&lt;/tr&gt;</span> 
+    <span class="nt">&lt;/thead&gt;</span>
+    
+    <span class="c">&lt;!-- Table footer, must come before the body --&gt;</span>
+    <span class="nt">&lt;tfoot&gt;</span> 
+        <span class="nt">&lt;tr&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>#<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Name<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Age<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Country<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Birthsign<span class="nt">&lt;/td&gt;</span> 
+        <span class="nt">&lt;/tr&gt;</span> 
+    <span class="nt">&lt;/tfoot&gt;</span>  
+    
+    <span class="c">&lt;!-- Table body --&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span> 
+        <span class="nt">&lt;tr&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>1<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Pete Jackson<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>26<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Netherlands<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Libra<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span> 
+        <span class="nt">&lt;tr&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>2<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Yi Sun<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>23<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Japan<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Leo<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span> 
+        <span class="nt">&lt;tr&gt;</span> 
+            <span class="nt">&lt;th&gt;</span>3<span class="nt">&lt;/th&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>André Umstadt<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>34<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Germany<span class="nt">&lt;/td&gt;</span> 
+            <span class="nt">&lt;td&gt;</span>Virgo<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;/tr&gt;</span> 
+    <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+<div class="uncollapse">
+    Show full example
+</div>
+</div>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="utils" class="documentation-section">
         <h3>Utilities</h3>
         <p>Utilities here</p>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="configuring" class="documentation-section">
         <h3>Configuring</h3>
@@ -307,59 +732,60 @@ This is done by placing the columns inside a <code>.row</code>.</p>
 This enables you to customize and configure your build specifically for your project.</p>
 
 <h5 id="variables">Variables</h5>
-<p>Head over to <code>scss/parts</code> and you’ll find the core files for Pavilion.
-<code>_variables.scss</code> holds your project’s base settings which are weaved trough the entire core
-of Pavilion. Extended documentation about each variable can be found in the file itself.</p>
+<p>Head over to <code>scss/parts/_variables.scss</code>. This file holds your project’s base settings which are weaved trough the entire core
+of Pavilion.</p>
 
 <div class="collapsor">
-<h6 class="mute"><i class="material-icons">arrow_forward</i>File example. Full file and specific documentation in _variables.scss</h6>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/**</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/* Variables</span>
+<span class="cm">   ========================================================================== */</span>
+
+<span class="cm">/**</span>
 <span class="cm">  * Component &amp; Type sizing, normal and small.</span>
 <span class="cm">  */</span>
 
-<span class="nv">$remsize-normal</span><span class="o">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$emsize-normal</span><span class="o">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$remsize-normal</span><span class="o">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */</span>
+<span class="nv">$emsize-normal</span><span class="o">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/</span>
 
-<span class="nv">$remsize-small</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$emsize-small</span><span class="o">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$remsize-small</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */</span>
+<span class="nv">$emsize-small</span><span class="o">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/</span>
 
 <span class="cm">/**</span>
 <span class="cm">  * Line-height</span>
 <span class="cm">  */</span>
 
-<span class="nv">$line-height-normal</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="p">;</span>
+<span class="nv">$line-height-normal</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="p">;</span> 
 
 <span class="cm">/**</span>
 <span class="cm">  * Breakpoints</span>
 <span class="cm">  */</span>
 
-<span class="nv">$phone-landscape-size</span><span class="o">:</span> <span class="mi">540</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$tablet-portrait-size</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$tablet-landscape-size</span><span class="o">:</span> <span class="mi">991</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$desktop-size</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$phone-landscape-size</span><span class="o">:</span> <span class="mi">540</span><span class="kt">px</span><span class="p">;</span>    <span class="cm">/* Phone landscape minimum */</span>
+<span class="nv">$tablet-portrait-size</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>    <span class="cm">/* Tablet portrait minimum */</span>
+<span class="nv">$tablet-landscape-size</span><span class="o">:</span> <span class="mi">991</span><span class="kt">px</span><span class="p">;</span>   <span class="cm">/* Tablet landscape minimum */</span>
+<span class="nv">$desktop-size</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">;</span>           <span class="cm">/* Desktop minimum */</span>
 
-<span class="nv">$breakmargin</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$breakmargin</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>              <span class="cm">/* Margin added to the breakpoint */</span>
 
 <span class="cm">/**</span>
 <span class="cm">  * Colors and tints</span>
 <span class="cm">  */</span>
 
 <span class="nv">$body-copy-color</span><span class="o">:</span> <span class="mh">#333</span><span class="p">;</span>
-<span class="nv">$soft-gray</span><span class="o">:</span> <span class="mh">#E1E1E1</span><span class="p">;</span>
+<span class="nv">$soft-gray</span><span class="o">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
 <span class="nv">$hard-gray</span><span class="o">:</span> <span class="mh">#565656</span><span class="p">;</span>
-<span class="nv">$primary-color</span><span class="o">:</span> <span class="mh">#4283FB</span><span class="p">;</span>
+<span class="nv">$primary-color</span><span class="o">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
 <span class="nv">$accent-color</span><span class="o">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
 
 <span class="cm">/**</span>
 <span class="cm">  * Border radius</span>
 <span class="cm">  */</span>
 
-<span class="nv">$small-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
-<span class="nv">$large-radius</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="nv">$small-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Used on buttons, form elements, etc */</span>
+<span class="nv">$large-radius</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Not used, but will come in handy */</span>
 
 <span class="cm">/**</span>
-<span class="cm">  * Font-weights</span>
+<span class="cm">  * Font-weights, you can set your own values to match your font.</span>
 <span class="cm">  */</span>
 
 <span class="nv">$font-weight-light</span><span class="o">:</span> <span class="mi">300</span><span class="p">;</span>
@@ -379,17 +805,17 @@ of Pavilion. Extended documentation about each variable can be found in the file
 </div>
 
 <h5 id="other-files">Other files</h5>
-<p>Feel free to poke around and modify Pavilion to your liking. Note that when you change core files, <strong>your changes could be overwritten</strong> when you update Pavilion as a
+<p>Feel free to poke around and modify Pavilion the way you see fit. Note that when you change core files, <strong>your changes could be overwritten</strong> when you update Pavilion as a
 dependency.</p>
 
 <p>You can use the included Grunt.js file to compile your SCSS.</p>
 
     </div>
+    <div class="spacer"></div>
 
     <div id="grunt" class="documentation-section">
         <h3>Grunt</h3>
-        <p>After you’ve tweaked and configured the desired files you can run Grunt.js to compile your css.
-The Grunt.js file has two tasks. The default task ( <code>grunt</code> ) has the following subtasks:</p>
+        <p>The Grunt.js file shipped with the NPM, Bower and source download has two tasks. The default task ( <code>grunt</code> ) has the following subtasks:</p>
 
 <ul>
   <li>grunt-contrib-clean</li>
@@ -402,19 +828,20 @@ The Grunt.js file has two tasks. The default task ( <code>grunt</code> ) has the
 <p>If you only want to build, and not watch, use <code>grunt dist</code>.
 Both tasks produce the following files in the <code>dist</code> folder:</p>
 
-<pre><code>dist/
+<figure class="highlight"><pre><code class="language-html" data-lang="html">dist/
 ├── pavilion.css
 ├── pavilion.min.css
-└── pavilion.min.css.map
-</code></pre>
+└── pavilion.min.css.map</code></pre></figure>
 
     </div>
+    <div class="spacer"></div>
 
-    <div id="contribute" class="documentation-section">
-        <h3>Contribute</h3>
-        <p>Contribute here</p>
+    <div id="support" class="documentation-section">
+        <h3>Support</h3>
+        <p>Need help or found a bug? Open an issue at <a href="http://github.com/getpavilion/pavilion">Github</a> or tweet us at <a href="http://twitter.com/baasdesign">@baasdesign</a>.</p>
 
     </div>
+    <div class="spacer"></div>
 
         </div>
     </div>

@@ -13,10 +13,6 @@ of Pavilion.
 
 <div class="collapsor">
 {% highlight scss %}
-
-/* Variables
-   ========================================================================== */
-
 /**
   * Component & Type sizing, normal and small.
   */
@@ -73,9 +69,8 @@ $font-weight-bold: 700;
   * Base font stack
   */
 
-$base-font-family: "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif !default;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $mono-font-family: "Lucida Console", Monaco, monospace;
-
 
 {% endhighlight %}
     <div class="uncollapse">

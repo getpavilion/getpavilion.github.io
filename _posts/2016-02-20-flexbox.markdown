@@ -4,4 +4,57 @@ date:   2016-03-31 17:06:26 +0200
 postid: flexbox
 ---
 
-Flexbox here
+##### Flexbox columns
+Instead of using a `.row` you can use `.row-flex` and make use of the CSS Flex Box Layout Model for Pavilion's columns.
+Flex-columns span the maximum width possible width. The normal column classes still apply within the 'flexboxed' row. To use a flex-column add a div
+with the class `.col`.
+
+Please read the <a href="#grid" data-scroll>grid</a> documentation first if you haven't done so.
+
+<div class="row-flex">
+    <div class="col-pl-20">
+        <div class="exb">.col-*-20</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+    <div class="col-pl-33">
+        <div class="exb">.col-*-25</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+</div>
+<div class="row-flex">
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+    <div class="col-pl-40">
+        <div class="exb">.col-*-40</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+    <div class="col">
+        <div class="exb">.col</div>
+    </div>
+</div>
+
+##### Flex elements
+Add an element with the class `.display-flex` to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
+CSS Flex Box Layout Model.
+
+##### Flex utilities
+Pavilion comes with a set of handy flex-box classes to modify your layout.
+**Note:** these classes are also present in the <a href="#utils" data-scroll>utilities</a> section.
+
+

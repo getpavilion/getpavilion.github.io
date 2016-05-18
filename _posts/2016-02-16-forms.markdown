@@ -5,64 +5,155 @@ postid: forms
 ---
 With forms, Pavilion does some of the heavy lifting for you.
 We've normalized the styling and set it up in a way that you can easy style or use them the way you
-see fit.
+see fit. 
 
 <h6 class="mute">Form example</h6>
 
 <div class="row">
 <div class="col-tl-60">
 <form action="">
-    <fieldset>
-        
-        <!-- First name -->
-        <label for="firstName">First name</label>
-        <input id="firstName" type="text" placeholder="'John'">
-        
-        <!-- Last name -->
-        <label for="lastName">Last name</label>
-        <input id="lastName" type="text" placeholder="'Doe'">
-        
-        <!-- Select interests -->
-        <label for="selectInterests">Select interests</label>
-        <select name="interests" id="selectInterests">
-            <option value="all" selected="true">All interests</option>
-            <option value="drawing">Drawing</option>
-            <option value="cooking">Cooking</option>
-            <option value="gardening">Gardening</option>
-        </select>
-        
-        <!-- Checkbox -->
-        <label for="recieveEmails" class="checkbox">
-            Yes, recieve e-mails about interest related news.
-            <input type="checkbox" id="recieveEmails" checked="true">
-        </label>
-        
-        <!-- Radio buttons -->
-        <span class="radio-wrapper">
-            <label for="onceMonth" class="radio">
-                Once a month
-                <input type="radio" name="frequency" id="onceMonth">
-            </label>
-            <label for="twiceMonth" class="radio">
-                Twice a month
-                <input type="radio" name="frequency" id="twiceMonth">
-            </label>
-            <label for="onceWeek" class="radio">
-                Once a week
-                <input type="radio" name="frequency" id="onceWeek">
-            </label>
-        </span>
-        
-        <!-- Textarea -->
-        <label for="notes">Notes</label>
-        <textarea id="notes" name=""></textarea>
-        
-    </fieldset>
-    
-    <!-- Send button -->
-    <button type="submit" class="button-default">Send</button>
+            <fieldset>
+                <!-- Legend -->
+                <legend>Legend element</legend>
+                
+                <!-- Text input -->
+                <label for="firstName">Text input</label>
+                <input id="firstName" type="text" placeholder="'Placeholder'">
+                
+                <!-- Text input -->
+                <label for="firstName">Text input disabled</label>
+                <input id="firstName" type="text" placeholder="'Placeholder'" disabled="">
+                
+                <!-- Input with button left -->
+                <div class="input-with-button-left">
+                    <label for="lastName">Text input with button on the left</label>
+                    <span class="button-wrapper">
+                        <button class="button-default">Button</button>
+                    </span>
+                    <input id="lastName" type="text" placeholder="'Placeholder'">
+                </div>
+                
+                <!-- Input with button right -->
+                <div class="input-with-button-right">
+                    <label for="lastName">Text input with button on the right</label>
+                    <input id="lastName" type="text" placeholder="'Placeholder'">
+                    <span class="button-wrapper">
+                        <button class="button-default">Button</button>
+                    </span>
+                </div>
 
-</form>
+                <!-- Selectbox -->
+                <label for="selectInterests">Selectbox</label>
+                <select name="interests" id="selectInterests">
+                    <option value="all" selected="true">All options</option>
+                    <option value="option1">Option #1</option>
+                    <option value="option2">Option #2</option>
+                    <option value="option3">Option #3</option>
+                    <option value="option4">Option #4</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <!-- Standard file upload -->
+                <label for="standardFileUpload">Standard file input</label>
+                <input type="file" id="standardFileUpload">
+            
+                <!-- Button file upload -->
+                <h5>Button-type file input</h5>
+                <label for="profileUpload" class="button-default">
+                    Upload profile pic
+                    <input id="profileUpload" type="file">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <h5>Checkboxes</h5>
+                
+                <!-- Checkboxes block -->
+                <label for="checkbox1" class="checkbox">
+                    Option #1
+                    <input type="checkbox" id="checkbox1" checked="true">
+                </label>
+                <label for="checkbox2" class="checkbox">
+                    Option #2
+                    <input type="checkbox" id="checkbox2">
+                </label>
+                <label for="checkbox3" class="checkbox">
+                    Option #3
+                    <input type="checkbox" id="checkbox3">
+                </label>
+                <label for="checkbox4" class="checkbox">
+                    Option #4
+                    <input type="checkbox" id="checkbox4">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <h5>Radio buttons</h5>
+                
+                <!-- Radio buttons block -->
+                <label for="radio1" class="radio">
+                    This?
+                    <input type="radio" name="frequency" id="radio1">
+                </label>
+                <label for="radio2" class="radio">
+                    Or this..
+                    <input type="radio" name="frequency" id="radio2">
+                </label>
+                <label for="radio3" class="radio">
+                    Or maybe this!
+                    <input type="radio" name="frequency" id="radio3">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <h5>Inline checkboxes</h5>
+                <!-- Checkboxes block -->
+                <label for="inlineCheckbox1" class="checkbox-inline">
+                    Option #1
+                    <input type="checkbox" id="inlineCheckbox1" checked="true">
+                </label>
+                <label for="inlineCheckbox2" class="checkbox-inline">
+                    Option #2
+                    <input type="checkbox" id="inlineCheckbox2">
+                </label>
+                <label for="inlineCheckbox3" class="checkbox-inline">
+                    Option #3
+                    <input type="checkbox" id="inlineCheckbox3">
+                </label>
+                <label for="inlineCheckbox4" class="checkbox-inline">
+                    Option #4
+                    <input type="checkbox" id="inlineCheckbox4">
+                </label>
+            </fieldset>
+                
+            <fieldset>
+                <h5>Inline radiobuttons</h5>
+                <!-- Radio buttons block -->
+                <label for="inlineRadio1" class="radio-inline">
+                    This?
+                    <input type="radio" name="frequency" id="inlineRadio1">
+                </label>
+                <label for="inlineRadio2" class="radio-inline">
+                    Or this..
+                    <input type="radio" name="frequency" id="inlineRadio2">
+                </label>
+                <label for="inlineRadio3" class="radio-inline">
+                    Or maybe this!
+                    <input type="radio" name="frequency" id="inlineRadio3">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <!-- Textarea -->
+                <label for="textarea1">Textarea</label>
+                <textarea id="textarea1" name=""></textarea>
+            </fieldset>
+            
+            <!-- Send button -->
+            <button type="submit" class="button-default">Submit</button>
+            
+        </form>
 </div>
 </div>
 
@@ -70,55 +161,146 @@ see fit.
 {% highlight html %}
 <form action="">
     <fieldset>
+        <!-- Legend -->
+        <legend>Legend element</legend>
         
-        <!-- First name -->
-        <label for="firstName">First name</label>
-        <input id="firstName" type="text" placeholder="'John'">
+        <!-- Text input -->
+        <label for="firstName">Text input</label>
+        <input id="firstName" type="text" placeholder="'Placeholder'">
         
-        <!-- Last name -->
-        <label for="lastName">Last name</label>
-        <input id="lastName" type="text" placeholder="'Doe'">
+        <!-- Text input -->
+        <label for="firstName">Text input disabled</label>
+        <input id="firstName" type="text" placeholder="'Placeholder'" disabled="">
         
-        <!-- Select interests -->
-        <label for="selectInterests">Select interests</label>
+        <!-- Input with button left -->
+        <div class="input-with-button-left">
+            <label for="lastName">Text input with button on the left</label>
+            <span class="button-wrapper">
+                <button class="button-default">Button</button>
+            </span>
+            <input id="lastName" type="text" placeholder="'Placeholder'">
+        </div>
+        
+        <!-- Input with button right -->
+        <div class="input-with-button-right">
+            <label for="lastName">Text input with button on the right</label>
+            <input id="lastName" type="text" placeholder="'Placeholder'">
+            <span class="button-wrapper">
+                <button class="button-default">Button</button>
+            </span>
+        </div>
+
+        <!-- Selectbox -->
+        <label for="selectInterests">Selectbox</label>
         <select name="interests" id="selectInterests">
-            <option value="all" selected="true">All interests</option>
-            <option value="drawing">Drawing</option>
-            <option value="cooking">Cooking</option>
-            <option value="gardening">Gardening</option>
+            <option value="all" selected="true">All options</option>
+            <option value="option1">Option #1</option>
+            <option value="option2">Option #2</option>
+            <option value="option3">Option #3</option>
+            <option value="option4">Option #4</option>
         </select>
-        
-        <!-- Checkbox -->
-        <label for="recieveEmails" class="checkbox">
-            Yes, recieve e-mails about interest related news.
-            <input type="checkbox" id="recieveEmails" checked="true">
+    </fieldset>
+    
+    <fieldset>
+        <!-- Standard file upload -->
+        <label for="standardFileUpload">Standard file input</label>
+        <input type="file" id="standardFileUpload">
+    
+        <!-- Button file upload -->
+        <h5>Button-type file input</h5>
+        <label for="profileUpload" class="button-default">
+            Upload profile pic
+            <input id="profileUpload" type="file">
         </label>
+    </fieldset>
+    
+    <fieldset>
+        <h5>Checkboxes</h5>
         
-        <!-- Radio buttons -->
-        <span class="radio-wrapper">
-            <label for="onceMonth" class="radio">
-                Once a month
-                <input type="radio" name="frequency" id="onceMonth">
-            </label>
-            <label for="twiceMonth" class="radio">
-                Twice a month
-                <input type="radio" name="frequency" id="twiceMonth">
-            </label>
-            <label for="onceWeek" class="radio">
-                Once a week
-                <input type="radio" name="frequency" id="onceWeek">
-            </label>
-        </span>
+        <!-- Checkboxes block -->
+        <label for="checkbox1" class="checkbox">
+            Option #1
+            <input type="checkbox" id="checkbox1" checked="true">
+        </label>
+        <label for="checkbox2" class="checkbox">
+            Option #2
+            <input type="checkbox" id="checkbox2">
+        </label>
+        <label for="checkbox3" class="checkbox">
+            Option #3
+            <input type="checkbox" id="checkbox3">
+        </label>
+        <label for="checkbox4" class="checkbox">
+            Option #4
+            <input type="checkbox" id="checkbox4">
+        </label>
+    </fieldset>
+    
+    <fieldset>
+        <h5>Radio buttons</h5>
         
+        <!-- Radio buttons block -->
+        <label for="radio1" class="radio">
+            This?
+            <input type="radio" name="frequency" id="radio1">
+        </label>
+        <label for="radio2" class="radio">
+            Or this..
+            <input type="radio" name="frequency" id="radio2">
+        </label>
+        <label for="radio3" class="radio">
+            Or maybe this!
+            <input type="radio" name="frequency" id="radio3">
+        </label>
+    </fieldset>
+    
+    <fieldset>
+        <h5>Inline checkboxes</h5>
+        <!-- Checkboxes block -->
+        <label for="inlineCheckbox1" class="checkbox-inline">
+            Option #1
+            <input type="checkbox" id="inlineCheckbox1" checked="true">
+        </label>
+        <label for="inlineCheckbox2" class="checkbox-inline">
+            Option #2
+            <input type="checkbox" id="inlineCheckbox2">
+        </label>
+        <label for="inlineCheckbox3" class="checkbox-inline">
+            Option #3
+            <input type="checkbox" id="inlineCheckbox3">
+        </label>
+        <label for="inlineCheckbox4" class="checkbox-inline">
+            Option #4
+            <input type="checkbox" id="inlineCheckbox4">
+        </label>
+    </fieldset>
+        
+    <fieldset>
+        <h5>Inline radiobuttons</h5>
+        <!-- Radio buttons block -->
+        <label for="inlineRadio1" class="radio-inline">
+            This?
+            <input type="radio" name="frequency" id="inlineRadio1">
+        </label>
+        <label for="inlineRadio2" class="radio-inline">
+            Or this..
+            <input type="radio" name="frequency" id="inlineRadio2">
+        </label>
+        <label for="inlineRadio3" class="radio-inline">
+            Or maybe this!
+            <input type="radio" name="frequency" id="inlineRadio3">
+        </label>
+    </fieldset>
+    
+    <fieldset>
         <!-- Textarea -->
-        <label for="notes">Notes</label>
-        <textarea id="notes" name=""></textarea>
-        
+        <label for="textarea1">Textarea</label>
+        <textarea id="textarea1" name=""></textarea>
     </fieldset>
     
     <!-- Send button -->
-    <button type="submit" class="button-default">Send</button>
-
+    <button type="submit" class="button-default">Submit</button>
+    
 </form>
 {% endhighlight %}
     <div class="uncollapse">Show full example</div>

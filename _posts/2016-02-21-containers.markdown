@@ -24,16 +24,16 @@ This container has a default max-width of 1140px and is centered in the viewport
 
 ##### Breakpoint specific containers
 {% highlight html %}
-<div class="container-tl">
-    <!-- Container width: tablet landscape / 991px -->
+<div class="container-pl">
+    <!-- Container width: phone landscape / 540px -->
 </div>
 
 <div class="container-tp">
     <!-- Container width: tablet portrait / 768px -->
 </div>
 
-<div class="container-pl">
-    <!-- Container width: phone landscape / 540px -->
+<div class="container-tl">
+    <!-- Container width: tablet landscape / 991px -->
 </div>
 {% endhighlight %}
 

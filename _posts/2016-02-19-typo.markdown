@@ -7,7 +7,8 @@ The headings `h1` trough `h6` are available and accompanied by corresponding cla
 These classes come in handy when you want to bump up (or down) an element's textual context to a certain heading size. For instance, giving a button the class `.h3` will give it a text size
 matching that of a `h3` heading.
 
-The font-sizes are set in EM's and calculated by [type-scale.com](https://www.type-scale.com).
+The font-sizes are set in EM's and inherit the `body` font-size. 
+Typography calculated by [type-scale](http://type-scale.com/).
 
 <div class="typo-example-no-margin">
 

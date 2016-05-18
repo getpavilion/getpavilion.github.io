@@ -1,8 +1,9 @@
 /* style default components */
 
 body {
-    // font-size: 16px;
-    // font-family: "Work Sans";
+    font-size: 16px;
+    font-family: "Brandon Text";
+    color: #373a3c;
 }
 
 .devider-center {
@@ -10,6 +11,17 @@ body {
     display: block;
     border-top: 1px solid darken($soft-gray, 30%);
     margin: 2rem auto;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+figure {
+    margin: 0 0 3rem 0;
 }
 
 .alert {

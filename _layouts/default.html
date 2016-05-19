@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body {% if page.layout == "documentation" %}data-spy="scroll" data-target="#sticky-sticky-wrapper" data-offset="200"{% endif %}>
+<body {% if page.type == "documentation" %}data-spy="scroll" data-target="#sticky-sticky-wrapper" data-offset="200"{% endif %}>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

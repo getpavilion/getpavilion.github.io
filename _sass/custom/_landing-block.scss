@@ -48,6 +48,13 @@
             position: relative;
             @media (max-width: $tablet-portrait-size) {
                 padding-left: 4rem;
+                width: 325px;
+                strong {
+                    display: block;
+                }
+                br {
+                    display: none;
+                }
             }
             .usp-icon {
                 position: absolute;

@@ -2284,7 +2284,7 @@ table > tfoot > tr > td {
 /* style default components */
 body {
   font-size: 16px;
-  font-family: "Brandon Text";
+  font-family: "Source Sans Pro";
   color: #373a3c; }
 
 .devider-center {
@@ -2479,6 +2479,14 @@ pre code, pre kbd {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+.exfb {
+  height: 200px;
+  border-radius: 3px;
+  background-color: #EFEFEF;
+  margin-bottom: 2rem; }
+  .exfb button {
+    margin: 0; }
+
 .landing-block {
   width: 100%;
   background-color: #f1f4ff;
@@ -2530,7 +2538,12 @@ pre code, pre kbd {
       clear: both; }
     @media (max-width: 768px) {
       .landing-block .usp-column .usp-block {
-        padding-left: 4rem; } }
+        padding-left: 4rem;
+        width: 325px; }
+        .landing-block .usp-column .usp-block strong {
+          display: block; }
+        .landing-block .usp-column .usp-block br {
+          display: none; } }
     .landing-block .usp-column .usp-block .usp-icon {
       position: absolute;
       top: 4px;

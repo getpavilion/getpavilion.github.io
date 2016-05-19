@@ -17,9 +17,12 @@ description: > # this means to ignore newlines until "baseurl:"
 # baseurl: "http://baasdesign.nl/workspace/docs"
 # siteurl: "http://baasdesign.nl/workspace/docs"
 
+baseurl: "http://www.pavilion.io"
+siteurl: "http://www.pavilion.io"
+
 #for local
-baseurl: ""
-siteurl: "http://127.0.0.1:4000/"
+# baseurl: ""
+# siteurl: "http://127.0.0.1:4000/"
 
 # Build settings
 markdown: kramdown

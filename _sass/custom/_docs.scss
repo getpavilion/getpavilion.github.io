@@ -96,3 +96,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.exfb {
+    height: 200px;
+    border-radius: $small-radius;
+    background-color: #EFEFEF;
+    margin-bottom: 2rem;
+    button {
+        margin: 0;
+    }
+}

@@ -1,7 +1,415 @@
 ---
-title:  "Utilities"
+title:  "Utility classes"
 date:   2016-03-31 17:06:26 +0200
 postid: utils
 ---
 
-Utilities here
+Utility classes are classes that may come in handy when you quickly want to apply CSS rules to
+an element. 
+<br>
+
+##### Test classes
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>Class</th> 
+            <th>Behaviour</th> 
+            <th>Usage</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td><code>.show-elements</code></td> 
+            <td>Shows all element outlines</td> 
+            <td>On <code>&lt;body&gt;</code></td> 
+        </tr>
+        <tr> 
+            <td><code>.test-block</code></td> 
+            <td>Adds a test-block to a column</td> 
+            <td>On columns</td> 
+        </tr>
+    </tbody>
+</table>
+<br>
+
+##### General utilities
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>Class</th> 
+            <th>Behaviour</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td><code>.float-left</code></td> 
+            <td>float: left</td>
+        </tr>
+        <tr> 
+            <td><code>.float-right</code></td> 
+            <td>float: right</td> 
+        </tr>
+        <tr> 
+            <td><code>.clearfix</code></td> 
+            <td>Wrap floating elements</td> 
+        </tr>
+    </tbody>
+</table>
+<br>
+
+##### Hiding and showing elements
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>Class</th> 
+            <th>Behaviour</th> 
+            <th>Active on breakpoint</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody>
+        <tr> 
+            <td><code>.show</code></td> 
+            <td>display: block</td> 
+            <td>All</td> 
+        </tr> 
+        <tr> 
+            <td><code>.hide</code></td> 
+            <td>display: none</td> 
+            <td>All</td> 
+        </tr> 
+        <tr> 
+            <td><code>.show-pp</code></td> 
+            <td>display: block</td> 
+            <td>Phone Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-pl</code></td> 
+            <td>display: block</td> 
+            <td>Phone Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-tp</code></td> 
+            <td>display: block</td> 
+            <td>Tablet Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-tl</code></td> 
+            <td>display: block</td> 
+            <td>Tablet Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-dt</code></td> 
+            <td>display: block</td> 
+            <td>Desktop</td> 
+        </tr>
+        
+        
+        <tr> 
+            <td><code>.show-pp-inline</code></td> 
+            <td>display: inline</td> 
+            <td>Phone Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-pl-inline</code></td> 
+            <td>display: inline</td> 
+            <td>Phone Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-tp-inline</code></td> 
+            <td>display: inline</td> 
+            <td>Tablet Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-tl-inline</code></td> 
+            <td>display: inline</td> 
+            <td>Tablet Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-dt-inline</code></td> 
+            <td>display: inline</td> 
+            <td>Desktop</td> 
+        </tr>
+        
+        <tr> 
+            <td><code>.show-pp-inline-block</code></td> 
+            <td>display: inline-block</td> 
+            <td>Phone Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-pl-inline-block</code></td> 
+            <td>display: inline-block</td> 
+            <td>Phone Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-tp-inline-block</code></td> 
+            <td>display: inline-block</td> 
+            <td>Tablet Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-tl-inline-block</code></td> 
+            <td>display: inline-block</td> 
+            <td>Tablet Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.show-dt-inline-block</code></td> 
+            <td>display: inline-block</td> 
+            <td>Desktop</td> 
+        </tr>
+        
+        <tr> 
+            <td><code>.hide-pp</code></td> 
+            <td>display: none</td> 
+            <td>Phone Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.hide-pl</code></td> 
+            <td>display: none</td> 
+            <td>Phone Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.hide-tp</code></td> 
+            <td>display: none</td> 
+            <td>Tablet Portrait</td> 
+        </tr>
+        <tr> 
+            <td><code>.hide-tl</code></td> 
+            <td>display: none</td> 
+            <td>Tablet Landscape</td> 
+        </tr>
+        <tr> 
+            <td><code>.hide-dt</code></td> 
+            <td>display: none</td> 
+            <td>Desktop</td> 
+        </tr>
+    </tbody>
+</table>
+<br>
+
+##### Text-align classes
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>Class</th> 
+            <th>Align text</th> 
+            <th>Active on breakpoint</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody>
+        <tr> 
+            <td><code>.text-center</code></td> 
+            <td>center</td> 
+            <td>All</td>
+        </tr>
+        <tr> 
+            <td><code>.text-pp-center</code></td> 
+            <td>center</td> 
+            <td>Phone Portrait</td>
+        </tr> 
+        <tr> 
+            <td><code>.text-pl-center</code></td> 
+            <td>center</td> 
+            <td>Phone Landscape</td>
+        </tr>
+        <tr> 
+            <td><code>.text-tp-center</code></td> 
+            <td>center</td> 
+            <td>Tablet Portrait</td>
+        </tr>
+        <tr> 
+            <td><code>.text-tl-center</code></td> 
+            <td>center</td> 
+            <td>Tablet Landscape</td>
+        </tr>
+        <tr> 
+            <td><code>.text-dt-center</code></td> 
+            <td>center</td> 
+            <td>Desktop</td>
+        </tr>
+        
+        <tr> 
+            <td><code>.text-left</code></td> 
+            <td>left</td> 
+            <td>All</td>
+        </tr>
+        <tr> 
+            <td><code>.text-pp-left</code></td> 
+            <td>left</td> 
+            <td>Phone Portrait</td>
+        </tr> 
+        <tr> 
+            <td><code>.text-pl-left</code></td> 
+            <td>left</td> 
+            <td>Phone Landscape</td>
+        </tr>
+        <tr> 
+            <td><code>.text-tp-left</code></td> 
+            <td>left</td> 
+            <td>Tablet Portrait</td>
+        </tr>
+        <tr> 
+            <td><code>.text-tl-left</code></td> 
+            <td>left</td> 
+            <td>Tablet Landscape</td>
+        </tr>
+        <tr> 
+            <td><code>.text-dt-left</code></td> 
+            <td>left</td> 
+            <td>Desktop</td>
+        </tr>
+        
+        <tr> 
+            <td><code>.text-right</code></td> 
+            <td>right</td> 
+            <td>All</td>
+        </tr>
+        <tr> 
+            <td><code>.text-pp-right</code></td> 
+            <td>right</td> 
+            <td>Phone Portrait</td>
+        </tr> 
+        <tr> 
+            <td><code>.text-pl-right</code></td> 
+            <td>right</td> 
+            <td>Phone Landscape</td>
+        </tr>
+        <tr> 
+            <td><code>.text-tp-right</code></td> 
+            <td>right</td> 
+            <td>Tablet Portrait</td>
+        </tr>
+        <tr> 
+            <td><code>.text-tl-right</code></td> 
+            <td>right</td> 
+            <td>Tablet Landscape</td>
+        </tr>
+        <tr> 
+            <td><code>.text-dt-right</code></td> 
+            <td>right</td> 
+            <td>Desktop</td>
+        </tr>       
+    </tbody>
+</table>
+<br>
+
+##### Flexbox classes
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>Class</th> 
+            <th>Behaviour</th> 
+            <th>Usage</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td><code>.display-flex</code></td> 
+            <td>Set display: flex;</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.row-flex</code></td> 
+            <td>Set display: flex;</td> 
+            <td>On row</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-center-h</code></td> 
+            <td>Center items horizontally</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-center-v</code></td> 
+            <td>Center items vertically</td> 
+            <td>On container</td> 
+        </tr>  
+        <tr> 
+            <td><code>.items-top</code></td> 
+            <td>Align items to top</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-left</code></td> 
+            <td>Align items to left</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-right</code></td> 
+            <td>Align items to right</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-bottom</code></td> 
+            <td>Align items to bottom</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-baseline</code></td> 
+            <td>Align items to baseline</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-spaced-around</code></td> 
+            <td>Distribute items evenly</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-spaced-between</code></td> 
+            <td>Distribute items to edges</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-top</code></td> 
+            <td>Align to top</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-bottom</code></td> 
+            <td>Align to bottom</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-baseline</code></td> 
+            <td>Align to baseline</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-center-v</code></td> 
+            <td>Align to center vertically</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-center-h</code></td> 
+            <td>Align to center horizontally</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-first</code></td> 
+            <td>Reorder item to be the first</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-last</code></td> 
+            <td>Reorder item to be the last</td> 
+            <td>On child</td> 
+        </tr>
+    </tbody>
+</table>

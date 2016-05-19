@@ -1,1 +1,37 @@
+<p>EM’s and REM’s inherit a value set by a parent.
+REM is different from EM in that it always inherits its value from the root element, which is your <code>html</code> tag.
+The EM unit inherits it’s value from its first parent with a specified font-size.</p>
 
+<p>Pavilion uses EM’s for typography and REM’s for component margins, paddings or other properties.
+One EM is equal to 18px, which is set on the <code>body</code>. One REM is equal to 15px, which is set 
+on the <code>html</code> tag.</p>
+
+<h5 id="smaller-screens">Smaller screens</h5>
+<p>On smaller screens the font-sizes on the body and html tags wil decrease, which will affect the EM’s and REM’s troughout the
+rest of the DOM.</p>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>1 EM equals</th> 
+            <th>1 REM equals</th>
+            <th>On breakpoints</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td>18px</td>
+            <td>15px</td> 
+            <td>Tablet Portrait and larger</td> 
+        </tr>
+        <tr> 
+            <td>16px</td>
+            <td>10px</td> 
+            <td>All sizes below Tablet Portrait</td> 
+        </tr>
+    </tbody>
+</table>
+<p><br /></p>

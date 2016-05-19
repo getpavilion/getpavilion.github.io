@@ -4,10 +4,10 @@
     <title>Pavilion</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 May 2016 01:12:49 +0200</pubDate>
-    <lastBuildDate>Thu, 19 May 2016 01:12:49 +0200</lastBuildDate>
+    <link>http://www.pavilion.io/</link>
+    <atom:link href="http://www.pavilion.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 May 2016 21:36:57 +0200</pubDate>
+    <lastBuildDate>Thu, 19 May 2016 21:36:57 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -70,8 +70,8 @@
 
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/getting-started.html</link>
-        <guid isPermaLink="true">/2016/03/31/getting-started.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/getting-started.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/getting-started.html</guid>
         
         
       </item>
@@ -127,8 +127,8 @@ The &lt;strong&gt;Phone Portrait&lt;/strong&gt; breakpoint uses the &lt;strong&g
 See &lt;a data-scroll=&quot;&quot; href=&quot;#gettingstarted&quot;&gt;getting started&lt;/a&gt; for those installations or the &lt;a data-scroll=&quot;&quot; href=&quot;#configuring&quot;&gt;configuring&lt;/a&gt; section for the variables.&lt;/p&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/media-queries.html</link>
-        <guid isPermaLink="true">/2016/03/31/media-queries.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/media-queries.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/media-queries.html</guid>
         
         
       </item>
@@ -136,7 +136,7 @@ See &lt;a data-scroll=&quot;&quot; href=&quot;#gettingstarted&quot;&gt;getting s
       <item>
         <title>Containers</title>
         <description>&lt;p&gt;To keep all your elements packed in consistend left and right paddings you should wrap
-them in containers. Basically we have two types of containers.&lt;/p&gt;
+them in containers. Basically we have three types of containers.&lt;/p&gt;
 
 &lt;h5 id=&quot;standard-fixed-width-container&quot;&gt;Standard (fixed width) container&lt;/h5&gt;
 &lt;p&gt;This container has a default max-width of 1140px and is centered in the viewport.&lt;/p&gt;
@@ -170,8 +170,8 @@ have a smaller max-width.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/containers.html</link>
-        <guid isPermaLink="true">/2016/03/31/containers.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/containers.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/containers.html</guid>
         
         
       </item>
@@ -309,7 +309,9 @@ you don’t wrap your columns in a row. This would remove the padding along the 
 
 &lt;h3 id=&quot;columns--breakpoints&quot;&gt;Columns &amp;amp; breakpoints&lt;/h3&gt;
 &lt;p&gt;To create a flexible layout you need to be able to set specific column width’s per breakpoint. Pavilion uses a common concept to do this.
-Just add the breakpoint’s respective device &amp;amp; orientation derivative to the column class. Does that sound confusing?&lt;/p&gt;
+Just add the breakpoint’s respective abbreviation to the column class.&lt;/p&gt;
+
+&lt;p&gt;Does that sound confusing? It isn’t, look:&lt;/p&gt;
 
 &lt;div class=&quot;row-flex&quot;&gt;
     &lt;div class=&quot;col-pl-50 col-tl-33&quot;&gt;
@@ -347,8 +349,8 @@ When the viewport gets smaller, they’ll both span a width of 50% until the scr
 breakpoints and screensizes.&lt;/p&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/grid.html</link>
-        <guid isPermaLink="true">/2016/03/31/grid.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/grid.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/grid.html</guid>
         
         
       </item>
@@ -401,17 +403,128 @@ with the class &lt;code&gt;.col&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h5 id=&quot;flex-elements&quot;&gt;Flex elements&lt;/h5&gt;
-&lt;p&gt;Add an element with the class &lt;code&gt;.display-flex&lt;/code&gt; to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
-CSS Flex Box Layout Model.&lt;/p&gt;
+&lt;p&gt;Use the class &lt;code&gt;.display-flex&lt;/code&gt; to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
+‘CSS Flex Box Layout Model’. Pavilion comes with a set of handy flexbox classes to modify your layout.&lt;/p&gt;
 
-&lt;h5 id=&quot;flex-utilities&quot;&gt;Flex utilities&lt;/h5&gt;
-&lt;p&gt;Pavilion comes with a set of handy flex-box classes to modify your layout.
-&lt;strong&gt;Note:&lt;/strong&gt; these classes are also present in the &lt;a href=&quot;#utils&quot; data-scroll=&quot;&quot;&gt;utilities&lt;/a&gt; section.&lt;/p&gt;
+&lt;p&gt;For example, centering horizontally and vertically is easy with flexbox:&lt;/p&gt;
+&lt;div class=&quot;display-flex exfb items-center-h items-center-v&quot;&gt;
+    &lt;button class=&quot;button-default&quot;&gt;I am centered X&amp;amp;Y&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;table&gt; 
+    &lt;!-- Table head --&gt;
+    &lt;thead&gt; 
+        &lt;tr&gt; 
+            &lt;th&gt;Class&lt;/th&gt; 
+            &lt;th&gt;Behaviour&lt;/th&gt; 
+            &lt;th&gt;Usage&lt;/th&gt; 
+        &lt;/tr&gt; 
+    &lt;/thead&gt;
+    
+    &lt;!-- Table body --&gt;
+    &lt;tbody&gt; 
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.display-flex&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Set display: flex;&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.row-flex&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Set display: flex;&lt;/td&gt; 
+            &lt;td&gt;On row&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-center-h&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Center items horizontally&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-center-v&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Center items vertically&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;  
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-top&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align items to top&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-left&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align items to left&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-right&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align items to right&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-bottom&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align items to bottom&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-baseline&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align items to baseline&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-spaced-around&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Distribute items evenly&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.items-spaced-between&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Distribute items to edges&lt;/td&gt; 
+            &lt;td&gt;On container&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-top&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align to top&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-bottom&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align to bottom&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-baseline&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align to baseline&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-center-v&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align to center vertically&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-center-h&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Align to center horizontally&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-first&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Reorder item to be the first&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;&lt;code&gt;.item-last&lt;/code&gt;&lt;/td&gt; 
+            &lt;td&gt;Reorder item to be the last&lt;/td&gt; 
+            &lt;td&gt;On child&lt;/td&gt; 
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ofcourse there are numerous other properties that apply to flexbox, which we don’t cover in our utility classes.
+We have covered classes for basic flexbox usage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; these classes are also present in the &lt;a href=&quot;#utils&quot; data-scroll=&quot;&quot;&gt;utilities&lt;/a&gt; section.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/flexbox.html</link>
-        <guid isPermaLink="true">/2016/03/31/flexbox.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/flexbox.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/flexbox.html</guid>
         
         
       </item>
@@ -492,8 +605,8 @@ parapgraph in half.&lt;/p&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;split&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Lorem ipsum ...&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/typo.html</link>
-        <guid isPermaLink="true">/2016/03/31/typo.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/typo.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/typo.html</guid>
         
         
       </item>
@@ -524,8 +637,8 @@ parapgraph in half.&lt;/p&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button-default h6&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;h6 button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/buttons.html</link>
-        <guid isPermaLink="true">/2016/03/31/buttons.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/buttons.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/buttons.html</guid>
         
         
       </item>
@@ -533,7 +646,7 @@ parapgraph in half.&lt;/p&gt;
       <item>
         <title>Lists</title>
         <description>&lt;p&gt;Well, you know…lists. Who doesn’t use lists. Pavilion comes with three, common, types of lists.
-Unordered, Ordered and Description lists. All three have minimal styling. We’ve notched up the
+Unordered, ordered and description lists. All three have minimal styling. We’ve notched up the
 unordered list with a circle instead of the dot.&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
@@ -635,8 +748,8 @@ unordered list with a circle instead of the dot.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/lists.html</link>
-        <guid isPermaLink="true">/2016/03/31/lists.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/lists.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/lists.html</guid>
         
         
       </item>
@@ -947,8 +1060,8 @@ see fit.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/forms.html</link>
-        <guid isPermaLink="true">/2016/03/31/forms.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/forms.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/forms.html</guid>
         
         
       </item>
@@ -1063,8 +1176,8 @@ Pavilion ships with a clean table. Use &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/cod
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
-        <link>/2016/03/31/tables.html</link>
-        <guid isPermaLink="true">/2016/03/31/tables.html</guid>
+        <link>http://www.pavilion.io/2016/03/31/tables.html</link>
+        <guid isPermaLink="true">http://www.pavilion.io/2016/03/31/tables.html</guid>
         
         
       </item>

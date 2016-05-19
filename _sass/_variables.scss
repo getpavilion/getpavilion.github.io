@@ -49,16 +49,14 @@ $large-radius: 10px; /* Not used, but will come in handy */
   * Font-weights, you can set your own values to match your font.
   */
 
-$font-weight-hairline: 100;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$font-weight-black: 900;
 
 /**
   * Base font stack
   */
 
-$base-font-family: "Work Sans", "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif !default;
+$base-font-family: "Source Sans Pro", "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif !default;
 $brand-font-family: "Source Code Pro", "Source Sans Pro", sans-serif;
 $mono-font-family: "Lucida Console", Monaco, monospace;

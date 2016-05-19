@@ -50,11 +50,122 @@ Please read the <a href="#grid" data-scroll>grid</a> documentation first if you 
 </div>
 
 ##### Flex elements
-Add an element with the class `.display-flex` to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
-CSS Flex Box Layout Model.
+Use the class `.display-flex` to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
+'CSS Flex Box Layout Model'. Pavilion comes with a set of handy flexbox classes to modify your layout.
 
-##### Flex utilities
-Pavilion comes with a set of handy flex-box classes to modify your layout.
+For example, centering horizontally and vertically is easy with flexbox:
+<div class="display-flex exfb items-center-h items-center-v">
+    <button class="button-default">I am centered X&Y</button>
+</div>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>Class</th> 
+            <th>Behaviour</th> 
+            <th>Usage</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td><code>.display-flex</code></td> 
+            <td>Set display: flex;</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.row-flex</code></td> 
+            <td>Set display: flex;</td> 
+            <td>On row</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-center-h</code></td> 
+            <td>Center items horizontally</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-center-v</code></td> 
+            <td>Center items vertically</td> 
+            <td>On container</td> 
+        </tr>  
+        <tr> 
+            <td><code>.items-top</code></td> 
+            <td>Align items to top</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-left</code></td> 
+            <td>Align items to left</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-right</code></td> 
+            <td>Align items to right</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-bottom</code></td> 
+            <td>Align items to bottom</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-baseline</code></td> 
+            <td>Align items to baseline</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-spaced-around</code></td> 
+            <td>Distribute items evenly</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.items-spaced-between</code></td> 
+            <td>Distribute items to edges</td> 
+            <td>On container</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-top</code></td> 
+            <td>Align to top</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-bottom</code></td> 
+            <td>Align to bottom</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-baseline</code></td> 
+            <td>Align to baseline</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-center-v</code></td> 
+            <td>Align to center vertically</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-center-h</code></td> 
+            <td>Align to center horizontally</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-first</code></td> 
+            <td>Reorder item to be the first</td> 
+            <td>On child</td> 
+        </tr>
+        <tr> 
+            <td><code>.item-last</code></td> 
+            <td>Reorder item to be the last</td> 
+            <td>On child</td> 
+        </tr>
+    </tbody>
+</table>
+
+Ofcourse there are numerous other properties that apply to flexbox, which we don't cover in our utility classes.
+We have covered classes for basic flexbox usage.
+
 **Note:** these classes are also present in the <a href="#utils" data-scroll>utilities</a> section.
 
 

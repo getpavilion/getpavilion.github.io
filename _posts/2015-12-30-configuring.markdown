@@ -4,7 +4,7 @@ date:   2016-03-31 17:06:26 +0200
 postid: configuring
 ---
 
-Download the source files trough NPM, Bower or source download.
+Download the source files trough NPM, Bower or source download (see: <a href="#gettingstarted" data-scroll>getting started</a>).
 This enables you to customize and configure your build specifically for your project.
 
 ##### Variables

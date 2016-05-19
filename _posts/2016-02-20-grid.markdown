@@ -137,7 +137,9 @@ Pavilion's columns come in fifths, fourths, thirds and divisions of those.
 
 ### Columns & breakpoints
 To create a flexible layout you need to be able to set specific column width's per breakpoint. Pavilion uses a common concept to do this.
-Just add the breakpoint's respective device & orientation derivative to the column class. Does that sound confusing?
+Just add the breakpoint's respective abbreviation to the column class. 
+
+Does that sound confusing? It isn't, look:
 
 <div class="row-flex">
     <div class="col-pl-50 col-tl-33">

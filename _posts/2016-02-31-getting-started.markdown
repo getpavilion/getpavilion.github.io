@@ -53,17 +53,18 @@ pavilion/
 ├── scss/
 │   ├── pavilion.scss
 │   └── parts/
-│       ├── _variables.scss
+│       ├── _base.scss
+│       ├── _buttons.scss
+│       ├── _flexbox.scss
+│       ├── _forms.scss
+│       ├── _grid.scss
+│       ├── _helpers.scss
+│       ├── _lists.scss
 │       ├── _mixins.scss
 │       ├── _normalize.scss
-│       ├── _grid.scss
-│       ├── _flexbox.scss
-│       ├── _typography.scss
-│       ├── _buttons.scss
-│       ├── _lists.scss
-│       ├── _forms.scss
 │       ├── _tables.scss
-│       └── _helpers.scss
+│       ├── _typography.scss
+│       └── _variables.scss
 ├── README.md
 ├── CHANGELOG.md
 ├── license

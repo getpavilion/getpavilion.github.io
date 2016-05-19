@@ -17,9 +17,9 @@
     <link rel="icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
     
     <!-- Open graph tags -->
-    <meta property="og:image" content="/assets/images/featured-image.jpg"/>
+    <meta property="og:image" content="{{ "/assets/images/featured-image.jpg" | prepend: site.siteurl }}"/>
     <meta property="og:title" content="{% if page.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}"/>
-    <meta property="og:description" content="Pavilion was created out of the need for a simple, unopinionated CSS framework, ready for the future."/>
+    <meta property="og:description" content="Pavilion is a simple, unopinionated CSS framework, ready for the future."/>
     <meta property="og:url" content="http://pavilion.io{{ page.url }}"/>
     <meta property="og:site_name" content="Pavilion"/>
     <meta property="og:type" content="website"/>
@@ -29,8 +29,8 @@
     <meta name="twitter:site" content="@wesselgrift">
     <meta name="twitter:creator" content="@wesselgrift">
     <meta name="twitter:title" content="{% if page.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="twitter:description" content="Pavilion was created out of the need for a simple, unopinionated CSS framework, ready for the future. ">
-    <meta name="twitter:image" content="/assets/images/featured-image.jpg">
+    <meta name="twitter:description" content="Pavilion is a simple, unopinionated CSS framework, ready for the future. ">
+    <meta name="twitter:image" content="{{ "/assets/images/featured-image.jpg" | prepend: site.siteurl }}">
 
     <!-- Source Code Pro -->
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>

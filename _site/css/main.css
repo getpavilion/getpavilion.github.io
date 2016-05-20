@@ -2494,6 +2494,9 @@ pre code, pre kbd {
   .exfb button {
     margin: 0; }
 
+label[class^="checkbox"] input[type="checkbox"] {
+  top: 0.35rem; }
+
 .landing-block {
   width: 100%;
   background-color: #f1f4ff;

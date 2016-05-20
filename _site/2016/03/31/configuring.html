@@ -2,69 +2,69 @@
 This enables you to customize and configure your build specifically for your project.</p>
 
 <h5 id="variables">Variables</h5>
-<p>Head over to <code>scss/parts/_variables.scss</code>. This file holds your project’s base settings which are weaved trough the entire core
+<p>Head over to <code class="highlighter-rouge">scss/parts/_variables.scss</code>. This file holds your project’s base settings which are weaved trough the entire core
 of Pavilion.</p>
 
 <div class="collapsor">
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/**</span>
-<span class="cm">  * Component &amp; Type sizing, normal and small.</span>
-<span class="cm">  */</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/**
+  * Component &amp; Type sizing, normal and small.
+  */</span>
 
-<span class="nv">$remsize-normal</span><span class="o">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */</span>
-<span class="nv">$emsize-normal</span><span class="o">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/</span>
+<span class="nv">$remsize-normal</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */</span>
+<span class="nv">$emsize-normal</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/</span>
 
-<span class="nv">$remsize-small</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */</span>
-<span class="nv">$emsize-small</span><span class="o">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/</span>
+<span class="nv">$remsize-small</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */</span>
+<span class="nv">$emsize-small</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Line-height</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Line-height
+  */</span>
 
-<span class="nv">$line-height-normal</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="p">;</span> 
+<span class="nv">$line-height-normal</span><span class="p">:</span> <span class="m">1</span><span class="mi">.5</span><span class="p">;</span> 
 
-<span class="cm">/**</span>
-<span class="cm">  * Breakpoints</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Breakpoints
+  */</span>
 
-<span class="nv">$phone-landscape-size</span><span class="o">:</span> <span class="mi">540</span><span class="kt">px</span><span class="p">;</span>    <span class="cm">/* Phone landscape minimum */</span>
-<span class="nv">$tablet-portrait-size</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>    <span class="cm">/* Tablet portrait minimum */</span>
-<span class="nv">$tablet-landscape-size</span><span class="o">:</span> <span class="mi">991</span><span class="kt">px</span><span class="p">;</span>   <span class="cm">/* Tablet landscape minimum */</span>
-<span class="nv">$desktop-size</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">;</span>           <span class="cm">/* Desktop minimum */</span>
+<span class="nv">$phone-landscape-size</span><span class="p">:</span> <span class="m">540px</span><span class="p">;</span>    <span class="cm">/* Phone landscape minimum */</span>
+<span class="nv">$tablet-portrait-size</span><span class="p">:</span> <span class="m">768px</span><span class="p">;</span>    <span class="cm">/* Tablet portrait minimum */</span>
+<span class="nv">$tablet-landscape-size</span><span class="p">:</span> <span class="m">991px</span><span class="p">;</span>   <span class="cm">/* Tablet landscape minimum */</span>
+<span class="nv">$desktop-size</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>           <span class="cm">/* Desktop minimum */</span>
 
-<span class="nv">$breakmargin</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>              <span class="cm">/* Margin added to the breakpoint */</span>
+<span class="nv">$breakmargin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>              <span class="cm">/* Margin added to the breakpoint */</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Colors and tints</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Colors and tints
+  */</span>
 
-<span class="nv">$body-copy-color</span><span class="o">:</span> <span class="mh">#333</span><span class="p">;</span>
-<span class="nv">$soft-gray</span><span class="o">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
-<span class="nv">$hard-gray</span><span class="o">:</span> <span class="mh">#565656</span><span class="p">;</span>
-<span class="nv">$primary-color</span><span class="o">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
-<span class="nv">$accent-color</span><span class="o">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
+<span class="nv">$body-copy-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="nv">$soft-gray</span><span class="p">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
+<span class="nv">$hard-gray</span><span class="p">:</span> <span class="mh">#565656</span><span class="p">;</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
+<span class="nv">$accent-color</span><span class="p">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Border radius</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Border radius
+  */</span>
 
-<span class="nv">$small-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Used on buttons, form elements, etc */</span>
-<span class="nv">$large-radius</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Not used, but will come in handy */</span>
+<span class="nv">$small-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span> <span class="cm">/* Used on buttons, form elements, etc */</span>
+<span class="nv">$large-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="cm">/* Not used, but will come in handy */</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Font-weights, you can set your own values to match your font.</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Font-weights, you can set your own values to match your font.
+  */</span>
 
-<span class="nv">$font-weight-light</span><span class="o">:</span> <span class="mi">300</span><span class="p">;</span>
-<span class="nv">$font-weight-normal</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
-<span class="nv">$font-weight-bold</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+<span class="nv">$font-weight-light</span><span class="p">:</span> <span class="m">300</span><span class="p">;</span>
+<span class="nv">$font-weight-normal</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="nv">$font-weight-bold</span><span class="p">:</span> <span class="m">700</span><span class="p">;</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Base font stack</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Base font stack
+  */</span>
 
-<span class="nv">$base-font-family</span><span class="o">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
-<span class="nv">$mono-font-family</span><span class="o">:</span> <span class="s2">&quot;Lucida Console&quot;</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="no">monospace</span><span class="p">;</span></code></pre></figure>
+<span class="nv">$base-font-family</span><span class="p">:</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$mono-font-family</span><span class="p">:</span> <span class="s2">"Lucida Console"</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;</span></code></pre></figure>
 
     <div class="uncollapse">
         Show full example

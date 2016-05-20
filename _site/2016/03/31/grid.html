@@ -1,11 +1,11 @@
 <p>When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept:</p>
 
-<p>A <code>.container</code> wraps elements and provides you with <strong>left and right padding</strong> to keep the edges of the screen away
+<p>A <code class="highlighter-rouge">.container</code> wraps elements and provides you with <strong>left and right padding</strong> to keep the edges of the screen away
 from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
-This is done by placing the columns inside a <code>.row</code>.</p>
+This is done by placing the columns inside a <code class="highlighter-rouge">.row</code>.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- Columns go here, inside a row to prevent double paddings --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -142,7 +142,7 @@ Just add the breakpoint’s respective abbreviation to the column class.</p>
     </div>
 </div>
 
-<p>These columns will span 33% and 66% when the viewport is equal or larger than <strong>tablet landscape</strong> (hence the <code>*-tl-*</code>).
+<p>These columns will span 33% and 66% when the viewport is equal or larger than <strong>tablet landscape</strong> (hence the <code class="highlighter-rouge">*-tl-*</code>).
 When the viewport gets smaller, they’ll both span a width of 50% until the screensize drops below <strong>phone landscape</strong>.</p>
 
 <p>You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it’s breakpoint it will <strong>default to
@@ -150,20 +150,20 @@ When the viewport gets smaller, they’ll both span a width of 50% until the scr
 
 <h5 id="example">Example</h5>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-pl-50 col-tl-33&quot;</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 33.3333% width on &#39;tablet landscape&#39; or larger --&gt;</span>
-        <span class="c">&lt;!-- 50% width on &#39;phone landscape&#39; or larger --&gt;</span>
-        <span class="c">&lt;!-- 100% width on smaller than &#39;phone landscape&#39; --&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-pl-50 col-tl-33"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- 33.3333% width on 'tablet landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 50% width on 'phone landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 100% width on smaller than 'phone landscape' --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-pl-50 col-tl-66&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-pl-50 col-tl-66"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- 66.6666% width on tablet landscape or larger --&gt;</span>
-        <span class="c">&lt;!-- 50% width on &#39;phone landscape&#39; or larger --&gt;</span>
-        <span class="c">&lt;!-- 100% width on smaller than &#39;phone landscape&#39; --&gt;</span>
+        <span class="c">&lt;!-- 50% width on 'phone landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 100% width on smaller than 'phone landscape' --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>If you would want to set the column width to 50% on phone portrait you would have to add the class <code>.col-pp-50</code> to the columns.</p>
+<p>If you would want to set the column width to 50% on phone portrait you would have to add the class <code class="highlighter-rouge">.col-pp-50</code> to the columns.</p>
 
 <p>See the <a href="#breakpoints" data-scroll="">breakpoints</a> section for more information about 
 breakpoints and screensizes.</p>

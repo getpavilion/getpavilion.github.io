@@ -202,6 +202,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
   line-height: 1.5;
   color: #333;
   font-size: 16px;
@@ -1893,6 +1895,13 @@ pre code, pre kbd {
 .clearfix:after {
   clear: both;
 }
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
 .text-center {
   text-align: center;
 }
@@ -2152,7 +2161,7 @@ label[class^="checkbox"], label[class^="radio"] {
   margin-top: 0;
   margin-bottom: 1.1rem;
   position: relative;
-  display: block;
+  display: table;
   cursor: pointer;
   font-weight: 400;
 }

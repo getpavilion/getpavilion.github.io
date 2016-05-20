@@ -19,9 +19,9 @@
     <link rel="icon" href="http://www.pavilion.io/assets/images/favicon.ico" type="image/x-icon">
     
     <!-- Open graph tags -->
-    <meta property="og:image" content="/assets/images/featured-image.jpg"/>
+    <meta property="og:image" content="http://www.pavilion.io/assets/images/featured-image.jpg"/>
     <meta property="og:title" content="Pavilion | Documentation"/>
-    <meta property="og:description" content="Pavilion was created out of the need for a simple, unopinionated CSS framework, ready for the future."/>
+    <meta property="og:description" content="Pavilion is a simple, unopinionated CSS framework, ready for the future."/>
     <meta property="og:url" content="http://pavilion.io/documentation/"/>
     <meta property="og:site_name" content="Pavilion"/>
     <meta property="og:type" content="website"/>
@@ -31,8 +31,8 @@
     <meta name="twitter:site" content="@wesselgrift">
     <meta name="twitter:creator" content="@wesselgrift">
     <meta name="twitter:title" content="Pavilion | Documentation">
-    <meta name="twitter:description" content="Pavilion was created out of the need for a simple, unopinionated CSS framework, ready for the future. ">
-    <meta name="twitter:image" content="/assets/images/featured-image.jpg">
+    <meta name="twitter:description" content="Pavilion is a simple, unopinionated CSS framework, ready for the future. ">
+    <meta name="twitter:image" content="http://www.pavilion.io/assets/images/featured-image.jpg">
 
     <!-- Source Code Pro -->
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -161,7 +161,7 @@
 <h5 id="cdn">CDN</h5>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- pavilion.min.css --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://cdn.jsdelivr.net/pavilion/latest/pavilion.min.css&quot;</span><span class="nt">&gt;</span></code></pre></figure>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/pavilion/latest/pavilion.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <h5 id="npm">NPM</h5>
 
@@ -186,17 +186,18 @@
 ├── scss/
 │   ├── pavilion.scss
 │   └── parts/
-│       ├── _variables.scss
+│       ├── _base.scss
+│       ├── _buttons.scss
+│       ├── _flexbox.scss
+│       ├── _forms.scss
+│       ├── _grid.scss
+│       ├── _helpers.scss
+│       ├── _lists.scss
 │       ├── _mixins.scss
 │       ├── _normalize.scss
-│       ├── _grid.scss
-│       ├── _flexbox.scss
-│       ├── _typography.scss
-│       ├── _buttons.scss
-│       ├── _lists.scss
-│       ├── _forms.scss
 │       ├── _tables.scss
-│       └── _helpers.scss
+│       ├── _typography.scss
+│       └── _variables.scss
 ├── README.md
 ├── CHANGELOG.md
 ├── license
@@ -254,7 +255,7 @@
 <p>The breakpoint classes are derived from their respective devices and orientations.
 The <strong>Phone Portrait</strong> breakpoint uses the <strong>Phone Landscape</strong> width as it’s maximum width.</p>
 
-<p>The breakpoints can be adjusted in the <code>_variables.scss</code>, which is included in the source download and NPM/Bower installations. 
+<p>The breakpoints can be adjusted in the <code class="highlighter-rouge">_variables.scss</code>, which is included in the source download and NPM/Bower installations. 
 See <a data-scroll="" href="#gettingstarted">getting started</a> for those installations or the <a data-scroll="" href="#configuring">configuring</a> section for the variables.</p>
 
     </div>
@@ -268,27 +269,27 @@ them in containers. Basically we have three types of containers.</p>
 <h5 id="standard-fixed-width-container">Standard (fixed width) container</h5>
 <p>This container has a default max-width of 1140px and is centered in the viewport.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Container width: 1140px --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h5 id="full-width-container">Full width container</h5>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container-full-width&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-full-width"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Container width: 100% --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h5 id="breakpoint-specific-containers">Breakpoint specific containers</h5>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container-pl&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-pl"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Container width: phone landscape / 540px --&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container-tp&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-tp"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Container width: tablet portrait / 768px --&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container-tl&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-tl"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Container width: tablet landscape / 991px --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
@@ -303,12 +304,12 @@ have a smaller max-width.</p>
         <h3>Grid</h3>
         <p>When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept:</p>
 
-<p>A <code>.container</code> wraps elements and provides you with <strong>left and right padding</strong> to keep the edges of the screen away
+<p>A <code class="highlighter-rouge">.container</code> wraps elements and provides you with <strong>left and right padding</strong> to keep the edges of the screen away
 from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
-This is done by placing the columns inside a <code>.row</code>.</p>
+This is done by placing the columns inside a <code class="highlighter-rouge">.row</code>.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- Columns go here, inside a row to prevent double paddings --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -445,7 +446,7 @@ Just add the breakpoint’s respective abbreviation to the column class.</p>
     </div>
 </div>
 
-<p>These columns will span 33% and 66% when the viewport is equal or larger than <strong>tablet landscape</strong> (hence the <code>*-tl-*</code>).
+<p>These columns will span 33% and 66% when the viewport is equal or larger than <strong>tablet landscape</strong> (hence the <code class="highlighter-rouge">*-tl-*</code>).
 When the viewport gets smaller, they’ll both span a width of 50% until the screensize drops below <strong>phone landscape</strong>.</p>
 
 <p>You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it’s breakpoint it will <strong>default to
@@ -453,20 +454,20 @@ When the viewport gets smaller, they’ll both span a width of 50% until the scr
 
 <h5 id="example">Example</h5>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-pl-50 col-tl-33&quot;</span><span class="nt">&gt;</span>
-        <span class="c">&lt;!-- 33.3333% width on &#39;tablet landscape&#39; or larger --&gt;</span>
-        <span class="c">&lt;!-- 50% width on &#39;phone landscape&#39; or larger --&gt;</span>
-        <span class="c">&lt;!-- 100% width on smaller than &#39;phone landscape&#39; --&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-pl-50 col-tl-33"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- 33.3333% width on 'tablet landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 50% width on 'phone landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 100% width on smaller than 'phone landscape' --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-pl-50 col-tl-66&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-pl-50 col-tl-66"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- 66.6666% width on tablet landscape or larger --&gt;</span>
-        <span class="c">&lt;!-- 50% width on &#39;phone landscape&#39; or larger --&gt;</span>
-        <span class="c">&lt;!-- 100% width on smaller than &#39;phone landscape&#39; --&gt;</span>
+        <span class="c">&lt;!-- 50% width on 'phone landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 100% width on smaller than 'phone landscape' --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>If you would want to set the column width to 50% on phone portrait you would have to add the class <code>.col-pp-50</code> to the columns.</p>
+<p>If you would want to set the column width to 50% on phone portrait you would have to add the class <code class="highlighter-rouge">.col-pp-50</code> to the columns.</p>
 
 <p>See the <a href="#breakpoints" data-scroll="">breakpoints</a> section for more information about 
 breakpoints and screensizes.</p>
@@ -477,9 +478,9 @@ breakpoints and screensizes.</p>
     <div id="flexbox" class="documentation-section">
         <h3>Flexbox</h3>
         <h5 id="flexbox-columns">Flexbox columns</h5>
-<p>Instead of using a <code>.row</code> you can use <code>.row-flex</code> and make use of the CSS Flex Box Layout Model for Pavilion’s columns.
+<p>Instead of using a <code class="highlighter-rouge">.row</code> you can use <code class="highlighter-rouge">.row-flex</code> and make use of the CSS Flex Box Layout Model for Pavilion’s columns.
 Flex-columns span the maximum width possible width. The normal column classes still apply within the ‘flexboxed’ row. To use a flex-column add a div
-with the class <code>.col</code>.</p>
+with the class <code class="highlighter-rouge">.col</code>.</p>
 
 <p>Please read the <a href="#grid" data-scroll="">grid</a> documentation first if you haven’t done so.</p>
 
@@ -522,7 +523,7 @@ with the class <code>.col</code>.</p>
 </div>
 
 <h5 id="flex-elements">Flex elements</h5>
-<p>Use the class <code>.display-flex</code> to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
+<p>Use the class <code class="highlighter-rouge">.display-flex</code> to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
 ‘CSS Flex Box Layout Model’. Pavilion comes with a set of handy flexbox classes to modify your layout.</p>
 
 <p>For example, centering horizontally and vertically is easy with flexbox:</p>
@@ -646,11 +647,11 @@ We have covered classes for basic flexbox usage.</p>
 
     <div id="typo" class="documentation-section">
         <h3>Typography</h3>
-        <p>The headings <code>h1</code> trough <code>h6</code> are available and accompanied by corresponding classes: <code>.h1</code> trough <code>.h6</code>.
-These classes come in handy when you want to bump up (or down) an element’s textual context to a certain heading size. For instance, giving a button the class <code>.h3</code> will give it a text size
-matching that of a <code>h3</code> heading.</p>
+        <p>The headings <code class="highlighter-rouge">h1</code> trough <code class="highlighter-rouge">h6</code> are available and accompanied by corresponding classes: <code class="highlighter-rouge">.h1</code> trough <code class="highlighter-rouge">.h6</code>.
+These classes come in handy when you want to bump up (or down) an element’s textual context to a certain heading size. For instance, giving a button the class <code class="highlighter-rouge">.h3</code> will give it a text size
+matching that of a <code class="highlighter-rouge">h3</code> heading.</p>
 
-<p>The font-sizes are set in EM’s and inherit the <code>body</code> font-size. 
+<p>The font-sizes are set in EM’s and inherit the <code class="highlighter-rouge">body</code> font-size. 
 Typography calculated by <a href="http://type-scale.com/">type-scale</a>.</p>
 
 <div class="typo-example-no-margin">
@@ -673,17 +674,17 @@ Typography calculated by <a href="http://type-scale.com/">type-scale</a>.</p>
 <span class="nt">&lt;h6&gt;</span>h6 Heading<span class="nt">&lt;/h6&gt;</span> <span class="c">&lt;!-- font-size: 0.75em; --&gt;</span>
 
 <span class="c">&lt;!-- Heading classes --&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h1&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h2&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h3&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h4&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h5&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;h6&quot;</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Heading wannabe<span class="nt">&lt;/span&gt;</span></code></pre></figure>
 
 <h5 id="other-typographic-elements">Other typographic elements</h5>
 <p>Below you’ll find a set of elements that are commonly used in web typography.
-We’ve also included <code>.summary</code> that, when added to a <code>&lt;p&gt;</code> element, bumps up the font-size a bit and decreases font-weight.
-Next to that we’ve included a <code>.dropcap</code> which is optional for <code>&lt;p&gt;</code> elements and a <code>.split</code> class, which cuts your
+We’ve also included <code class="highlighter-rouge">.summary</code> that, when added to a <code class="highlighter-rouge">&lt;p&gt;</code> element, bumps up the font-size a bit and decreases font-weight.
+Next to that we’ve included a <code class="highlighter-rouge">.dropcap</code> which is optional for <code class="highlighter-rouge">&lt;p&gt;</code> elements and a <code class="highlighter-rouge">.split</code> class, which cuts your
 parapgraph in half.</p>
 
 <h5 id="summary-paragraph">Summary paragraph</h5>
@@ -691,7 +692,7 @@ parapgraph in half.</p>
 <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magnam hic ex tenetur amet, recusandae id nulla ullam nostrum cum vitae sunt aliquam atque, unde, veniam, aliquid earum nam corporis.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Bumps up the font-size and decreases font-weight --&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;summary&quot;</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"summary"</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
 <h5 id="paragraphs">Paragraphs</h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
@@ -711,13 +712,13 @@ parapgraph in half.</p>
 <h5 id="dropcaps">Dropcaps</h5>
 <p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;dropcap&quot;</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"dropcap"</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
 <h5 id="split">Split</h5>
 <p class="split">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis impedit doloremque aliquam deleniti repellat a quas rerum consectetur rem, temporibus possimus iste fugiat labore dolores commodi nam dolor perferendis voluptatum.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Breaks a text element into two columns until $phone-landscape-size is reached --&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;split&quot;</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"split"</span><span class="nt">&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
     </div>
     <div class="spacer"></div>
@@ -728,9 +729,9 @@ parapgraph in half.</p>
 
 <p><button class="button-default">Default button</button> <button class="button-outlined">Outlined button</button> <button class="button-stripped">Stripped button</button></p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-outlined&quot;</span><span class="nt">&gt;</span>Outlined button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-stripped&quot;</span><span class="nt">&gt;</span>Stripped button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default"</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-outlined"</span><span class="nt">&gt;</span>Outlined button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-stripped"</span><span class="nt">&gt;</span>Stripped button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <h5 id="button-sizes">Button sizes</h5>
 <p>Just add the contextual heading class to a button, and done.</p>
@@ -740,12 +741,12 @@ parapgraph in half.</p>
 <button class="button-default h5">h5 button</button> <br />
 <button class="button-default h6">h6 button</button></p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h1&quot;</span><span class="nt">&gt;</span>h1 button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h2&quot;</span><span class="nt">&gt;</span>h2 button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h3&quot;</span><span class="nt">&gt;</span>h3 button<span class="nt">&lt;/button&gt;</span> 
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h4&quot;</span><span class="nt">&gt;</span>h4 button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h5&quot;</span><span class="nt">&gt;</span>h5 button<span class="nt">&lt;/button&gt;</span> <span class="c">&lt;!-- Same size as a normal button --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default h6&quot;</span><span class="nt">&gt;</span>h6 button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default h1"</span><span class="nt">&gt;</span>h1 button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default h2"</span><span class="nt">&gt;</span>h2 button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default h3"</span><span class="nt">&gt;</span>h3 button<span class="nt">&lt;/button&gt;</span> 
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default h4"</span><span class="nt">&gt;</span>h4 button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default h5"</span><span class="nt">&gt;</span>h5 button<span class="nt">&lt;/button&gt;</span> <span class="c">&lt;!-- Same size as a normal button --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default h6"</span><span class="nt">&gt;</span>h6 button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
     </div>
     <div class="spacer"></div>
@@ -824,15 +825,15 @@ unordered list with a circle instead of the dot.</p>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Ordered list --&gt;</span>
 <span class="nt">&lt;ol&gt;</span>
     <span class="nt">&lt;li&gt;</span>Water melons<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>Strawberry&#39;s<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Strawberry's<span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;</span>Exotic fruits
         <span class="nt">&lt;ol&gt;</span>
-            <span class="nt">&lt;li&gt;</span>Mango&#39;s<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Mango's<span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;</span>Bananas<span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;li&gt;</span>Grapes<span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;/ol&gt;</span>
     <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>Kiwi&#39;s<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Kiwi's<span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;</span>Oranges<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ol&gt;</span></code></pre></figure>
 
@@ -1015,58 +1016,58 @@ see fit.</p>
 
 <div class="collapsor">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="c">&lt;!-- Legend --&gt;</span>
         <span class="nt">&lt;legend&gt;</span>Legend element<span class="nt">&lt;/legend&gt;</span>
         
         <span class="c">&lt;!-- Text input --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;firstName&quot;</span><span class="nt">&gt;</span>Text input<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;firstName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;Placeholder&#39;&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"firstName"</span><span class="nt">&gt;</span>Text input<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"firstName"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"'Placeholder'"</span><span class="nt">&gt;</span>
         
         <span class="c">&lt;!-- Text input --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;firstName&quot;</span><span class="nt">&gt;</span>Text input disabled<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;firstName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;Placeholder&#39;&quot;</span> <span class="na">disabled=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"firstName"</span><span class="nt">&gt;</span>Text input disabled<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"firstName"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"'Placeholder'"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
         
         <span class="c">&lt;!-- Input with button left --&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;input-with-button-left&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;lastName&quot;</span><span class="nt">&gt;</span>Text input with button on the left<span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button-wrapper&quot;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-with-button-left"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"lastName"</span><span class="nt">&gt;</span>Text input with button on the left<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button-wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;lastName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;Placeholder&#39;&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"lastName"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"'Placeholder'"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         
         <span class="c">&lt;!-- Input with button right --&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;input-with-button-right&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;lastName&quot;</span><span class="nt">&gt;</span>Text input with button on the right<span class="nt">&lt;/label&gt;</span>
-            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;lastName&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;&#39;Placeholder&#39;&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;button-wrapper&quot;</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-with-button-right"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"lastName"</span><span class="nt">&gt;</span>Text input with button on the right<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"lastName"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"'Placeholder'"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button-wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
         <span class="c">&lt;!-- Selectbox --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;selectInterests&quot;</span><span class="nt">&gt;</span>Selectbox<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">&quot;interests&quot;</span> <span class="na">id=</span><span class="s">&quot;selectInterests&quot;</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;all&quot;</span> <span class="na">selected=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>All options<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span><span class="nt">&gt;</span>Option #1<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;option2&quot;</span><span class="nt">&gt;</span>Option #2<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;option3&quot;</span><span class="nt">&gt;</span>Option #3<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;option4&quot;</span><span class="nt">&gt;</span>Option #4<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"selectInterests"</span><span class="nt">&gt;</span>Selectbox<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"interests"</span> <span class="na">id=</span><span class="s">"selectInterests"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"all"</span> <span class="na">selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>All options<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>Option #1<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>Option #2<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span>Option #3<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option4"</span><span class="nt">&gt;</span>Option #4<span class="nt">&lt;/option&gt;</span>
         <span class="nt">&lt;/select&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
     
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="c">&lt;!-- Standard file upload --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;standardFileUpload&quot;</span><span class="nt">&gt;</span>Standard file input<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span> <span class="na">id=</span><span class="s">&quot;standardFileUpload&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"standardFileUpload"</span><span class="nt">&gt;</span>Standard file input<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"standardFileUpload"</span><span class="nt">&gt;</span>
     
         <span class="c">&lt;!-- Button file upload --&gt;</span>
         <span class="nt">&lt;h5&gt;</span>Button-type file input<span class="nt">&lt;/h5&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;profileUpload&quot;</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"profileUpload"</span> <span class="na">class=</span><span class="s">"button-default"</span><span class="nt">&gt;</span>
             Upload profile pic
-            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;profileUpload&quot;</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"profileUpload"</span> <span class="na">type=</span><span class="s">"file"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
     
@@ -1074,21 +1075,21 @@ see fit.</p>
         <span class="nt">&lt;h5&gt;</span>Checkboxes<span class="nt">&lt;/h5&gt;</span>
         
         <span class="c">&lt;!-- Checkboxes block --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox1"</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
             Option #1
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox1&quot;</span> <span class="na">checked=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox1"</span> <span class="na">checked=</span><span class="s">"true"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox2&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox2"</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
             Option #2
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox2"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox3&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox3"</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
             Option #3
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox3&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;checkbox4&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox4"</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
             Option #4
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;checkbox4&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox4"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
     
@@ -1096,66 +1097,66 @@ see fit.</p>
         <span class="nt">&lt;h5&gt;</span>Radio buttons<span class="nt">&lt;/h5&gt;</span>
         
         <span class="c">&lt;!-- Radio buttons block --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio1&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio1"</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
             This?
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;radio1&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"radio1"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio2&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio2"</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
             Or this..
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;radio2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"radio2"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;radio3&quot;</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio3"</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
             Or maybe this!
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;radio3&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"radio3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
     
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="nt">&lt;h5&gt;</span>Inline checkboxes<span class="nt">&lt;/h5&gt;</span>
         <span class="c">&lt;!-- Checkboxes block --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineCheckbox1&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox1"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
             Option #1
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox1&quot;</span> <span class="na">checked=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox1"</span> <span class="na">checked=</span><span class="s">"true"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineCheckbox2&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox2"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
             Option #2
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox2"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineCheckbox3&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox3"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
             Option #3
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox3&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineCheckbox4&quot;</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox4"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
             Option #4
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox4&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox4"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
         
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="nt">&lt;h5&gt;</span>Inline radiobuttons<span class="nt">&lt;/h5&gt;</span>
         <span class="c">&lt;!-- Radio buttons block --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineRadio1&quot;</span> <span class="na">class=</span><span class="s">&quot;radio-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio1"</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
             This?
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineRadio1&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"inlineRadio1"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineRadio2&quot;</span> <span class="na">class=</span><span class="s">&quot;radio-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio2"</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
             Or this..
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineRadio2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"inlineRadio2"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;inlineRadio3&quot;</span> <span class="na">class=</span><span class="s">&quot;radio-inline&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio3"</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
             Or maybe this!
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;frequency&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineRadio3&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"inlineRadio3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
     
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="c">&lt;!-- Textarea --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;textarea1&quot;</span><span class="nt">&gt;</span>Textarea<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">&quot;textarea1&quot;</span> <span class="na">name=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"textarea1"</span><span class="nt">&gt;</span>Textarea<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"textarea1"</span> <span class="na">name=</span><span class="s">""</span><span class="nt">&gt;&lt;/textarea&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
     
     <span class="c">&lt;!-- Send button --&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;button-default&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"button-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
     
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
@@ -1168,7 +1169,7 @@ see fit.</p>
     <div id="tables" class="documentation-section">
         <h3>Tables</h3>
         <p>Not having to style a table is reason enough to use a framework.
-Pavilion ships with a clean table. Use <code>&lt;thead&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;tfoot&gt;</code> to emphasize data.</p>
+Pavilion ships with a clean table. Use <code class="highlighter-rouge">&lt;thead&gt;</code>, <code class="highlighter-rouge">&lt;th&gt;</code> and <code class="highlighter-rouge">&lt;tfoot&gt;</code> to emphasize data.</p>
 
 <table> 
     <!-- Table head -->
@@ -1695,12 +1696,12 @@ an element.
     <div id="emrem" class="documentation-section">
         <h3>Using EM & REM</h3>
         <p>EM’s and REM’s inherit a value set by a parent.
-REM is different from EM in that it always inherits its value from the root element, which is your <code>html</code> tag.
+REM is different from EM in that it always inherits its value from the root element, which is your <code class="highlighter-rouge">html</code> tag.
 The EM unit inherits it’s value from its first parent with a specified font-size.</p>
 
 <p>Pavilion uses EM’s for typography and REM’s for component margins, paddings or other properties.
-One EM is equal to 18px, which is set on the <code>body</code>. One REM is equal to 15px, which is set 
-on the <code>html</code> tag.</p>
+One EM is equal to 18px, which is set on the <code class="highlighter-rouge">body</code>. One REM is equal to 15px, which is set 
+on the <code class="highlighter-rouge">html</code> tag.</p>
 
 <h5 id="smaller-screens">Smaller screens</h5>
 <p>On smaller screens the font-sizes on the body and html tags wil decrease, which will affect the EM’s and REM’s troughout the
@@ -1741,69 +1742,69 @@ rest of the DOM.</p>
 This enables you to customize and configure your build specifically for your project.</p>
 
 <h5 id="variables">Variables</h5>
-<p>Head over to <code>scss/parts/_variables.scss</code>. This file holds your project’s base settings which are weaved trough the entire core
+<p>Head over to <code class="highlighter-rouge">scss/parts/_variables.scss</code>. This file holds your project’s base settings which are weaved trough the entire core
 of Pavilion.</p>
 
 <div class="collapsor">
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/**</span>
-<span class="cm">  * Component &amp; Type sizing, normal and small.</span>
-<span class="cm">  */</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="cm">/**
+  * Component &amp; Type sizing, normal and small.
+  */</span>
 
-<span class="nv">$remsize-normal</span><span class="o">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */</span>
-<span class="nv">$emsize-normal</span><span class="o">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/</span>
+<span class="nv">$remsize-normal</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on tablets and larger screens, 1REM equals the size you set here. */</span>
+<span class="nv">$emsize-normal</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on tablets and larger screens. EM is used for typography. 1EM equals the size you set here.*/</span>
 
-<span class="nv">$remsize-small</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */</span>
-<span class="nv">$emsize-small</span><span class="o">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/</span>
+<span class="nv">$remsize-small</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="cm">/* Adjust this to adjust your REM sizes on phones, 1REM equals the size you set here. */</span>
+<span class="nv">$emsize-small</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Line-height</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Line-height
+  */</span>
 
-<span class="nv">$line-height-normal</span><span class="o">:</span> <span class="mi">1</span><span class="mf">.5</span><span class="p">;</span> 
+<span class="nv">$line-height-normal</span><span class="p">:</span> <span class="m">1</span><span class="mi">.5</span><span class="p">;</span> 
 
-<span class="cm">/**</span>
-<span class="cm">  * Breakpoints</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Breakpoints
+  */</span>
 
-<span class="nv">$phone-landscape-size</span><span class="o">:</span> <span class="mi">540</span><span class="kt">px</span><span class="p">;</span>    <span class="cm">/* Phone landscape minimum */</span>
-<span class="nv">$tablet-portrait-size</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>    <span class="cm">/* Tablet portrait minimum */</span>
-<span class="nv">$tablet-landscape-size</span><span class="o">:</span> <span class="mi">991</span><span class="kt">px</span><span class="p">;</span>   <span class="cm">/* Tablet landscape minimum */</span>
-<span class="nv">$desktop-size</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">;</span>           <span class="cm">/* Desktop minimum */</span>
+<span class="nv">$phone-landscape-size</span><span class="p">:</span> <span class="m">540px</span><span class="p">;</span>    <span class="cm">/* Phone landscape minimum */</span>
+<span class="nv">$tablet-portrait-size</span><span class="p">:</span> <span class="m">768px</span><span class="p">;</span>    <span class="cm">/* Tablet portrait minimum */</span>
+<span class="nv">$tablet-landscape-size</span><span class="p">:</span> <span class="m">991px</span><span class="p">;</span>   <span class="cm">/* Tablet landscape minimum */</span>
+<span class="nv">$desktop-size</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>           <span class="cm">/* Desktop minimum */</span>
 
-<span class="nv">$breakmargin</span><span class="o">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>              <span class="cm">/* Margin added to the breakpoint */</span>
+<span class="nv">$breakmargin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>              <span class="cm">/* Margin added to the breakpoint */</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Colors and tints</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Colors and tints
+  */</span>
 
-<span class="nv">$body-copy-color</span><span class="o">:</span> <span class="mh">#333</span><span class="p">;</span>
-<span class="nv">$soft-gray</span><span class="o">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
-<span class="nv">$hard-gray</span><span class="o">:</span> <span class="mh">#565656</span><span class="p">;</span>
-<span class="nv">$primary-color</span><span class="o">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
-<span class="nv">$accent-color</span><span class="o">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
+<span class="nv">$body-copy-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="nv">$soft-gray</span><span class="p">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
+<span class="nv">$hard-gray</span><span class="p">:</span> <span class="mh">#565656</span><span class="p">;</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
+<span class="nv">$accent-color</span><span class="p">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Border radius</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Border radius
+  */</span>
 
-<span class="nv">$small-radius</span><span class="o">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Used on buttons, form elements, etc */</span>
-<span class="nv">$large-radius</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span> <span class="cm">/* Not used, but will come in handy */</span>
+<span class="nv">$small-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span> <span class="cm">/* Used on buttons, form elements, etc */</span>
+<span class="nv">$large-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="cm">/* Not used, but will come in handy */</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Font-weights, you can set your own values to match your font.</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Font-weights, you can set your own values to match your font.
+  */</span>
 
-<span class="nv">$font-weight-light</span><span class="o">:</span> <span class="mi">300</span><span class="p">;</span>
-<span class="nv">$font-weight-normal</span><span class="o">:</span> <span class="mi">400</span><span class="p">;</span>
-<span class="nv">$font-weight-bold</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+<span class="nv">$font-weight-light</span><span class="p">:</span> <span class="m">300</span><span class="p">;</span>
+<span class="nv">$font-weight-normal</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="nv">$font-weight-bold</span><span class="p">:</span> <span class="m">700</span><span class="p">;</span>
 
-<span class="cm">/**</span>
-<span class="cm">  * Base font stack</span>
-<span class="cm">  */</span>
+<span class="cm">/**
+  * Base font stack
+  */</span>
 
-<span class="nv">$base-font-family</span><span class="o">:</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">;</span>
-<span class="nv">$mono-font-family</span><span class="o">:</span> <span class="s2">&quot;Lucida Console&quot;</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="no">monospace</span><span class="p">;</span></code></pre></figure>
+<span class="nv">$base-font-family</span><span class="p">:</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$mono-font-family</span><span class="p">:</span> <span class="s2">"Lucida Console"</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;</span></code></pre></figure>
 
     <div class="uncollapse">
         Show full example
@@ -1821,7 +1822,7 @@ dependency.</p>
 
     <div id="grunt" class="documentation-section">
         <h3>Grunt</h3>
-        <p>The Grunt.js file shipped with the NPM, Bower and source download has two tasks. The default task ( <code>grunt</code> ) has the following subtasks:</p>
+        <p>The Grunt.js file shipped with the NPM, Bower and source download has two tasks. The default task ( <code class="highlighter-rouge">grunt</code> ) has the following subtasks:</p>
 
 <ul>
   <li>grunt-contrib-clean</li>
@@ -1831,8 +1832,8 @@ dependency.</p>
   <li>grunt-contrib-watch</li>
 </ul>
 
-<p>If you only want to build, and not watch, use <code>grunt dist</code>.
-Both tasks produce the following files in the <code>dist</code> folder:</p>
+<p>If you only want to build, and not watch, use <code class="highlighter-rouge">grunt dist</code>.
+Both tasks produce the following files in the <code class="highlighter-rouge">dist</code> folder:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">dist/
 ├── pavilion.css
@@ -1844,7 +1845,7 @@ Both tasks produce the following files in the <code>dist</code> folder:</p>
 
     <div id="support" class="documentation-section">
         <h3>Support</h3>
-        <p>Need help or found a bug? Open an issue at <a href="http://github.com/getpavilion/pavilion">Github</a> or tweet us at <a href="http://twitter.com/baasdesign">@baasdesign</a>.</p>
+        <p>Need help or found a bug? Open an issue at <a href="http://github.com/getpavilion/pavilion">Github</a> or tweet me at <a href="http://twitter.com/wesselgrift">@wesselgrift</a>.</p>
 
     </div>
     <div class="spacer"></div>
@@ -1876,7 +1877,7 @@ Both tasks produce the following files in the <code>dist</code> folder:</p>
                 <span class="footer-text">Designed and maintained by <a href="https://twitter.com/wesselgrift" target="_blank">@wesselgrift</a></span>
             </div>
             <div class="col-tp-50 text-right text-pl-center text-pp-center">
-                <span class="footer-text">Current version: 1.0.2</span>
+                <span class="footer-text">Current version: 1.0.22</span>
             </div>
         </div>
     </div>

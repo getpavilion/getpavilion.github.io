@@ -2291,7 +2291,6 @@ table > tfoot > tr > td {
 
 /* style default components */
 body {
-  font-size: 16px;
   font-family: "Source Sans Pro";
   color: #373a3c; }
 
@@ -2482,7 +2481,7 @@ pre code, pre kbd {
   margin-bottom: 1em;
   padding: 1em 0;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 13px;
+  font-size: 0.82em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }

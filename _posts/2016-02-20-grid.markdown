@@ -137,9 +137,8 @@ Pavilion's columns come in fifths, fourths, thirds and divisions of those.
 
 ### Columns & breakpoints
 To create a flexible layout you need to be able to set specific column width's per breakpoint. Pavilion uses a common concept to do this.
-Just add the breakpoint's respective abbreviation to the column class. 
-
-Does that sound confusing? It isn't, look:
+Just add the breakpoint's abbreviation class to the column. Does that sound confusing? It's easy, look:
+   
 
 <div class="row-flex">
     <div class="col-pl-50 col-tl-33">
@@ -149,14 +148,6 @@ Does that sound confusing? It isn't, look:
         <div class="exb">.col-pl-50 .col-tl-66</div>
     </div>
 </div>
-
-These columns will span 33% and 66% when the viewport is equal or larger than **tablet landscape** (hence the `*-tl-*`).
-When the viewport gets smaller, they'll both span a width of 50% until the screensize drops below **phone landscape**.
-
-You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it's breakpoint it will **default to
-100% width**.
-
-##### Example
 
 {% highlight html %}
 <div class="row">
@@ -173,7 +164,35 @@ You can add column classes for each breakpoint to create fitting layouts. When a
 </div>
 {% endhighlight %}
 
-If you would want to set the column width to 50% on phone portrait you would have to add the class `.col-pp-50` to the columns.
+The columns above will span a width of 33% and 66% when the viewport is equal or larger than **tablet landscape** (hence the `*-tl-*`).
+When the viewport gets smaller, they'll both span a width of 50% until the screensize drops below **phone landscape**.
+You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it's breakpoint it will default to 100% width.
+
 
 See the <a href="#breakpoints" data-scroll>breakpoints</a> section for more information about 
 breakpoints and screensizes.
+
+##### Reordering columns
+
+You can reorder columns per breakpoint. To shift columns to the left and right you can use `push-*-*` and `pull-*-*`.
+Push and pull makes use of the left and right CSS properties and won't actually push other content or columns away.
+
+Try resizing your browser. The columns are switched around on desktop and will switch back when they break out of the desktop breakpoint.
+
+<div class="row">
+    <div class="col-tp-66 push-dt-33">
+        <div class="exb" style="background-color: #EFEFEF; color: #426AFB;">
+            .col-tp-66 .push-dt-33
+        </div>
+    </div>
+    <div class="col-tp-33 pull-dt-66">
+        <div class="exb">
+            .col-tp-33 .pull-dt-66
+        </div>
+    </div>
+</div>
+
+##### Offsetting columns
+
+Where reordering makes use of the left and right CSS properties, offsetting adds margin to the left of a column and will affect the DOM flow.
+Offsets are created by adding `offset-*-*` to your column in the same way pulls and pushes are created.

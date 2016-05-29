@@ -20,7 +20,7 @@ First of all, thanks for checking out Pavilion! Now let's get you started. Here 
 ##### CDN
 {% highlight html %}
 <!-- pavilion.min.css -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/pavilion/latest/pavilion.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pavilion/1.0.24/pavilion.min.css">
 {% endhighlight %}
 
 

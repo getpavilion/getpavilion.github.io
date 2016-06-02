@@ -4,7 +4,7 @@ date:   2016-03-31 17:06:26 +0200
 postid: containers
 ---
 
-To keep all your elements packed in consistend left and right paddings you should wrap
+To keep all your elements packed in consistent left and right paddings you should wrap
 them in containers. Basically we have three types of containers.
 
 ##### Standard (fixed width) container

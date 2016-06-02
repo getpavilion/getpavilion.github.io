@@ -23,7 +23,7 @@ This is done by placing the columns inside a `.row`.
 2. Columns within a container must have a row as their first parent to prevent double padding
 
 ### Columns
-As stated above: **wrap columns in a row** to prevent double padding. Altough there is one exeption. That is when you don't use a container,
+As stated above: **wrap columns in a row** to prevent double padding. Although there is one exception. That is when you don't use a container,
 you don't wrap your columns in a row. This would remove the padding along the edges of your screen.
 
 Pavilion's columns come in fifths, fourths, thirds and divisions of those. 
@@ -136,7 +136,7 @@ Pavilion's columns come in fifths, fourths, thirds and divisions of those.
 </div>
 
 ### Columns & breakpoints
-To create a flexible layout you need to be able to set specific column width's per breakpoint. Pavilion uses a common concept to do this.
+To create a flexible layout you need to be able to set specific column widths per breakpoint. Pavilion uses a common concept to do this.
 Just add the breakpoint's abbreviation class to the column. Does that sound confusing? It's easy, look:
    
 
@@ -166,7 +166,7 @@ Just add the breakpoint's abbreviation class to the column. Does that sound conf
 
 The columns above will span a width of 33% and 66% when the viewport is equal or larger than **tablet landscape** (hence the `*-tl-*`).
 When the viewport gets smaller, they'll both span a width of 50% until the screensize drops below **phone landscape**.
-You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it's breakpoint it will default to 100% width.
+You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of its breakpoint it will default to 100% width.
 
 
 See the <a href="#breakpoints" data-scroll>breakpoints</a> section for more information about 

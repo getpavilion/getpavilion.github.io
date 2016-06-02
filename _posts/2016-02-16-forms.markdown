@@ -128,7 +128,7 @@ see fit.
             </fieldset>
                 
             <fieldset>
-                <h5>Inline radiobuttons</h5>
+                <h5>Inline radio buttons</h5>
                 <!-- Radio buttons block -->
                 <label for="inlineRadio1" class="radio-inline">
                     This?
@@ -276,7 +276,7 @@ see fit.
     </fieldset>
         
     <fieldset>
-        <h5>Inline radiobuttons</h5>
+        <h5>Inline radio buttons</h5>
         <!-- Radio buttons block -->
         <label for="inlineRadio1" class="radio-inline">
             This?

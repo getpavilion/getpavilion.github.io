@@ -19,7 +19,7 @@ Please read the <a href="#grid" data-scroll>grid</a> documentation first if you 
         <div class="exb">.col</div>
     </div>
     <div class="col-pl-33">
-        <div class="exb">.col-*-25</div>
+        <div class="exb">.col-*-33</div>
     </div>
     <div class="col">
         <div class="exb">.col</div>

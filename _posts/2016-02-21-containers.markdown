@@ -5,7 +5,7 @@ postid: containers
 ---
 
 To keep all your elements packed in consistent left and right paddings you should wrap
-them in containers. Basically we have three types of containers.
+them in containers. Basically you have three types of containers.
 
 ##### Standard (fixed width) container
 This container has a default max-width of 1140px and is centered in the viewport.

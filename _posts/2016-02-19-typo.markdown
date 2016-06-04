@@ -41,8 +41,8 @@ Typography calculated by [type-scale](http://type-scale.com/).
 
 ##### Other typographic elements
 Below you'll find a set of elements that are commonly used in web typography.
-We've also included `.summary` that, when added to a `<p>` element, bumps up the font-size a bit and decreases font-weight.
-Next to that we've included a `.dropcap` which is optional for `<p>` elements and a `.split` class, which cuts your
+Pavilion comes with a `.summary` which, when added to a `<p>` element, bumps up the font-size a bit and decreases font-weight.
+Next to that a `.dropcap` which is optional for `<p>` elements and a `.split` class, which cuts your
 paragraph in half.
 
 ##### Summary paragraph 

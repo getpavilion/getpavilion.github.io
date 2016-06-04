@@ -3,8 +3,8 @@ title:  "Forms"
 date:   2016-03-31 17:06:26 +0200
 postid: forms
 ---
-With forms, Pavilion does some of the heavy lifting for you.
-We've normalized the styling and set it up in a way that you can easy style or use them the way you
+With forms Pavilion does some of the heavy lifting for you.
+The styling is normalized and set up in a way in which you can easily style or use them in a way you
 see fit. 
 
 <h6 class="mute">Form example</h6>

@@ -163,9 +163,7 @@ For example, centering horizontally and vertically is easy with flexbox:
     </tbody>
 </table>
 
-Ofcourse there are numerous other properties that apply to flexbox, which we don't cover in our utility classes.
+Of course there are numerous other properties that apply to flexbox, which we don't cover in our utility classes.
 We have covered classes for basic flexbox usage.
 
 **Note:** these classes are also present in the <a href="#utils" data-scroll>utilities</a> section.
-
-

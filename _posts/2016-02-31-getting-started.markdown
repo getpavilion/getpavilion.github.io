@@ -73,5 +73,5 @@ pavilion/
 {% endhighlight %}
 
 For consistent browser behaviour Pavilion ships with **normalize.css**, a collection of HTML element and attribute style-normalizations by Nicolas Gallagher and Jonathan Neal.
-See their documentations [here](http://example.net/).
+See their documentation [here](http://necolas.github.io/normalize.css/).
 

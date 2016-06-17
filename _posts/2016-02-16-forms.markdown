@@ -173,7 +173,7 @@ see fit.
         <input id="firstName" type="text" placeholder="'Placeholder'" disabled="">
         
         <!-- Input with button left -->
-        <div class="input-with- button-left">
+        <div class="input-with-button button-left">
             <label for="lastName">Text input with button on the left</label>
             <span class="button-wrapper">
                 <button class="button-default">Button</button>

@@ -172,7 +172,7 @@
 <h5 id="cdn">CDN</h5>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- pavilion.min.css --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/pavilion/latest/pavilion.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/pavilion/1.0.24/pavilion.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <h5 id="npm">NPM</h5>
 
@@ -214,6 +214,9 @@
 ├── license
 ├── gruntfile.js
 └── package.json</code></pre></figure>
+
+<p>For consistent browser behaviour Pavilion ships with <strong>normalize.css</strong>, a collection of HTML element and attribute style-normalizations by Nicolas Gallagher and Jonathan Neal.
+See their documentation <a href="http://necolas.github.io/normalize.css/">here</a>.</p>
 
 
     </div>
@@ -274,8 +277,8 @@ See <a data-scroll="" href="#gettingstarted">getting started</a> for those insta
 
     <div id="containers" class="documentation-section">
         <h3>Containers</h3>
-        <p>To keep all your elements packed in consistend left and right paddings you should wrap
-them in containers. Basically we have three types of containers.</p>
+        <p>To keep all your elements packed in consistent left and right paddings you should wrap
+them in containers. Basically you have three types of containers.</p>
 
 <h5 id="standard-fixed-width-container">Standard (fixed width) container</h5>
 <p>This container has a default max-width of 1140px and is centered in the viewport.</p>
@@ -332,7 +335,7 @@ This is done by placing the columns inside a <code class="highlighter-rouge">.ro
 </ol>
 
 <h3 id="columns">Columns</h3>
-<p>As stated above: <strong>wrap columns in a row</strong> to prevent double padding. Altough there is one exeption. That is when you don’t use a container,
+<p>As stated above: <strong>wrap columns in a row</strong> to prevent double padding. Although there is one exception. That is when you don’t use a container,
 you don’t wrap your columns in a row. This would remove the padding along the edges of your screen.</p>
 
 <p>Pavilion’s columns come in fifths, fourths, thirds and divisions of those.</p>
@@ -443,7 +446,7 @@ you don’t wrap your columns in a row. This would remove the padding along the 
 </div>
 
 <h3 id="columns--breakpoints">Columns &amp; breakpoints</h3>
-<p>To create a flexible layout you need to be able to set specific column width’s per breakpoint. Pavilion uses a common concept to do this.
+<p>To create a flexible layout you need to be able to set specific column widths per breakpoint. Pavilion uses a common concept to do this.
 Just add the breakpoint’s abbreviation class to the column. Does that sound confusing? It’s easy, look:</p>
 
 <div class="row-flex">
@@ -470,7 +473,7 @@ Just add the breakpoint’s abbreviation class to the column. Does that sound co
 
 <p>The columns above will span a width of 33% and 66% when the viewport is equal or larger than <strong>tablet landscape</strong> (hence the <code class="highlighter-rouge">*-tl-*</code>).
 When the viewport gets smaller, they’ll both span a width of 50% until the screensize drops below <strong>phone landscape</strong>.
-You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it’s breakpoint it will default to 100% width.</p>
+You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of its breakpoint it will default to 100% width.</p>
 
 <p>See the <a href="#breakpoints" data-scroll="">breakpoints</a> section for more information about 
 breakpoints and screensizes.</p>
@@ -520,7 +523,7 @@ with the class <code class="highlighter-rouge">.col</code>.</p>
         <div class="exb">.col</div>
     </div>
     <div class="col-pl-33">
-        <div class="exb">.col-*-25</div>
+        <div class="exb">.col-*-33</div>
     </div>
     <div class="col">
         <div class="exb">.col</div>
@@ -664,11 +667,10 @@ with the class <code class="highlighter-rouge">.col</code>.</p>
     </tbody>
 </table>
 
-<p>Ofcourse there are numerous other properties that apply to flexbox, which we don’t cover in our utility classes.
+<p>Of course there are numerous other properties that apply to flexbox, which Pavilion doesn’t cover in its utility classes.
 We have covered classes for basic flexbox usage.</p>
 
 <p><strong>Note:</strong> these classes are also present in the <a href="#utils" data-scroll="">utilities</a> section.</p>
-
 
     </div>
     <div class="spacer"></div>
@@ -711,9 +713,9 @@ Typography calculated by <a href="http://type-scale.com/">type-scale</a>.</p>
 
 <h5 id="other-typographic-elements">Other typographic elements</h5>
 <p>Below you’ll find a set of elements that are commonly used in web typography.
-We’ve also included <code class="highlighter-rouge">.summary</code> that, when added to a <code class="highlighter-rouge">&lt;p&gt;</code> element, bumps up the font-size a bit and decreases font-weight.
-Next to that we’ve included a <code class="highlighter-rouge">.dropcap</code> which is optional for <code class="highlighter-rouge">&lt;p&gt;</code> elements and a <code class="highlighter-rouge">.split</code> class, which cuts your
-parapgraph in half.</p>
+Pavilion comes with a <code class="highlighter-rouge">.summary</code> which, when added to a <code class="highlighter-rouge">&lt;p&gt;</code> element, bumps up the font-size a bit and decreases font-weight.
+Next to that a <code class="highlighter-rouge">.dropcap</code> which is optional for <code class="highlighter-rouge">&lt;p&gt;</code> elements and a <code class="highlighter-rouge">.split</code> class, which cuts your
+paragraph in half.</p>
 
 <h5 id="summary-paragraph">Summary paragraph</h5>
 
@@ -782,8 +784,7 @@ parapgraph in half.</p>
     <div id="lists" class="documentation-section">
         <h3>Lists</h3>
         <p>Well, you know…lists. Who doesn’t use lists. Pavilion comes with three, common, types of lists.
-Unordered, ordered and description lists. All three have minimal styling. We’ve notched up the
-unordered list with a circle instead of the dot.</p>
+Unordered, ordered and description lists. All three have minimal styling with circles instead of dots.</p>
 
 <div class="row">
     <div class="col-pl-33">
@@ -888,8 +889,8 @@ unordered list with a circle instead of the dot.</p>
 
     <div id="forms" class="documentation-section">
         <h3>Forms</h3>
-        <p>With forms, Pavilion does some of the heavy lifting for you.
-We’ve normalized the styling and set it up in a way that you can easy style or use them the way you
+        <p>With forms Pavilion does some of the heavy lifting for you.
+The styling is normalized and set up in a way in which you can easily style or use them in a way you
 see fit.</p>
 
 <h6 class="mute">Form example</h6>
@@ -910,7 +911,7 @@ see fit.</p>
                 <input id="firstName" type="text" placeholder="'Placeholder'" disabled="" />
                 
                 <!-- Input with button left -->
-                <div class="input-with-button-left">
+                <div class="input-with-button button-left">
                     <label for="lastName">Text input with button on the left</label>
                     <span class="button-wrapper">
                         <button class="button-default">Button</button>
@@ -919,7 +920,7 @@ see fit.</p>
                 </div>
                 
                 <!-- Input with button right -->
-                <div class="input-with-button-right">
+                <div class="input-with-button button-right">
                     <label for="lastName">Text input with button on the right</label>
                     <input id="lastName" type="text" placeholder="'Placeholder'" />
                     <span class="button-wrapper">
@@ -993,37 +994,37 @@ see fit.</p>
             
             <fieldset>
                 <h5>Inline checkboxes</h5>
-                <!-- Checkboxes block -->
-                <label for="inlineCheckbox1" class="checkbox-inline">
+                <!-- Checkboxes inline -->
+                <label for="inlineCheckbox1" class="checkbox checkbox-inline">
                     Option #1
                     <input type="checkbox" id="inlineCheckbox1" checked="true" />
                 </label>
-                <label for="inlineCheckbox2" class="checkbox-inline">
+                <label for="inlineCheckbox2" class="checkbox checkbox-inline">
                     Option #2
                     <input type="checkbox" id="inlineCheckbox2" />
                 </label>
-                <label for="inlineCheckbox3" class="checkbox-inline">
+                <label for="inlineCheckbox3" class="checkbox checkbox-inline">
                     Option #3
                     <input type="checkbox" id="inlineCheckbox3" />
                 </label>
-                <label for="inlineCheckbox4" class="checkbox-inline">
+                <label for="inlineCheckbox4" class="checkbox checkbox-inline">
                     Option #4
                     <input type="checkbox" id="inlineCheckbox4" />
                 </label>
             </fieldset>
                 
             <fieldset>
-                <h5>Inline radiobuttons</h5>
-                <!-- Radio buttons block -->
-                <label for="inlineRadio1" class="radio-inline">
+                <h5>Inline radio buttons</h5>
+                <!-- Radio buttons inline -->
+                <label for="inlineRadio1" class="radio radio-inline">
                     This?
                     <input type="radio" name="frequency" id="inlineRadio1" />
                 </label>
-                <label for="inlineRadio2" class="radio-inline">
+                <label for="inlineRadio2" class="radio radio-inline">
                     Or this..
                     <input type="radio" name="frequency" id="inlineRadio2" />
                 </label>
-                <label for="inlineRadio3" class="radio-inline">
+                <label for="inlineRadio3" class="radio radio-inline">
                     Or maybe this!
                     <input type="radio" name="frequency" id="inlineRadio3" />
                 </label>
@@ -1058,7 +1059,7 @@ see fit.</p>
         <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"firstName"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"'Placeholder'"</span> <span class="na">disabled=</span><span class="s">""</span><span class="nt">&gt;</span>
         
         <span class="c">&lt;!-- Input with button left --&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-with-button-left"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-with- button-left"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"lastName"</span><span class="nt">&gt;</span>Text input with button on the left<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button-wrapper"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-default"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
@@ -1067,7 +1068,7 @@ see fit.</p>
         <span class="nt">&lt;/div&gt;</span>
         
         <span class="c">&lt;!-- Input with button right --&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-with-button-right"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-with-button button-right"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"lastName"</span><span class="nt">&gt;</span>Text input with button on the right<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"lastName"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"'Placeholder'"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"button-wrapper"</span><span class="nt">&gt;</span>
@@ -1141,37 +1142,37 @@ see fit.</p>
     
     <span class="nt">&lt;fieldset&gt;</span>
         <span class="nt">&lt;h5&gt;</span>Inline checkboxes<span class="nt">&lt;/h5&gt;</span>
-        <span class="c">&lt;!-- Checkboxes block --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox1"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Checkboxes inline --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox1"</span> <span class="na">class=</span><span class="s">"checkbox checkbox-inline"</span><span class="nt">&gt;</span>
             Option #1
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox1"</span> <span class="na">checked=</span><span class="s">"true"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox2"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox2"</span> <span class="na">class=</span><span class="s">"checkbox checkbox-inline"</span><span class="nt">&gt;</span>
             Option #2
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox2"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox3"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox3"</span> <span class="na">class=</span><span class="s">"checkbox checkbox-inline"</span><span class="nt">&gt;</span>
             Option #3
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox4"</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineCheckbox4"</span> <span class="na">class=</span><span class="s">"checkbox checkbox-inline"</span><span class="nt">&gt;</span>
             Option #4
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox4"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
         
     <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;h5&gt;</span>Inline radiobuttons<span class="nt">&lt;/h5&gt;</span>
-        <span class="c">&lt;!-- Radio buttons block --&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio1"</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5&gt;</span>Inline radio buttons<span class="nt">&lt;/h5&gt;</span>
+        <span class="c">&lt;!-- Radio buttons inline --&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio1"</span> <span class="na">class=</span><span class="s">"radio radio-inline"</span><span class="nt">&gt;</span>
             This?
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"inlineRadio1"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio2"</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio2"</span> <span class="na">class=</span><span class="s">"radio radio-inline"</span><span class="nt">&gt;</span>
             Or this..
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"inlineRadio2"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio3"</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inlineRadio3"</span> <span class="na">class=</span><span class="s">"radio radio-inline"</span><span class="nt">&gt;</span>
             Or maybe this!
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"frequency"</span> <span class="na">id=</span><span class="s">"inlineRadio3"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
@@ -1309,7 +1310,7 @@ Pavilion ships with a clean table. Use <code class="highlighter-rouge">&lt;thead
     <div id="utils" class="documentation-section">
         <h3>Utility classes</h3>
         <p>Utility classes are classes that may come in handy when you quickly want to apply CSS rules to
-an element. 
+an element! 
 <br /></p>
 
 <h5 id="test-classes">Test classes</h5>
@@ -1725,14 +1726,14 @@ an element.
         <h3>Using EM & REM</h3>
         <p>EM’s and REM’s inherit a value set by a parent.
 REM is different from EM in that it always inherits its value from the root element, which is your <code class="highlighter-rouge">html</code> tag.
-The EM unit inherits it’s value from its first parent with a specified font-size.</p>
+The EM unit inherits its value from its first parent with a specified font-size.</p>
 
 <p>Pavilion uses EM’s for typography and REM’s for component margins, paddings or other properties.
 One EM is equal to 18px, which is set on the <code class="highlighter-rouge">body</code>. One REM is equal to 15px, which is set 
 on the <code class="highlighter-rouge">html</code> tag.</p>
 
 <h5 id="smaller-screens">Smaller screens</h5>
-<p>On smaller screens the font-sizes on the body and html tags wil decrease, which will affect the EM’s and REM’s troughout the
+<p>On smaller screens the font-sizes on the body and html tags wil decrease, which will affect the EM’s and REM’s throughout the
 rest of the DOM.</p>
 
 <table> 
@@ -1876,10 +1877,17 @@ Both tasks produce the following files in the <code class="highlighter-rouge">di
         <p>Need help or found a bug? Open an issue at <a href="http://github.com/getpavilion/pavilion">Github</a> or tweet me at <a href="http://twitter.com/wesselgrift">@wesselgrift</a>.</p>
 
 <h5 id="browser-support">Browser support</h5>
-<p>Altough Pavilion is built for modern browsers, the CSS is prefixed for the last two versions of commonly used browsers.
+<p>Although Pavilion is built for modern browsers, the CSS is prefixed for the last two versions of commonly used browsers.
 Yes, this will increase the file size. But it’s nice to have some browser support other than the latest versions.</p>
 
 <p>If you find any bugs, please let me know and always test your productions thoroughly.</p>
+
+<h5 id="mixins-are-coming">Mixins are coming</h5>
+<p>At the moment Pavilion uses classes which dictate styling trough DOM markup. This works fine and might even work fast in some cases. 
+But it could cludge up your DOM, and its not really semantic. That is why Pavilion will gradually move towards using mixins for creating your layouts.
+I haven’t decided on how this will be implemented, but it is coming.</p>
+
+<p>See the full roadmap <a href="https://github.com/getpavilion/pavilion/wiki" target="_blank" class="documentation-list-link">here</a>.</p>
 
 <p>Cheers, Wessel.</p>
 
@@ -1913,7 +1921,7 @@ Yes, this will increase the file size. But it’s nice to have some browser supp
                 <span class="footer-text">Designed and maintained by <a href="https://twitter.com/wesselgrift" target="_blank">@wesselgrift</a>. Licensed under the <a href="https://github.com/getpavilion/pavilion/blob/master/license" target="_blank">MIT License</a>.</span>
             </div>
             <div class="col-tp-25 text-right text-pl-center text-pp-center">
-                <span class="footer-text">Current version: 1.0.24</span>
+                <span class="footer-text">Current version: 1.0.25</span>
             </div>
         </div>
     </div>

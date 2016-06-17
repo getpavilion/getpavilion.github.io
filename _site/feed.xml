@@ -6,8 +6,8 @@
 </description>
     <link>http://www.pavilion.io/</link>
     <atom:link href="http://www.pavilion.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 May 2016 11:41:53 +0200</pubDate>
-    <lastBuildDate>Sun, 29 May 2016 11:41:53 +0200</lastBuildDate>
+    <pubDate>Fri, 17 Jun 2016 13:42:23 +0200</pubDate>
+    <lastBuildDate>Fri, 17 Jun 2016 13:42:23 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -26,7 +26,7 @@
 &lt;h5 id=&quot;cdn&quot;&gt;CDN&lt;/h5&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- pavilion.min.css --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.jsdelivr.net/pavilion/latest/pavilion.min.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdnjs.cloudflare.com/ajax/libs/pavilion/1.0.24/pavilion.min.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h5 id=&quot;npm&quot;&gt;NPM&lt;/h5&gt;
 
@@ -68,6 +68,9 @@
 ├── license
 ├── gruntfile.js
 └── package.json&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For consistent browser behaviour Pavilion ships with &lt;strong&gt;normalize.css&lt;/strong&gt;, a collection of HTML element and attribute style-normalizations by Nicolas Gallagher and Jonathan Neal.
+See their documentation &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
@@ -136,8 +139,8 @@ See &lt;a data-scroll=&quot;&quot; href=&quot;#gettingstarted&quot;&gt;getting s
     
       <item>
         <title>Containers</title>
-        <description>&lt;p&gt;To keep all your elements packed in consistend left and right paddings you should wrap
-them in containers. Basically we have three types of containers.&lt;/p&gt;
+        <description>&lt;p&gt;To keep all your elements packed in consistent left and right paddings you should wrap
+them in containers. Basically you have three types of containers.&lt;/p&gt;
 
 &lt;h5 id=&quot;standard-fixed-width-container&quot;&gt;Standard (fixed width) container&lt;/h5&gt;
 &lt;p&gt;This container has a default max-width of 1140px and is centered in the viewport.&lt;/p&gt;
@@ -198,7 +201,7 @@ This is done by placing the columns inside a &lt;code class=&quot;highlighter-ro
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;columns&quot;&gt;Columns&lt;/h3&gt;
-&lt;p&gt;As stated above: &lt;strong&gt;wrap columns in a row&lt;/strong&gt; to prevent double padding. Altough there is one exeption. That is when you don’t use a container,
+&lt;p&gt;As stated above: &lt;strong&gt;wrap columns in a row&lt;/strong&gt; to prevent double padding. Although there is one exception. That is when you don’t use a container,
 you don’t wrap your columns in a row. This would remove the padding along the edges of your screen.&lt;/p&gt;
 
 &lt;p&gt;Pavilion’s columns come in fifths, fourths, thirds and divisions of those.&lt;/p&gt;
@@ -309,7 +312,7 @@ you don’t wrap your columns in a row. This would remove the padding along the 
 &lt;/div&gt;
 
 &lt;h3 id=&quot;columns--breakpoints&quot;&gt;Columns &amp;amp; breakpoints&lt;/h3&gt;
-&lt;p&gt;To create a flexible layout you need to be able to set specific column width’s per breakpoint. Pavilion uses a common concept to do this.
+&lt;p&gt;To create a flexible layout you need to be able to set specific column widths per breakpoint. Pavilion uses a common concept to do this.
 Just add the breakpoint’s abbreviation class to the column. Does that sound confusing? It’s easy, look:&lt;/p&gt;
 
 &lt;div class=&quot;row-flex&quot;&gt;
@@ -336,7 +339,7 @@ Just add the breakpoint’s abbreviation class to the column. Does that sound co
 
 &lt;p&gt;The columns above will span a width of 33% and 66% when the viewport is equal or larger than &lt;strong&gt;tablet landscape&lt;/strong&gt; (hence the &lt;code class=&quot;highlighter-rouge&quot;&gt;*-tl-*&lt;/code&gt;).
 When the viewport gets smaller, they’ll both span a width of 50% until the screensize drops below &lt;strong&gt;phone landscape&lt;/strong&gt;.
-You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of it’s breakpoint it will default to 100% width.&lt;/p&gt;
+You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of its breakpoint it will default to 100% width.&lt;/p&gt;
 
 &lt;p&gt;See the &lt;a href=&quot;#breakpoints&quot; data-scroll=&quot;&quot;&gt;breakpoints&lt;/a&gt; section for more information about 
 breakpoints and screensizes.&lt;/p&gt;
@@ -390,7 +393,7 @@ with the class &lt;code class=&quot;highlighter-rouge&quot;&gt;.col&lt;/code&gt;
         &lt;div class=&quot;exb&quot;&gt;.col&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col-pl-33&quot;&gt;
-        &lt;div class=&quot;exb&quot;&gt;.col-*-25&lt;/div&gt;
+        &lt;div class=&quot;exb&quot;&gt;.col-*-33&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;
         &lt;div class=&quot;exb&quot;&gt;.col&lt;/div&gt;
@@ -534,11 +537,10 @@ with the class &lt;code class=&quot;highlighter-rouge&quot;&gt;.col&lt;/code&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Ofcourse there are numerous other properties that apply to flexbox, which we don’t cover in our utility classes.
+&lt;p&gt;Of course there are numerous other properties that apply to flexbox, which Pavilion doesn’t cover in its utility classes.
 We have covered classes for basic flexbox usage.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; these classes are also present in the &lt;a href=&quot;#utils&quot; data-scroll=&quot;&quot;&gt;utilities&lt;/a&gt; section.&lt;/p&gt;
-
 </description>
         <pubDate>Thu, 31 Mar 2016 17:06:26 +0200</pubDate>
         <link>http://www.pavilion.io/2016/03/31/flexbox.html</link>
@@ -585,9 +587,9 @@ Typography calculated by &lt;a href=&quot;http://type-scale.com/&quot;&gt;type-s
 
 &lt;h5 id=&quot;other-typographic-elements&quot;&gt;Other typographic elements&lt;/h5&gt;
 &lt;p&gt;Below you’ll find a set of elements that are commonly used in web typography.
-We’ve also included &lt;code class=&quot;highlighter-rouge&quot;&gt;.summary&lt;/code&gt; that, when added to a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element, bumps up the font-size a bit and decreases font-weight.
-Next to that we’ve included a &lt;code class=&quot;highlighter-rouge&quot;&gt;.dropcap&lt;/code&gt; which is optional for &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements and a &lt;code class=&quot;highlighter-rouge&quot;&gt;.split&lt;/code&gt; class, which cuts your
-parapgraph in half.&lt;/p&gt;
+Pavilion comes with a &lt;code class=&quot;highlighter-rouge&quot;&gt;.summary&lt;/code&gt; which, when added to a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element, bumps up the font-size a bit and decreases font-weight.
+Next to that a &lt;code class=&quot;highlighter-rouge&quot;&gt;.dropcap&lt;/code&gt; which is optional for &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements and a &lt;code class=&quot;highlighter-rouge&quot;&gt;.split&lt;/code&gt; class, which cuts your
+paragraph in half.&lt;/p&gt;
 
 &lt;h5 id=&quot;summary-paragraph&quot;&gt;Summary paragraph&lt;/h5&gt;
 
@@ -664,8 +666,7 @@ parapgraph in half.&lt;/p&gt;
       <item>
         <title>Lists</title>
         <description>&lt;p&gt;Well, you know…lists. Who doesn’t use lists. Pavilion comes with three, common, types of lists.
-Unordered, ordered and description lists. All three have minimal styling. We’ve notched up the
-unordered list with a circle instead of the dot.&lt;/p&gt;
+Unordered, ordered and description lists. All three have minimal styling with circles instead of dots.&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-pl-33&quot;&gt;
@@ -774,8 +775,8 @@ unordered list with a circle instead of the dot.&lt;/p&gt;
     
       <item>
         <title>Forms</title>
-        <description>&lt;p&gt;With forms, Pavilion does some of the heavy lifting for you.
-We’ve normalized the styling and set it up in a way that you can easy style or use them the way you
+        <description>&lt;p&gt;With forms Pavilion does some of the heavy lifting for you.
+The styling is normalized and set up in a way in which you can easily style or use them in a way you
 see fit.&lt;/p&gt;
 
 &lt;h6 class=&quot;mute&quot;&gt;Form example&lt;/h6&gt;
@@ -796,7 +797,7 @@ see fit.&lt;/p&gt;
                 &lt;input id=&quot;firstName&quot; type=&quot;text&quot; placeholder=&quot;&#39;Placeholder&#39;&quot; disabled=&quot;&quot; /&gt;
                 
                 &lt;!-- Input with button left --&gt;
-                &lt;div class=&quot;input-with-button-left&quot;&gt;
+                &lt;div class=&quot;input-with-button button-left&quot;&gt;
                     &lt;label for=&quot;lastName&quot;&gt;Text input with button on the left&lt;/label&gt;
                     &lt;span class=&quot;button-wrapper&quot;&gt;
                         &lt;button class=&quot;button-default&quot;&gt;Button&lt;/button&gt;
@@ -805,7 +806,7 @@ see fit.&lt;/p&gt;
                 &lt;/div&gt;
                 
                 &lt;!-- Input with button right --&gt;
-                &lt;div class=&quot;input-with-button-right&quot;&gt;
+                &lt;div class=&quot;input-with-button button-right&quot;&gt;
                     &lt;label for=&quot;lastName&quot;&gt;Text input with button on the right&lt;/label&gt;
                     &lt;input id=&quot;lastName&quot; type=&quot;text&quot; placeholder=&quot;&#39;Placeholder&#39;&quot; /&gt;
                     &lt;span class=&quot;button-wrapper&quot;&gt;
@@ -879,37 +880,37 @@ see fit.&lt;/p&gt;
             
             &lt;fieldset&gt;
                 &lt;h5&gt;Inline checkboxes&lt;/h5&gt;
-                &lt;!-- Checkboxes block --&gt;
-                &lt;label for=&quot;inlineCheckbox1&quot; class=&quot;checkbox-inline&quot;&gt;
+                &lt;!-- Checkboxes inline --&gt;
+                &lt;label for=&quot;inlineCheckbox1&quot; class=&quot;checkbox checkbox-inline&quot;&gt;
                     Option #1
                     &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox1&quot; checked=&quot;true&quot; /&gt;
                 &lt;/label&gt;
-                &lt;label for=&quot;inlineCheckbox2&quot; class=&quot;checkbox-inline&quot;&gt;
+                &lt;label for=&quot;inlineCheckbox2&quot; class=&quot;checkbox checkbox-inline&quot;&gt;
                     Option #2
                     &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox2&quot; /&gt;
                 &lt;/label&gt;
-                &lt;label for=&quot;inlineCheckbox3&quot; class=&quot;checkbox-inline&quot;&gt;
+                &lt;label for=&quot;inlineCheckbox3&quot; class=&quot;checkbox checkbox-inline&quot;&gt;
                     Option #3
                     &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox3&quot; /&gt;
                 &lt;/label&gt;
-                &lt;label for=&quot;inlineCheckbox4&quot; class=&quot;checkbox-inline&quot;&gt;
+                &lt;label for=&quot;inlineCheckbox4&quot; class=&quot;checkbox checkbox-inline&quot;&gt;
                     Option #4
                     &lt;input type=&quot;checkbox&quot; id=&quot;inlineCheckbox4&quot; /&gt;
                 &lt;/label&gt;
             &lt;/fieldset&gt;
                 
             &lt;fieldset&gt;
-                &lt;h5&gt;Inline radiobuttons&lt;/h5&gt;
-                &lt;!-- Radio buttons block --&gt;
-                &lt;label for=&quot;inlineRadio1&quot; class=&quot;radio-inline&quot;&gt;
+                &lt;h5&gt;Inline radio buttons&lt;/h5&gt;
+                &lt;!-- Radio buttons inline --&gt;
+                &lt;label for=&quot;inlineRadio1&quot; class=&quot;radio radio-inline&quot;&gt;
                     This?
                     &lt;input type=&quot;radio&quot; name=&quot;frequency&quot; id=&quot;inlineRadio1&quot; /&gt;
                 &lt;/label&gt;
-                &lt;label for=&quot;inlineRadio2&quot; class=&quot;radio-inline&quot;&gt;
+                &lt;label for=&quot;inlineRadio2&quot; class=&quot;radio radio-inline&quot;&gt;
                     Or this..
                     &lt;input type=&quot;radio&quot; name=&quot;frequency&quot; id=&quot;inlineRadio2&quot; /&gt;
                 &lt;/label&gt;
-                &lt;label for=&quot;inlineRadio3&quot; class=&quot;radio-inline&quot;&gt;
+                &lt;label for=&quot;inlineRadio3&quot; class=&quot;radio radio-inline&quot;&gt;
                     Or maybe this!
                     &lt;input type=&quot;radio&quot; name=&quot;frequency&quot; id=&quot;inlineRadio3&quot; /&gt;
                 &lt;/label&gt;
@@ -944,7 +945,7 @@ see fit.&lt;/p&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;firstName&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&#39;Placeholder&#39;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;disabled=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         
         &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Input with button left --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input-with-button-left&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input-with- button-left&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lastName&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Text input with button on the left&lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button-wrapper&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
                 &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button-default&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
@@ -953,7 +954,7 @@ see fit.&lt;/p&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
         
         &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Input with button right --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input-with-button-right&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;input-with-button button-right&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lastName&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Text input with button on the right&lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lastName&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&#39;Placeholder&#39;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button-wrapper&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -1027,37 +1028,37 @@ see fit.&lt;/p&gt;
     
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;fieldset&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&amp;gt;&lt;/span&gt;Inline checkboxes&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Checkboxes block --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Checkboxes inline --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             Option #1
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             Option #2
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             Option #3
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox4&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox4&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox checkbox-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             Option #4
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineCheckbox4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/fieldset&amp;gt;&lt;/span&gt;
         
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;fieldset&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&amp;gt;&lt;/span&gt;Inline radiobuttons&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Radio buttons block --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h5&amp;gt;&lt;/span&gt;Inline radio buttons&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h5&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Radio buttons inline --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio radio-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             This?
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;frequency&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio radio-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             Or this..
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;frequency&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio radio-inline&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
             Or maybe this!
             &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;radio&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;frequency&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inlineRadio3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;

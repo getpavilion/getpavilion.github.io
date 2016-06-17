@@ -25,7 +25,7 @@ see fit.
                 <input id="firstName" type="text" placeholder="'Placeholder'" disabled="">
                 
                 <!-- Input with button left -->
-                <div class="input-with-button-left">
+                <div class="input-with-button button-left">
                     <label for="lastName">Text input with button on the left</label>
                     <span class="button-wrapper">
                         <button class="button-default">Button</button>
@@ -34,7 +34,7 @@ see fit.
                 </div>
                 
                 <!-- Input with button right -->
-                <div class="input-with-button-right">
+                <div class="input-with-button button-right">
                     <label for="lastName">Text input with button on the right</label>
                     <input id="lastName" type="text" placeholder="'Placeholder'">
                     <span class="button-wrapper">
@@ -108,20 +108,20 @@ see fit.
             
             <fieldset>
                 <h5>Inline checkboxes</h5>
-                <!-- Checkboxes block -->
-                <label for="inlineCheckbox1" class="checkbox-inline">
+                <!-- Checkboxes inline -->
+                <label for="inlineCheckbox1" class="checkbox checkbox-inline">
                     Option #1
                     <input type="checkbox" id="inlineCheckbox1" checked="true">
                 </label>
-                <label for="inlineCheckbox2" class="checkbox-inline">
+                <label for="inlineCheckbox2" class="checkbox checkbox-inline">
                     Option #2
                     <input type="checkbox" id="inlineCheckbox2">
                 </label>
-                <label for="inlineCheckbox3" class="checkbox-inline">
+                <label for="inlineCheckbox3" class="checkbox checkbox-inline">
                     Option #3
                     <input type="checkbox" id="inlineCheckbox3">
                 </label>
-                <label for="inlineCheckbox4" class="checkbox-inline">
+                <label for="inlineCheckbox4" class="checkbox checkbox-inline">
                     Option #4
                     <input type="checkbox" id="inlineCheckbox4">
                 </label>
@@ -129,16 +129,16 @@ see fit.
                 
             <fieldset>
                 <h5>Inline radio buttons</h5>
-                <!-- Radio buttons block -->
-                <label for="inlineRadio1" class="radio-inline">
+                <!-- Radio buttons inline -->
+                <label for="inlineRadio1" class="radio radio-inline">
                     This?
                     <input type="radio" name="frequency" id="inlineRadio1">
                 </label>
-                <label for="inlineRadio2" class="radio-inline">
+                <label for="inlineRadio2" class="radio radio-inline">
                     Or this..
                     <input type="radio" name="frequency" id="inlineRadio2">
                 </label>
-                <label for="inlineRadio3" class="radio-inline">
+                <label for="inlineRadio3" class="radio radio-inline">
                     Or maybe this!
                     <input type="radio" name="frequency" id="inlineRadio3">
                 </label>
@@ -173,7 +173,7 @@ see fit.
         <input id="firstName" type="text" placeholder="'Placeholder'" disabled="">
         
         <!-- Input with button left -->
-        <div class="input-with-button-left">
+        <div class="input-with- button-left">
             <label for="lastName">Text input with button on the left</label>
             <span class="button-wrapper">
                 <button class="button-default">Button</button>
@@ -182,7 +182,7 @@ see fit.
         </div>
         
         <!-- Input with button right -->
-        <div class="input-with-button-right">
+        <div class="input-with-button button-right">
             <label for="lastName">Text input with button on the right</label>
             <input id="lastName" type="text" placeholder="'Placeholder'">
             <span class="button-wrapper">
@@ -256,20 +256,20 @@ see fit.
     
     <fieldset>
         <h5>Inline checkboxes</h5>
-        <!-- Checkboxes block -->
-        <label for="inlineCheckbox1" class="checkbox-inline">
+        <!-- Checkboxes inline -->
+        <label for="inlineCheckbox1" class="checkbox checkbox-inline">
             Option #1
             <input type="checkbox" id="inlineCheckbox1" checked="true">
         </label>
-        <label for="inlineCheckbox2" class="checkbox-inline">
+        <label for="inlineCheckbox2" class="checkbox checkbox-inline">
             Option #2
             <input type="checkbox" id="inlineCheckbox2">
         </label>
-        <label for="inlineCheckbox3" class="checkbox-inline">
+        <label for="inlineCheckbox3" class="checkbox checkbox-inline">
             Option #3
             <input type="checkbox" id="inlineCheckbox3">
         </label>
-        <label for="inlineCheckbox4" class="checkbox-inline">
+        <label for="inlineCheckbox4" class="checkbox checkbox-inline">
             Option #4
             <input type="checkbox" id="inlineCheckbox4">
         </label>
@@ -277,16 +277,16 @@ see fit.
         
     <fieldset>
         <h5>Inline radio buttons</h5>
-        <!-- Radio buttons block -->
-        <label for="inlineRadio1" class="radio-inline">
+        <!-- Radio buttons inline -->
+        <label for="inlineRadio1" class="radio radio-inline">
             This?
             <input type="radio" name="frequency" id="inlineRadio1">
         </label>
-        <label for="inlineRadio2" class="radio-inline">
+        <label for="inlineRadio2" class="radio radio-inline">
             Or this..
             <input type="radio" name="frequency" id="inlineRadio2">
         </label>
-        <label for="inlineRadio3" class="radio-inline">
+        <label for="inlineRadio3" class="radio radio-inline">
             Or maybe this!
             <input type="radio" name="frequency" id="inlineRadio3">
         </label>

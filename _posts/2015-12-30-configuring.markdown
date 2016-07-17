@@ -24,10 +24,20 @@ $remsize-small: 10px; /* Adjust this to adjust your REM sizes on phones, 1REM eq
 $emsize-small: 16px;  /* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/
 
 /**
-  * Line-height
+  * Line-height 
   */
 
 $line-height-normal: 1.5; 
+
+/**
+  * Paddings/borders for buttons and inputs
+  */
+  
+$padding-input-and-button-y: 0.6rem;
+$padding-input-and-button-x: 1rem;
+$padding-input-and-button: $padding-input-and-button-y $padding-input-and-button-x;
+
+$border-input-and-button: 1px; /* Borders for buttons and inputs are set to 1px by default */
 
 /**
   * Breakpoints
@@ -46,6 +56,7 @@ $breakmargin: 20px;              /* Margin added to the breakpoint */
 
 $body-copy-color: #333;
 $soft-gray: #EFEFEF;
+$medium-gray: #BCBCBC;
 $hard-gray: #565656;
 $primary-color: #426AFB;
 $accent-color: #2980b9;
@@ -56,6 +67,17 @@ $accent-color: #2980b9;
 
 $small-radius: 3px; /* Used on buttons, form elements, etc */
 $large-radius: 10px; /* Not used, but will come in handy */
+
+/**
+  * Heading sizes
+  */
+
+$h1: 3.157em;
+$h2: 2.369em;
+$h3: 1.777em;;
+$h4: 1.333em;
+$h5: 1em;
+$h6: 0.75em;
 
 /**
   * Font-weights, you can set your own values to match your font.
@@ -71,6 +93,7 @@ $font-weight-bold: 700;
 
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $mono-font-family: "Lucida Console", Monaco, monospace;
+
 
 {% endhighlight %}
     <div class="uncollapse">

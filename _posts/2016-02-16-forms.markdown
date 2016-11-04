@@ -54,6 +54,20 @@ see fit.
                     <option value="option3">Option #3</option>
                     <option value="option4">Option #4</option>
                 </select>
+                
+                <!-- Multi selectbox -->
+                <label for="selectInterestsMultiple">Multi selectbox</label>
+                <select multiple name="interests" id="selectInterestsMultiple">
+                    <option value="option1">Option #1</option>
+                    <option value="option2">Option #2</option>
+                    <option value="option3">Option #3</option>
+                    <option value="option4">Option #4</option>
+                    <option value="option1">Option #5</option>
+                    <option value="option2">Option #6</option>
+                    <option value="option3">Option #7</option>
+                    <option value="option4">Option #8</option>
+                </select>
+                
             </fieldset>
             
             <fieldset>
@@ -202,6 +216,20 @@ see fit.
             <option value="option3">Option #3</option>
             <option value="option4">Option #4</option>
         </select>
+        
+        <!-- Multi selectbox -->
+        <label for="selectInterestsMultiple">Multi selectbox</label>
+        <select multiple name="interests" id="selectInterestsMultiple">
+            <option value="option1">Option #1</option>
+            <option value="option2">Option #2</option>
+            <option value="option3">Option #3</option>
+            <option value="option4">Option #4</option>
+            <option value="option1">Option #5</option>
+            <option value="option2">Option #6</option>
+            <option value="option3">Option #7</option>
+            <option value="option4">Option #8</option>
+        </select>
+        
     </fieldset>
     
     <fieldset>

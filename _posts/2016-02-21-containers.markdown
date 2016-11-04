@@ -22,7 +22,7 @@ This container has a default max-width of 1140px and is centered in the viewport
 </div>
 {% endhighlight %}
 
-##### Breakpoint specific containers
+##### Smaller containers (matches breakpoints)
 {% highlight html %}
 <div class="container-pl">
     <!-- Container width: phone landscape / 540px -->

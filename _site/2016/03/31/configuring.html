@@ -18,10 +18,20 @@ of Pavilion.</p>
 <span class="nv">$emsize-small</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>  <span class="cm">/* Adjust this to adjust your EM sizes on phones. EM is used for typography. 1EM equals the size you set here.*/</span>
 
 <span class="cm">/**
-  * Line-height
+  * Line-height 
   */</span>
 
 <span class="nv">$line-height-normal</span><span class="p">:</span> <span class="m">1</span><span class="mi">.5</span><span class="p">;</span> 
+
+<span class="cm">/**
+  * Paddings/borders for buttons and inputs
+  */</span>
+  
+<span class="nv">$padding-input-and-button-y</span><span class="p">:</span> <span class="m">0</span><span class="mi">.6rem</span><span class="p">;</span>
+<span class="nv">$padding-input-and-button-x</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+<span class="nv">$padding-input-and-button</span><span class="p">:</span> <span class="nv">$padding-input-and-button-y</span> <span class="nv">$padding-input-and-button-x</span><span class="p">;</span>
+
+<span class="nv">$border-input-and-button</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span> <span class="cm">/* Borders for buttons and inputs are set to 1px by default */</span>
 
 <span class="cm">/**
   * Breakpoints
@@ -40,6 +50,7 @@ of Pavilion.</p>
 
 <span class="nv">$body-copy-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
 <span class="nv">$soft-gray</span><span class="p">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
+<span class="nv">$medium-gray</span><span class="p">:</span> <span class="mh">#BCBCBC</span><span class="p">;</span>
 <span class="nv">$hard-gray</span><span class="p">:</span> <span class="mh">#565656</span><span class="p">;</span>
 <span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
 <span class="nv">$accent-color</span><span class="p">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
@@ -50,6 +61,17 @@ of Pavilion.</p>
 
 <span class="nv">$small-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span> <span class="cm">/* Used on buttons, form elements, etc */</span>
 <span class="nv">$large-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="cm">/* Not used, but will come in handy */</span>
+
+<span class="cm">/**
+  * Heading sizes
+  */</span>
+
+<span class="nv">$h1</span><span class="p">:</span> <span class="m">3</span><span class="mi">.157em</span><span class="p">;</span>
+<span class="nv">$h2</span><span class="p">:</span> <span class="m">2</span><span class="mi">.369em</span><span class="p">;</span>
+<span class="nv">$h3</span><span class="p">:</span> <span class="m">1</span><span class="mi">.777em</span><span class="p">;;</span>
+<span class="nv">$h4</span><span class="p">:</span> <span class="m">1</span><span class="mi">.333em</span><span class="p">;</span>
+<span class="nv">$h5</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="nv">$h6</span><span class="p">:</span> <span class="m">0</span><span class="mi">.75em</span><span class="p">;</span>
 
 <span class="cm">/**
   * Font-weights, you can set your own values to match your font.
@@ -71,7 +93,7 @@ of Pavilion.</p>
     </div>
 </div>
 
-<h5 id="other-files">Other files</h5>
+<h5 id="be-careful">Be careful</h5>
 <p>Feel free to poke around and modify Pavilion the way you see fit. Note that when you change core files, <strong>your changes could be overwritten</strong> when you update Pavilion as a
 dependency.</p>
 

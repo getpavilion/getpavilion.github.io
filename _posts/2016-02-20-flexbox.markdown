@@ -5,9 +5,9 @@ postid: flexbox
 ---
 
 ##### Flexbox columns
-Instead of using a `.row` you can use `.row-flex` and make use of the CSS Flex Box Layout Model for Pavilion's columns.
-Flex-columns span the maximum possible width. The normal column classes still apply within the 'flexboxed' row. To use a flex-column add a div
-with the class `.col`.
+Instead of using a `.row` to contain your columns, you can use `.row-flex` and apply the Flexbox Layout Model for Pavilion's columns.
+Flex-columns take up the maximum possible width. The normal column classes still apply within the 'flexboxed' row. To use a flex-column add a div
+with the class `.col` inside a `.row-flex`.
 
 Please read the <a href="#grid" data-scroll>grid</a> documentation first if you haven't done so.
 
@@ -49,121 +49,247 @@ Please read the <a href="#grid" data-scroll>grid</a> documentation first if you 
     </div>
 </div>
 
-##### Flex elements
-Use the class `.display-flex` to create a flex element. You can now use flex utility classes to align and arrange the contained items according to the
-'CSS Flex Box Layout Model'. Pavilion comes with a set of handy flexbox classes to modify your layout.
+##### Flexbox positioning
+Apply the class `.display-flex` to create a flexbox container element. You can now use flex utility classes to align and arrange the contained items according to the
+Flex Box Layout Model. Pavilion has classes for most of the specs' properties. Since it is useless to create classes for properties like flex grow, 
+shrink, basis and order, these are not included. Want to learn more about flexbox? Check out <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties#flexbox-container-properties" target="_blank">this handy tutorial by Scotch.io</a>.
 
 For example, centering horizontally and vertically is easy with flexbox:
-<div class="display-flex exfb items-center-h items-center-v">
-    <button class="button-default">I am centered X&Y</button>
+<div class="display-flex exfb flex-align-items-center flex-justify-content-center">
+    <button class="button-default">I am centered X and Y</button>
 </div>
+
+{% highlight html %}
+<div class="display-flex flex-align-items-center flex-justify-content-center">
+    <button class="button-default">I am centered X and Y</button>
+</div>
+{% endhighlight %}
 
 <table> 
     <!-- Table head -->
     <thead> 
         <tr> 
-            <th>Class</th> 
+            <th class="cell-fixed-width">Display flex</th> 
             <th>Behaviour</th> 
-            <th>Usage</th> 
         </tr> 
     </thead>
     
     <!-- Table body -->
     <tbody> 
         <tr> 
-            <td><code>.display-flex</code></td> 
-            <td>Set display: flex;</td> 
-            <td>On parent</td> 
+            <td class="cell-fixed-width"><code>.display-flex</code></td> 
+            <td>Creates flex container</td> 
         </tr>
         <tr> 
-            <td><code>.row-flex</code></td> 
-            <td>Set display: flex;</td> 
-            <td>On row</td> 
+            <td class="cell-fixed-width"><code>.display-inline-flex</code></td> 
+            <td>Creates inline flex container</td> 
         </tr>
         <tr> 
-            <td><code>.items-center-h</code></td> 
-            <td>Center items horizontally</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-center-v</code></td> 
-            <td>Center items vertically</td> 
-            <td>On container</td> 
-        </tr>  
-        <tr> 
-            <td><code>.items-top</code></td> 
-            <td>Align items to top</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-left</code></td> 
-            <td>Align items to left</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-right</code></td> 
-            <td>Align items to right</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-bottom</code></td> 
-            <td>Align items to bottom</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-baseline</code></td> 
-            <td>Align items to baseline</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-spaced-around</code></td> 
-            <td>Distribute items evenly</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.items-spaced-between</code></td> 
-            <td>Distribute items to edges</td> 
-            <td>On container</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-top</code></td> 
-            <td>Align to top</td> 
-            <td>On child</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-bottom</code></td> 
-            <td>Align to bottom</td> 
-            <td>On child</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-baseline</code></td> 
-            <td>Align to baseline</td> 
-            <td>On child</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-center-v</code></td> 
-            <td>Align to center vertically</td> 
-            <td>On child</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-center-h</code></td> 
-            <td>Align to center horizontally</td> 
-            <td>On child</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-first</code></td> 
-            <td>Reorder item to be the first</td> 
-            <td>On child</td> 
-        </tr>
-        <tr> 
-            <td><code>.item-last</code></td> 
-            <td>Reorder item to be the last</td> 
-            <td>On child</td> 
+            <td class="cell-fixed-width"><code>.row-flex</code></td> 
+            <td>Creates row flex container (for columns)</td> 
         </tr>
     </tbody>
 </table>
 
-Of course there are numerous other properties that apply to flexbox, which Pavilion doesn't cover in its utility classes.
-We have covered classes for basic flexbox usage.
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th class="cell-fixed-width">Flex direction</th> 
+            <th>Behaviour</th>
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-direction-row</code></td> 
+            <td>Set main axis direction left to right <span class="text-primary">(default)</span></td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-direction-row-reverse</code></td> 
+            <td>Set main axis direction right to left</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-direction-column</code></td> 
+            <td>Set main axis direction top to bottom</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-direction-column-reverse</code></td> 
+            <td>Set main axis direction bottom to top</td> 
+        </tr>
+    </tbody>
+</table>
 
-**Note:** these classes are also present in the <a href="#utils" data-scroll>utilities</a> section.
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th class="cell-fixed-width">Flex wrap</th> 
+            <th>Behaviour</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-no-wrap</code></td> 
+            <td>Keep flex children on a single-line <span class="text-primary">(default)</span></td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-wrap</code></td> 
+            <td>Wrap flex children to multiple lines</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-wrap-reverse</code></td> 
+            <td>Same as above, but bottom to top</td> 
+        </tr>
+    </tbody>
+</table>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th class="cell-fixed-width">Justify content (main axis)</th> 
+            <th>Behaviour</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-justify-content-start</code></td> 
+            <td>Align items towards the main axis' start <span class="text-primary">(default)</span></td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-justify-content-end</code></td> 
+            <td>Align items towards the main axis' end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-justify-content-center</code></td> 
+            <td>Align items between the main axis' start/end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-justify-content-between</code></td> 
+            <td>Distribute items between the main axis' start/end, space between</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-justify-content-around</code></td> 
+            <td>Distribute items between the main axis' start/end, space around</td> 
+        </tr>
+    </tbody>
+</table>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th class="cell-fixed-width">Align items (cross axis)</th> 
+            <th>Behaviour</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-items-stretch</code></td> 
+            <td>Stretch items along the cross-axis <span class="text-primary">(default)</span></td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-items-start</code></td> 
+            <td>Align items towards the cross-axis' start</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-items-end</code></td> 
+            <td>Align items towards the cross-axis' end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-items-center</code></td> 
+            <td>Align items between the cross-axis' start/end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-items-baseline</code></td> 
+            <td>Align items to their baselines</td> 
+        </tr> 
+    </tbody>
+</table>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th class="cell-fixed-width">Align multiple lines (cross axis)</th> 
+            <th>Behaviour</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-content-stretch</code></td> 
+            <td>Stretch multiline contents along the cross-axis <span class="text-primary">(default)</span></td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-content-start</code></td> 
+            <td>Align multiline contents towards the cross-axis' start</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-content-end</code></td> 
+            <td>Align multiline contents towards the cross-axis' end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-content-center</code></td> 
+            <td>Align multiline contents between the cross-axis' start/end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-content-between</code></td> 
+            <td>Distribute items between the cross axis' start/end, space between</td> 
+        </tr> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-content-around</code></td> 
+            <td>Distribute items between the cross axis' start/end, space around</td> 
+        </tr>
+    </tbody>
+</table>
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th class="cell-fixed-width">Align flex child (apply on child)</th> 
+            <th>Behaviour</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-self-start</code></td> 
+            <td>Align flex child towards the cross-axis' start</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-self-end</code></td> 
+            <td>Align flex child towards the cross-axis' end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-self-center</code></td> 
+            <td>Align flex child between the cross-axis' start/end</td> 
+        </tr>
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-self-baseline</code></td> 
+            <td>Align flex child to flex baselines</td> 
+        </tr> 
+        <tr> 
+            <td class="cell-fixed-width"><code>.flex-align-self-stretch</code></td> 
+            <td>Stretch flex child along the cross-axis</td> 
+        </tr>
+    </tbody>
+</table>
+<br>
+<blockquote>
+<strong>Breaking changes from  v1.0.27 to v1.0.28</strong><br>
+Version 1.0.27 had different classes for the Flexbox Layout Model. Version 1.0.28 has new classes which reflect
+the purpose and usage of the Flexbox Layout Model much more accurate. You can still use the old classes, for now. They will be
+discarted in the future. So it is adviced to update your classes if you have used flexbox utilities.
+</blockquote>

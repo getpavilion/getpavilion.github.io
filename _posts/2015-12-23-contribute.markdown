@@ -12,11 +12,4 @@ Yes, this will increase the file size. But it's nice to have some browser suppor
 
 If you find any bugs, please let me know and always test your productions thoroughly.
 
-##### Mixins are coming
-At the moment Pavilion uses classes which dictate styling trough DOM markup. This works fine and might even work fast in some cases. 
-But it could cludge up your DOM, and its not really semantic. That is why Pavilion will gradually move towards using mixins for creating your layouts.
-I haven't decided on how this will be implemented, but it is coming.
-
-See the full roadmap <a href="https://github.com/getpavilion/pavilion/wiki" target="_blank" class="documentation-list-link">here</a>.
-
 Cheers, Wessel.

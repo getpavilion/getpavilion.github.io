@@ -101,7 +101,7 @@ $mono-font-family: "Lucida Console", Monaco, monospace;
     </div>
 </div>
 
-##### Other files
+##### Be careful
 Feel free to poke around and modify Pavilion the way you see fit. Note that when you change core files, **your changes could be overwritten** when you update Pavilion as a
 dependency.
 

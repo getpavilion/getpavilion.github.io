@@ -15,6 +15,11 @@ First of all, thanks for checking out Pavilion! Now let's get you started. Here 
     <button class="button-default">Compiled CSS</button>
 </a>
 
+##### CDN link
+{% highlight html %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pavilion/1.0.30/pavilion.min.css" />
+{% endhighlight %}
+
 ##### Install with NPM
 {% highlight html %}
 npm install pavilion

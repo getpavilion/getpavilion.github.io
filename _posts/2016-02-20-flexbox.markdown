@@ -288,8 +288,8 @@ For example, centering horizontally and vertically is easy with flexbox:
 </table>
 <br>
 <blockquote>
-<strong>Breaking changes from  v1.0.27 to v1.0.28</strong><br>
-Version 1.0.27 had different classes for the Flexbox Layout Model. Version 1.0.28 has new classes which reflect
+<strong>Breaking changes from  v1.0.28 and up</strong><br>
+Version 1.0.27 had different classes for the Flexbox Layout Model. Version 1.0.28 came with new classes which reflect
 the purpose and usage of the Flexbox Layout Model much more accurate. You can still use the old classes, for now. They will be
 discarted in the future. So it is adviced to update your classes if you have used flexbox utilities.
 </blockquote>

@@ -49,7 +49,7 @@ Please read the <a href="#grid" data-scroll>grid</a> documentation first if you 
     </div>
 </div>
 
-##### Flexbox positioning
+##### Flexbox elements
 Apply the class `.display-flex` to create a flexbox container element. You can now use flex utility classes to align and arrange the contained items according to the
 Flex Box Layout Model. Pavilion has classes for most of the specs' properties. Since it is useless to create classes for properties like flex grow, 
 shrink, basis and order, these are not included. Want to learn more about flexbox? Check out <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties#flexbox-container-properties" target="_blank">this handy tutorial by Scotch.io</a>.

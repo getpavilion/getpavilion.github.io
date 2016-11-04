@@ -59,12 +59,6 @@ For example, centering horizontally and vertically is easy with flexbox:
     <button class="button-default">I am centered X and Y</button>
 </div>
 
-{% highlight html %}
-<div class="display-flex flex-align-items-center flex-justify-content-center">
-    <button class="button-default">I am centered X and Y</button>
-</div>
-{% endhighlight %}
-
 <table> 
     <!-- Table head -->
     <thead> 

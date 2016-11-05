@@ -25,6 +25,10 @@ First of all, thanks for checking out Pavilion! Now let's get you started. Here 
 npm install pavilion
 {% endhighlight %}
 
+##### Install with Bower
+{% highlight html %}
+bower install pavilion
+{% endhighlight %}
 
 * * *
 

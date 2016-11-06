@@ -43,17 +43,25 @@ of Pavilion.</p>
 <span class="nv">$desktop-size</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>           <span class="cm">/* Desktop minimum */</span>
 
 <span class="nv">$breakmargin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>              <span class="cm">/* Margin added to the breakpoint */</span>
+<span class="nv">$size-switch</span><span class="p">:</span> <span class="nv">$tablet-portrait-size</span><span class="p">;</span> <span class="cm">/* Breakpoint at which the EM &amp; REM sizes switch to small */</span>
 
 <span class="cm">/**
   * Colors and tints
   */</span>
 
-<span class="nv">$body-copy-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="nv">$body-copy-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span> <span class="cm">/* Standard text color */</span>
+<span class="nv">$heading-color</span><span class="p">:</span> <span class="nv">$body-copy-color</span><span class="p">;</span>
+
 <span class="nv">$soft-gray</span><span class="p">:</span> <span class="mh">#EFEFEF</span><span class="p">;</span>
 <span class="nv">$medium-gray</span><span class="p">:</span> <span class="mh">#BCBCBC</span><span class="p">;</span>
 <span class="nv">$hard-gray</span><span class="p">:</span> <span class="mh">#565656</span><span class="p">;</span>
+
 <span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#426AFB</span><span class="p">;</span>
 <span class="nv">$accent-color</span><span class="p">:</span> <span class="mh">#2980b9</span><span class="p">;</span>
+
+<span class="nv">$error-color</span><span class="p">:</span> <span class="mh">#FA435A</span><span class="p">;</span>
+<span class="nv">$alert-color</span><span class="p">:</span> <span class="mh">#F5A623</span><span class="p">;</span>
+<span class="nv">$success-color</span><span class="p">:</span> <span class="mh">#7ED321</span><span class="p">;</span>
 
 <span class="cm">/**
   * Border radius
@@ -78,7 +86,8 @@ of Pavilion.</p>
   */</span>
 
 <span class="nv">$font-weight-light</span><span class="p">:</span> <span class="m">300</span><span class="p">;</span>
-<span class="nv">$font-weight-normal</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="nv">$font-weight-regular</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="nv">$font-weight-medium</span><span class="p">:</span> <span class="m">500</span><span class="p">;</span>
 <span class="nv">$font-weight-bold</span><span class="p">:</span> <span class="m">700</span><span class="p">;</span>
 
 <span class="cm">/**
@@ -86,6 +95,7 @@ of Pavilion.</p>
   */</span>
 
 <span class="nv">$base-font-family</span><span class="p">:</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$heading-font-family</span><span class="p">:</span> <span class="nv">$base-font-family</span><span class="p">;</span>
 <span class="nv">$mono-font-family</span><span class="p">:</span> <span class="s2">"Lucida Console"</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;</span></code></pre></figure>
 
     <div class="uncollapse">

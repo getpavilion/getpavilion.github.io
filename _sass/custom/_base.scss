@@ -4,8 +4,16 @@ body {
     @media (max-width: 1280px) {
         font-size: 16px;
     }
-    font-family: "Source Sans Pro";
+    font-family: 'hk_groteskregular', 'Source Sans Pro', sans-serif;
     color: #373a3c;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'hk_groteskregular', 'Source Sans Pro', sans-serif;
+}
+
+h5, strong, b {
+    font-family: 'hk_groteskbold', 'Source Sans Pro', sans-serif;
 }
 
 .devider-center {
@@ -87,10 +95,3 @@ pre {
     display: block;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Source Sans Pro";
-}
-
-h5 {
-    font-weight: bold;
-}

@@ -1,36 +1,3 @@
-// fonts
-@font-face {
-    font-family: 'hk_groteskbold';
-    src: url('../assets/fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/hkgrotesk-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'hk_grotesklight';
-    src: url('../assets/fonts/hkgrotesk-light-webfont.woff2') format('woff2'),
-         url('../assets/fonts/hkgrotesk-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'hk_groteskmedium';
-    src: url('../assets/fonts/hkgrotesk-medium-webfont.woff2') format('woff2'),
-         url('../assets/fonts/hkgrotesk-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'hk_groteskregular';
-    src: url('../assets/fonts/hkgrotesk-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/hkgrotesk-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .documentation-header {
     background-color: $primary-color;
     padding: 2rem 0;

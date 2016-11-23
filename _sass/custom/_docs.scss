@@ -138,3 +138,9 @@ label[class^="checkbox"] input[type="checkbox"] {
 code {
     line-height: 1.6;
 }
+
+@media (min-width: 768px) {
+    select:not([multiple]) {
+        height: calc(3rem - 1px);
+    }
+}

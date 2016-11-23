@@ -2848,17 +2848,14 @@ table tfoot tr td {
 
 /* style default components */
 body {
-  font-family: 'hk_groteskregular', 'Source Sans Pro', sans-serif;
+  font-size: 18px;
   color: #373a3c; }
   @media (max-width: 1280px) {
     body {
       font-size: 16px; } }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'hk_groteskregular', 'Source Sans Pro', sans-serif; }
-
 h5, strong, b {
-  font-family: 'hk_groteskbold', 'Source Sans Pro', sans-serif; }
+  font-weight: bold; }
 
 .devider-center {
   width: 7rem;
@@ -2983,26 +2980,6 @@ pre code, pre kbd {
             margin: 0 auto;
             position: absolute; } }
 
-@font-face {
-  font-family: 'hk_groteskbold';
-  src: url("../assets/fonts/hkgrotesk-bold-webfont.woff2") format("woff2"), url("../assets/fonts/hkgrotesk-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'hk_grotesklight';
-  src: url("../assets/fonts/hkgrotesk-light-webfont.woff2") format("woff2"), url("../assets/fonts/hkgrotesk-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'hk_groteskmedium';
-  src: url("../assets/fonts/hkgrotesk-medium-webfont.woff2") format("woff2"), url("../assets/fonts/hkgrotesk-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'hk_groteskregular';
-  src: url("../assets/fonts/hkgrotesk-regular-webfont.woff2") format("woff2"), url("../assets/fonts/hkgrotesk-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 .documentation-header {
   background-color: #426AFB;
   padding: 2rem 0;
@@ -3099,6 +3076,9 @@ pre code, pre kbd {
 code {
   line-height: 1.6; }
 
+@media (min-width: 768px) {
+  select:not([multiple]) {
+    height: calc(3rem - 1px); } }
 .landing-block {
   width: 100%;
   background-color: #f1f4ff;

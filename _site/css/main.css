@@ -2848,7 +2848,7 @@ table tfoot tr td {
 
 /* style default components */
 body {
-  font-size: 18px;
+  font-size: 16px;
   color: #373a3c; }
   @media (max-width: 1280px) {
     body {
@@ -3049,12 +3049,8 @@ pre code, pre kbd {
   overflow: hidden;
   text-overflow: ellipsis; }
   .exb.faded {
-    color: transparent;
+    color: #426AFB;
     background-color: #EFEFEF; }
-    .exb.faded:hover {
-      background-color: #e2e2e2;
-      color: #426AFB;
-      cursor: default; }
 
 .not-bold {
   font-weight: normal; }
@@ -3066,6 +3062,15 @@ pre code, pre kbd {
   margin-bottom: 2rem; }
   .exfb button {
     margin: 0; }
+
+label[class^="checkbox"] input[type="checkbox"] {
+  top: 0.18rem; }
+
+.checkbox-inline input[type="radio"], .radio-inline input[type="radio"] {
+  top: 0.1rem; }
+
+input[type="file"] {
+  line-height: 1.5; }
 
 .cell-fixed-width {
   width: 40%; }

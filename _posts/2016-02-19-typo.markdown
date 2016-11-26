@@ -12,12 +12,12 @@ Typography calculated by [type-scale](http://type-scale.com/).
 
 <div class="typo-example-no-margin">
 
-<h1>h1 Heading</h1> 
-<h2>h2 Heading</h2> 
-<h3>h3 Heading</h3> 
-<h4>h4 Heading</h4> 
-<h5 class="not-bold">h5 Heading</h5> 
-<h6>h6 Heading</h6> 
+<h1>The quick brown fox</h1> 
+<h2>The quick brown fox</h2> 
+<h3>The quick brown fox</h3> 
+<h4>The quick brown fox</h4> 
+<h5 class="not-bold">The quick brown fox</h5> 
+<h6>The quick brown fox</h6> 
     
 </div>
 
@@ -47,7 +47,8 @@ paragraph in half.
 
 ##### Summary paragraph 
 
-<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magnam hic ex tenetur amet, recusandae id nulla ullam nostrum cum vitae sunt aliquam atque, unde, veniam, aliquid earum nam corporis.</p>
+<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magnam hic ex tenetur amet, recusandae id nulla ullam nostrum cum vitae sunt aliquam atque, unde, veniam, aliquid earum nam corporis.
+Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
 {% highlight html %}
 <!-- Bumps up the font-size and decreases font-weight -->
 <p class="summary">Lorem ipsum ...</p>

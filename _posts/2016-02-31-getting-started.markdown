@@ -30,9 +30,9 @@ npm install pavilion
 bower install pavilion
 {% endhighlight %}
 
-* * *
+<br>
 
-##### Pavilion source files
+### Pavilion source files
 When installing Pavilion with NPM, Bower or the source download, the following structure is delivered.
 
 {% highlight html %}

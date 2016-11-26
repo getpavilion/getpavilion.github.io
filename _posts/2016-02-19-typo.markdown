@@ -23,20 +23,20 @@ Typography calculated by [type-scale](http://type-scale.com/).
 
 {% highlight html %}
 <!-- Heading tags -->
-<h1>h1 Heading</h1> <!-- font-size: 3.157em; margin-top: 0; -->
-<h2>h2 Heading</h2> <!-- font-size: 2.369em; -->
-<h3>h3 Heading</h3> <!-- font-size: 1.777em; -->
-<h4>h4 Heading</h4> <!-- font-size: 1.333em; -->
-<h5>h5 Heading</h5> <!-- font-size: 1em; font-weight: bold; -->
-<h6>h6 Heading</h6> <!-- font-size: 0.75em; -->
+<h1>The quick brown fox</h1> <!-- font-size: 3.157em; margin-top: 0; -->
+<h2>The quick brown fox</h2> <!-- font-size: 2.369em; -->
+<h3>The quick brown fox</h3> <!-- font-size: 1.777em; -->
+<h4>The quick brown fox</h4> <!-- font-size: 1.333em; -->
+<h5>The quick brown fox</h5> <!-- font-size: 1em; -->
+<h6>The quick brown fox</h6> <!-- font-size: 0.75em; -->
 
 <!-- Heading classes -->
-<span class="h1">Heading wannabe</span>
-<span class="h2">Heading wannabe</span>
-<span class="h3">Heading wannabe</span>
-<span class="h4">Heading wannabe</span>
-<span class="h5">Heading wannabe</span>
-<span class="h6">Heading wannabe</span>
+<span class="h1">h1 wannabe</span>
+<span class="h2">h2 wannabe</span>
+<span class="h3">h3 wannabe</span>
+<span class="h4">h4 wannabe</span>
+<span class="h5">h5 wannabe</span>
+<span class="h6">h6 wannabe</span>
 {% endhighlight %}
 
 ##### Other typographic elements

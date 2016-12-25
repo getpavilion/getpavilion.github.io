@@ -13,6 +13,14 @@ There are three button variations included. Default, outlined and stripped.
 <button class="button-stripped">Stripped button</button>
 {% endhighlight %}
 
+##### Full width button
+<button class="button-default button-full-width">Full width button</button> 
+
+{% highlight html %}
+<button class="button-default button-full-width">Full width button</button> 
+{% endhighlight %}
+
+
 ##### Button sizes
 Just add the contextual heading class to a button, and done.
 

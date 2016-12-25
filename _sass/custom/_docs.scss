@@ -147,3 +147,15 @@ code {
         height: calc(3rem - 1px);
     }
 }
+
+.muted {
+    a {
+        color: rgba($primary-color, 0.5);
+    }
+    &.active {
+        a {
+            color: #0537ec;
+        }   
+    }
+    
+}

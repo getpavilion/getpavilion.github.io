@@ -48,7 +48,6 @@ pavilion/
 │   └── parts/
 │       ├── _base.scss
 │       ├── _buttons.scss
-│       ├── _flexbox.scss
 │       ├── _forms.scss
 │       ├── _grid.scss
 │       ├── _helpers.scss

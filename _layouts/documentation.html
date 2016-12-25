@@ -12,9 +12,11 @@ layout: default
         <div class="col-tp-25 hide-pl hide-pp">
             <ul class="documentation-list nav" id="sticky">
                 {% for post in site.posts %}
+                    {% if post.hidden != true %}
                 <li class="documentation-list-item">
                     <a class="documentation-list-link" data-scroll href="#{{ post.postid }}">{{ post.title }}</a>
                 </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>

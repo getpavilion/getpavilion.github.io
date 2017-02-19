@@ -1,0 +1,146 @@
+<p>When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept:</p>
+
+<p>A <code class="highlighter-rouge">.container</code> wraps elements and provides you with <strong>left and right padding</strong> to keep the edges of the screen away
+from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
+This is done by placing the columns inside a <code class="highlighter-rouge">.row</code>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Columns go here, inside a row to prevent double paddings --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h5 id="rules-of-thumb">Rules of thumb:</h5>
+<ol>
+  <li>Always wrap a row in a container</li>
+  <li>Columns within a container must have a row as their first parent to prevent double padding</li>
+</ol>
+
+<h3 id="columns">Columns</h3>
+<p>As stated above: <strong>wrap columns in a row</strong> to prevent double padding. Although there is one exception. That is when you don’t use a container,
+you don’t wrap your columns in a row. This would remove the padding along the edges of your screen.</p>
+
+<h5 id="column-widths">Column widths</h5>
+<hr style="opacity: 0; margin: 10px 0;" />
+
+<div class="row">
+    <div class="col-pl-10">
+        <div class="exb">.col-*-10</div>
+    </div>
+    <div class="col-pl-90">
+        <div class="exb">.col-*-90</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-20">
+        <div class="exb">.col-*-20</div>
+    </div>
+    <div class="col-pl-80">
+        <div class="exb">.col-*-80</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-25">
+        <div class="exb">.col-*-25</div>
+    </div>
+    <div class="col-pl-75">
+        <div class="exb">.col-*-75</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-30">
+        <div class="exb">.col-*-30</div>
+    </div>
+    <div class="col-pl-70">
+        <div class="exb">.col-*-70</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-33">
+        <div class="exb">.col-*-33</div>
+    </div>
+    <div class="col-pl-66">
+        <div class="exb">.col-*-66</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-40">
+        <div class="exb">.col-*-40</div>
+    </div>
+    <div class="col-pl-60">
+        <div class="exb">.col-*-60</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-50">
+        <div class="exb">.col-*-50</div>
+    </div>
+    <div class="col-pl-50">
+        <div class="exb">.col-*-50</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-100">
+        <div class="exb">.col-*-100</div>
+    </div>
+</div>
+
+<h3 id="responsive-columns">Responsive columns</h3>
+<p>To create a flexible layout you need to be able to set specific column widths per breakpoint. Pavilion uses a common concept to do this.
+Just add the breakpoint’s abbreviation class to the column. Does that sound confusing? It’s easy, look:</p>
+
+<div class="row">
+    <div class="col-pl-50 col-tl-33">
+        <div class="exb">.col-pl-50 .col-tl-33</div>
+    </div>
+    <div class="col-pl-50 col-tl-66">
+        <div class="exb">.col-pl-50 .col-tl-66</div>
+    </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-pl-50 col-tl-33"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- 33.3333% width on 'tablet landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 50% width on 'phone landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 100% width on smaller than 'phone landscape' --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-pl-50 col-tl-66"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- 66.6666% width on tablet landscape or larger --&gt;</span>
+        <span class="c">&lt;!-- 50% width on 'phone landscape' or larger --&gt;</span>
+        <span class="c">&lt;!-- 100% width on smaller than 'phone landscape' --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>The columns above will span a width of 33% and 66% when the viewport is equal or larger than <strong>tablet landscape</strong> (hence the <code class="highlighter-rouge">*-tl-*</code>).
+When the viewport gets smaller, they’ll both span a width of 50% until the screensize drops below <strong>phone landscape</strong>.
+You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of its breakpoint it will default to 100% width. See the <a href="#breakpoints" data-scroll="">breakpoints</a> section for more information about 
+breakpoints and screensizes.</p>
+
+<h5 id="reordering-columns">Reordering columns</h5>
+
+<p>You can reorder columns per breakpoint. To shift columns to the left and right you can use <code class="highlighter-rouge">push-*-*</code> and <code class="highlighter-rouge">pull-*-*</code>.
+Push and pull makes use of the left and right CSS properties and won’t actually push other content or columns away.</p>
+
+<p>These classes are breakpoint specific. So for example: adding the class <code class="highlighter-rouge">pull-tp-50</code> will only pull the column 50% to the left while the tablet portrait breakpoint is active.
+It won’t affect other breakpoints.</p>
+
+<p>The columns below are pushed and pulled around on desktop size (with <code class="highlighter-rouge">push-dt-*</code> and <code class="highlighter-rouge">pull-dt-*</code>).
+Try to resize the browser and see how the columns below switch around.</p>
+
+<div class="row">
+    <div class="col-tp-66 push-dt-33">
+        <div class="exb" style="background-color: #EFEFEF; color: #426AFB;">
+            .col-tp-66 .push-dt-33
+        </div>
+    </div>
+    <div class="col-tp-33 pull-dt-66">
+        <div class="exb">
+            .col-tp-33 .pull-dt-66
+        </div>
+    </div>
+</div>
+
+<h5 id="offsetting-columns-with-margin">Offsetting columns with margin</h5>
+
+<p>Where reordering makes use of the left and right CSS properties, offsetting adds margin to the left of a column and will affect the DOM flow.
+Offsets are created by adding <code class="highlighter-rouge">offset-*-*</code> to your column in the same way pulls and pushes are created.</p>

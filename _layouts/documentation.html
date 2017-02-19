@@ -1,27 +1,30 @@
 ---
 layout: default
 ---
-<div class="documentation-header">
+
+{% include header.html %}
+<section class="main-section version-picker">
     <div class="container">
-        <h1 class="documentation-title">{{ page.title }}</h1>
-        <h4 class="documentation-description">{{ page.description }}</h4>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-tp-25 hide-pl hide-pp">
-            <ul class="documentation-list nav" id="sticky">
-                {% for post in site.posts %}
-                    {% if post.hidden != true %}
-                <li class="documentation-list-item">
-                    <a class="documentation-list-link" data-scroll href="#{{ post.postid }}">{{ post.title }}</a>
-                </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <div class="version-picker-box">
+            <span class="tag">Version: </span>
+            <span class="version">
+                <div class="version-current">{{ page.version }} <i class="material-icons">arrow_drop_down</i></div>
+                <ul class="version-dropdown">
+                    <li class="version-item {% if page.version == '2.0.1' %} current {% endif %}">
+                        <a href="{{ siteurl }}/docs" class="version-link {% if page.version == '2.0.1' %} disable-click {% endif %}"><i class="material-icons">check</i> 2.0.1</a>
+                    </li>
+                    <li class="version-item {% if page.version == '1.0.31' %} current {% endif %}">
+                        <a href="{{ siteurl }}/deprecated/docs" class="version-link {% if page.version == '1.0.31' %} disable-click {% endif %}"><i class="material-icons">check</i> 1.0.31</a>
+                    </li>
+                </ul>
+            </span>
         </div>
-        <div class="col-tp-75">
+    </div>
+</section>
+<section class="main-section">
+    <div class="container">
+        <div class="row">
             {{ content }}
         </div>
     </div>
-</div>
+</section>

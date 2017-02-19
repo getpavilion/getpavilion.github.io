@@ -1,22 +1,27 @@
 ---
 layout: documentation
-type: documentation
 title: Documentation
 description: Because who doesn't like reading documentation?
-permalink: /documentation/
+permalink: /docs/
+version: 2.0.1
+vTag: version2_0_1
 ---
 
-{% for post in site.posts %}
-    {% if post.hidden != true %}
-    <div id="{{ post.postid }}" class="documentation-section">
-        <h3>{{ post.title }}</h3>
-        {{ post.content }}
-    </div>
-    <div class="spacer"></div>
-    {% endif %}
-{% endfor %}
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
-<div class="spacer"></div>
+<div class="col-tp-25 hide-pl hide-pp">
+    <ul class="documentation-list nav" id="sticky">
+        {% for post in site.categories.v2 %}
+            <li class="documentation-list-item">
+                <a class="documentation-list-link" data-scroll href="#{{ post.postid }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="col-tp-75">
+    {% for post in site.categories.v2 %}
+        <div id="{{ post.postid }}" class="documentation-section">
+            <h3>{{ post.title }}</h3>
+            {{ post.output }}
+        </div>
+        <div class="spacer"></div>
+    {% endfor %}
+</div>

@@ -1,0 +1,31 @@
+<p>Pavilion v1.1.0 ships with a GulpJS build system for compiling, autoprefixing and compressing Pavilion’s SCSS files.
+The following tasks with subtasks are defined:</p>
+
+<p><strong>Command:  </strong> <code class="highlighter-rouge">gulp</code> (default task)</p>
+
+<ul>
+  <li>Clean the <code class="highlighter-rouge">dist/</code> and <code class="highlighter-rouge">demo/css/</code> folders</li>
+  <li>Compile SCSS to CSS</li>
+  <li>Strip CSS comments</li>
+  <li>Autoprefix (last two browser versions)</li>
+  <li>Optimize and compress CSS</li>
+  <li>Output expanded and compressed CSS</li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>Command:  </strong> <code class="highlighter-rouge">gulp watch</code></p>
+
+<ul>
+  <li>Run <code class="highlighter-rouge">gulp</code> (default task)</li>
+  <li>Watch for changes in <code class="highlighter-rouge">scss/**/*</code></li>
+  <li>On change run <code class="highlighter-rouge">gulp</code></li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>Command:  </strong> <code class="highlighter-rouge">gulp clean</code></p>
+
+<ul>
+  <li>Clean the <code class="highlighter-rouge">dist/</code> and <code class="highlighter-rouge">demo/css/</code> folders</li>
+</ul>

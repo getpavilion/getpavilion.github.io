@@ -1,0 +1,107 @@
+---
+title:  "Lists"
+date:   2016-03-31 17:06:26 +0200
+postid: lists
+categories: v2
+---
+Well, you know...lists. Who doesn't use lists. Pavilion comes with three common list elements. <br>
+Unordered, ordered and description lists.
+
+
+<div class="row">
+    <div class="col-pl-33">
+        <ul>
+            <li>Wheels</li>
+            <li>Doors</li>
+            <li>Windows
+                <ul>
+                    <li>Read</li>
+                    <li>Sides</li>
+                    <li>Front</li>
+                </ul>
+            </li>
+            <li>Bumpers</li>
+            <li>Lights</li>
+        </ul>
+    </div>
+    <div class="col-pl-33">
+        <ol>
+            <li>Water melons</li>
+            <li>Strawberry's</li>
+            <li>Exotic fruits
+                <ol>
+                    <li>Mango's</li>
+                    <li>Bananas</li>
+                    <li>Grapes</li>
+                </ol>
+            </li>
+            <li>Kiwi's</li>
+            <li>Oranges</li>
+        </ol>
+    </div>
+    <div class="col-pl-33">
+        <dl>
+          	<dt>List item 1</dt>
+          	<dt>List item 2</dt>
+          	<dt>List item 3</dt>
+            	<dd>Sub item</dd>
+            	<dd>Sub item</dd>
+            	<dd>Sub item</dd>
+          	<dt>List item 4</dt>
+          	<dt>List item 5</dt>
+        </dl>
+    </div>
+</div>
+<div class="row">
+	<div class="col-pl-33">
+{% highlight html %}
+<!-- Unordered list -->
+<ul>
+    <li>Wheels</li>
+    <li>Doors</li>
+    <li>Windows
+        <ul>
+            <li>Read</li>
+            <li>Sides</li>
+            <li>Front</li>
+        </ul>
+    </li>
+    <li>Bumpers</li>
+    <li>Lights</li>
+</ul>
+{% endhighlight %}
+	</div>
+        <div class="col-pl-33">
+{% highlight html %}
+<!-- Ordered list -->
+<ol>
+    <li>Water melons</li>
+    <li>Strawberry's</li>
+    <li>Exotic fruits
+        <ol>
+            <li>Mango's</li>
+            <li>Bananas</li>
+            <li>Grapes</li>
+        </ol>
+    </li>
+    <li>Kiwi's</li>
+    <li>Oranges</li>
+</ol>
+{% endhighlight %}
+    </div>
+    <div class="col-pl-33">
+{% highlight html %}
+<!-- Description list -->
+<dl>
+    <dt>List item 1</dt>
+    <dt>List item 2</dt>
+    <dt>List item 3</dt>
+        <dd>Sub item</dd>
+        <dd>Sub item</dd>
+        <dd>Sub item</dd>
+    <dt>List item 4</dt>
+    <dt>List item 5</dt>
+</dl>
+{% endhighlight %}
+    </div>
+</div>

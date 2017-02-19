@@ -1,0 +1,85 @@
+/* 
+ * Base adjustments
+ * * * * * * * * * *
+ */
+
+html {
+    height: 100%;
+}
+
+body {
+    letter-spacing: -0.1px;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &.sticky-footer {
+        height: auto;
+        min-height: 100%;
+        padding-bottom: 86px;
+        position: relative;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+h5 {
+    font-weight: bold;
+}
+
+hr {
+    border-color: $soft-gray;
+}
+
+figure {
+    margin: 0 0 3rem 0;
+}
+
+pre {
+    background-color: #EFEFEF;
+}
+
+code {
+    color: $primary-color;
+    background: #EBEBEB;
+    width: 100%;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    display: inline;
+}
+
+mark {
+    background-color: #ffffa8;
+}
+
+.no-margin-r {
+    margin-right: 0;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.example-pre {
+    padding: 0.2em 0.5em;
+    margin: 0;
+    display: inline;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.code-style,
+.code-style-pre {
+    color: $primary-color !important;
+    font-weight: $font-weight-regular;
+}

@@ -1,0 +1,164 @@
+---
+title:  "Typography"
+date:   2016-03-31 17:06:26 +0200
+postid: typo
+categories: v2
+---
+The headings `h1` trough `h6` are available and accompanied by corresponding classes: `.h1` trough `.h6`.
+These classes come in handy when you want to bump up (or down) an element's textual context to a certain heading size. For instance, giving a button the class `.h3` will give it a text size
+matching that of a `h3` heading.
+
+The font-sizes are set in EM's and are relative the `body` font-size.
+
+<br>
+
+<div class="typo-example-no-margin">
+
+    <h1>The quick brown fox</h1> 
+    <h2>The quick brown fox</h2> 
+    <h3>The quick brown fox</h3> 
+    <h4>The quick brown fox</h4> 
+    <h5 class="not-bold">The quick brown fox</h5> 
+    <h6>The quick brown fox</h6> 
+    
+</div>
+
+<br>
+
+{% highlight html %}
+<!-- Heading tags -->
+<h1>The quick brown fox</h1> <!-- font-size: 3.157em; margin-top: 0; -->
+<h2>The quick brown fox</h2> <!-- font-size: 2.369em; -->
+<h3>The quick brown fox</h3> <!-- font-size: 1.777em; -->
+<h4>The quick brown fox</h4> <!-- font-size: 1.333em; -->
+<h5>The quick brown fox</h5> <!-- font-size: 1em; -->
+<h6>The quick brown fox</h6> <!-- font-size: 0.75em; -->
+
+<!-- Heading classes -->
+<span class="h1">h1 wannabe</span>
+<span class="h2">h2 wannabe</span>
+<span class="h3">h3 wannabe</span>
+<span class="h4">h4 wannabe</span>
+<span class="h5">h5 wannabe</span>
+<span class="h6">h6 wannabe</span>
+{% endhighlight %}
+
+##### Modular typography sizing
+Similair to Tim Brown’s <a href="http://modularscale.com/">Modular Scale</a> calculator, Pavilion has it's own modular typography system.
+Pavilion uses a `$scale-ratio` and a `fontsize(index)` to calculate headings sizes. The default ratio is set to `1.200` (minor third). Head over the the <a data-scroll="true" href="#customizing">customizing</a> section to see how this concept is applied in Pavilion and how to create your own Pavilion build with beautiful custom heading sizes.
+
+##### Responsive typography
+In Pavilion you can add a breakpoint abbreviation to a heading class to create responsive typographic elements. 
+For example: if we want a paragraph to have the size of an `h3` heading on tablet landscape size we just add the class `.h3-tl`.
+
+
+{% highlight html %}
+<!-- h1 size on $phone-portrait-size -->
+<p class="h1-pp">...</p>
+
+<!-- h2 size on $tablet-landscape-size -->
+<h3 class="h2-tl">...</h3> 
+{% endhighlight %}
+
+##### Paragraphs
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
+{% highlight html %}
+<p>Lorem ipsum ...</p> <!-- font-size: 1em; -->
+{% endhighlight %}
+
+
+##### Formatting
+Regular HTML formatting will behave as expected in Pavilion. Below you can find some examples.
+
+<table style="margin-bottom: 3rem;"> 
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td>Bold</td> 
+            <td><code>&lt;b&gt;</code></td> 
+            <td><b>Bold</b></td> 
+        </tr> 
+        <tr> 
+            <td>Strong</td> 
+            <td><code>&lt;strong&gt;</code></td> 
+            <td><strong>Strong</strong></td> 
+        </tr>
+        <tr> 
+            <td>Italic</td> 
+            <td><code>&lt;i&gt;</code></td> 
+            <td><i>Italic</i></td> 
+        </tr> 
+        <tr> 
+            <td>Emphasized</td> 
+            <td><code>&lt;em&gt;</code></td> 
+            <td><em>Emphasized</em></td> 
+        </tr> 
+        <tr> 
+            <td>Marked text</td> 
+            <td><code>&lt;mark&gt;</code></td> 
+            <td><mark>Marked text</mark></td> 
+        </tr> 
+        <tr> 
+            <td>Small text</td> 
+            <td><code>&lt;small&gt;</code></td> 
+            <td><small>Small text</small></td> 
+        </tr> 
+        <tr> 
+            <td>Deleted text</td> 
+            <td><code>&lt;del&gt;</code></td> 
+            <td><del>Deleted text</del></td> 
+        </tr> 
+        <tr> 
+            <td>Inserted text</td> 
+            <td><code>&lt;ins&gt;</code></td> 
+            <td><ins>Inserted text</ins></td> 
+        </tr> 
+        <tr> 
+            <td>Superscript</td> 
+            <td><code>&lt;sup&gt;</code></td> 
+            <td><sup>Superscript</sup></td> 
+        </tr> 
+        <tr> 
+            <td>Subscript</td> 
+            <td><code>&lt;sub&gt;</code></td> 
+            <td><sub>Subscript</sub></td> 
+        </tr> 
+        <tr> 
+            <td>Short quote</td> 
+            <td><code>&lt;q&gt;</code></td> 
+            <td><q>Short quote</q></td> 
+        </tr> 
+        <tr> 
+            <td>Code</td> 
+            <td><code>&lt;code&gt;</code></td> 
+            <td><code>code</code></td> 
+        </tr> 
+        <tr> 
+            <td>Keyboard input</td> 
+            <td><code>&lt;kbd&gt;</code></td> 
+            <td><kbd>kbd</kbd></td> 
+        </tr>
+        <tr> 
+            <td>Preformatted text</td> 
+            <td><code>&lt;pre&gt;</code></td> 
+            <td><pre class="example-pre">pre</pre></td> 
+        </tr> 
+    </tbody>
+</table>
+
+
+
+##### Blockquotes 
+<blockquote>
+    Lorem ipsum ...
+    <footer>A.A. Bernansky</footer>
+</blockquote>
+
+{% highlight html %}
+<blockquote>
+    Lorem ipsum ...
+    <footer>
+        A.A. Bernansky
+    </footer>
+</blockquote>
+{% endhighlight %}

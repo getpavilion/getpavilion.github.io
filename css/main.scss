@@ -4,16 +4,27 @@
 @charset "utf-8";
 
 // Mixins & variables first
-@import "variables";
-@import "mixins";
+@import "parts/functions";
+@import "parts/mixins";
+@import "parts/variables";
 
-// Core parts
-@import "custom/pavilion";
-@import "syntax-highlighting";
 
-// Custom parts
-@import "custom/base";
-@import "custom/header";
-@import "custom/docs";
-@import "custom/landing-block";
-@import "custom/footer";
+// Core pavilion-parts
+@import "parts/normalize";
+@import "parts/base";
+@import "parts/grid";
+@import "parts/typography";
+@import "parts/buttons";
+@import "parts/lists";
+@import "parts/forms";
+@import "parts/tables";
+@import "parts/utilities";
+
+// External
+@import "external/syntax-highlighting";
+
+// Project
+@import "project/resets";
+@import "project/styles";
+@import "project/type";
+@import "project/deprecated";

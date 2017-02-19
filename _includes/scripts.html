@@ -1,6 +1,14 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
-<script src="{{ "/assets/js/jquery.sticky.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
 <script src="{{ "/assets/js/scrollspy.bootstrap.js" | prepend: site.baseurl }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+
+{% if page.layout == "templates" %}
+    <!-- firebase scripts for templates page -->
+    {% include firebase-scripts.html %}
+{% endif %}
+
 <script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}"></script>
+

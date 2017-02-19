@@ -1,0 +1,156 @@
+---
+title:  "Grid"
+date:   2016-03-31 17:06:26 +0200
+postid: grid
+categories: v1
+---
+
+When creating layouts with columns there are a couple of things to consider. Pavilion leans on the following, common concept:
+
+A `.container` wraps elements and provides you with **left and right padding** to keep the edges of the screen away
+from your content. When placing columns inside containers, negative margin is used to prevent double padding (columns have padding too).
+This is done by placing the columns inside a `.row`.
+
+{% highlight html %}
+<div class="container">
+    <div class="row">
+        <!-- Columns go here, inside a row to prevent double paddings -->
+    </div>
+</div>
+{% endhighlight %}
+
+##### Rules of thumb:
+1. Always wrap a row in a container
+2. Columns within a container must have a row as their first parent to prevent double padding
+
+### Columns
+As stated above: **wrap columns in a row** to prevent double padding. Although there is one exception. That is when you don't use a container,
+you don't wrap your columns in a row. This would remove the padding along the edges of your screen.
+
+##### Column widths
+<hr style="opacity: 0; margin: 10px 0;">
+<div class="row">
+    <div class="col-pl-10">
+        <div class="exb">.col-*-10</div>
+    </div>
+    <div class="col-pl-90">
+        <div class="exb">.col-*-90</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-20">
+        <div class="exb">.col-*-20</div>
+    </div>
+    <div class="col-pl-80">
+        <div class="exb">.col-*-80</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-25">
+        <div class="exb">.col-*-25</div>
+    </div>
+    <div class="col-pl-75">
+        <div class="exb">.col-*-75</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-30">
+        <div class="exb">.col-*-30</div>
+    </div>
+    <div class="col-pl-70">
+        <div class="exb">.col-*-70</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-33">
+        <div class="exb">.col-*-33</div>
+    </div>
+    <div class="col-pl-66">
+        <div class="exb">.col-*-66</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-40">
+        <div class="exb">.col-*-40</div>
+    </div>
+    <div class="col-pl-60">
+        <div class="exb">.col-*-60</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-50">
+        <div class="exb">.col-*-50</div>
+    </div>
+    <div class="col-pl-50">
+        <div class="exb">.col-*-50</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-pl-100">
+        <div class="exb">.col-*-100</div>
+    </div>
+</div>
+
+
+
+
+
+
+### Columns & breakpoints
+To create a flexible layout you need to be able to set specific column widths per breakpoint. Pavilion uses a common concept to do this.
+Just add the breakpoint's abbreviation class to the column. Does that sound confusing? It's easy, look:
+   
+
+<div class="row">
+    <div class="col-pl-50 col-tl-33">
+        <div class="exb">.col-pl-50 .col-tl-33</div>
+    </div>
+    <div class="col-pl-50 col-tl-66">
+        <div class="exb">.col-pl-50 .col-tl-66</div>
+    </div>
+</div>
+
+{% highlight html %}
+<div class="row">
+    <div class="col-pl-50 col-tl-33">
+        <!-- 33.3333% width on 'tablet landscape' or larger -->
+        <!-- 50% width on 'phone landscape' or larger -->
+        <!-- 100% width on smaller than 'phone landscape' -->
+    </div>
+    <div class="col-pl-50 col-tl-66">
+        <!-- 66.6666% width on tablet landscape or larger -->
+        <!-- 50% width on 'phone landscape' or larger -->
+        <!-- 100% width on smaller than 'phone landscape' -->
+    </div>
+</div>
+{% endhighlight %}
+
+The columns above will span a width of 33% and 66% when the viewport is equal or larger than **tablet landscape** (hence the `*-tl-*`).
+When the viewport gets smaller, they'll both span a width of 50% until the screensize drops below **phone landscape**.
+You can add column classes for each breakpoint to create fitting layouts. When a column breaks out of its breakpoint it will default to 100% width. See the <a href="#breakpoints" data-scroll>breakpoints</a> section for more information about 
+breakpoints and screensizes.
+
+##### Reordering columns
+
+You can reorder columns per breakpoint. To shift columns to the left and right you can use `push-*-*` and `pull-*-*`.
+Push and pull makes use of the left and right CSS properties and won't actually push other content or columns away.
+
+Try resizing your browser. The columns are switched around on desktop and will switch back when they break out of the desktop breakpoint.
+
+<div class="row">
+    <div class="col-tp-66 push-dt-33">
+        <div class="exb" style="background-color: #EFEFEF; color: #426AFB;">
+            .col-tp-66 .push-dt-33
+        </div>
+    </div>
+    <div class="col-tp-33 pull-dt-66">
+        <div class="exb">
+            .col-tp-33 .pull-dt-66
+        </div>
+    </div>
+</div>
+
+##### Offsetting columns with margin
+
+Where reordering makes use of the left and right CSS properties, offsetting adds margin to the left of a column and will affect the DOM flow.
+Offsets are created by adding `offset-*-*` to your column in the same way pulls and pushes are created.

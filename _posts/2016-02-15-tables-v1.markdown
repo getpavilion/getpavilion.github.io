@@ -1,0 +1,112 @@
+---
+title:  "Tables"
+date:   2016-03-31 17:06:26 +0200
+postid: tables
+categories: v1
+---
+Not having to style a table is reason enough to use a framework.
+Pavilion ships with a clean table. Use `<thead>`, `<th>` and `<tfoot>` to emphasize data.
+
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>#</th> 
+            <th>Name</th> 
+            <th>Age</th> 
+            <th>Country</th> 
+            <th>Birthsign</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table footer, must come before the body -->
+    <tfoot> 
+        <tr> 
+            <td>#</td> 
+            <td>Name</td> 
+            <td>Age</td> 
+            <td>Country</td> 
+            <td>Birthsign</td> 
+        </tr> 
+    </tfoot>  
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <th>1</th> 
+            <td>Pete Jackson</td> 
+            <td>26</td> 
+            <td>Netherlands</td> 
+            <td>Libra</td>
+        </tr> 
+        <tr> 
+            <th>2</th> 
+            <td>Yi Sun</td> 
+            <td>23</td> 
+            <td>Japan</td> 
+            <td>Leo</td>
+        </tr> 
+        <tr> 
+            <th>3</th> 
+            <td>André Umstadt</td> 
+            <td>34</td> 
+            <td>Germany</td> 
+            <td>Virgo</td>
+        </tr> 
+    </tbody>
+</table>
+<div class="collapsor">
+{% highlight html %}
+<table> 
+    <!-- Table head -->
+    <thead> 
+        <tr> 
+            <th>#</th> 
+            <th>Name</th> 
+            <th>Age</th> 
+            <th>Country</th> 
+            <th>Birthsign</th> 
+        </tr> 
+    </thead>
+    
+    <!-- Table footer, must come before the body -->
+    <tfoot> 
+        <tr> 
+            <td>#</td> 
+            <td>Name</td> 
+            <td>Age</td> 
+            <td>Country</td> 
+            <td>Birthsign</td> 
+        </tr> 
+    </tfoot>  
+    
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <th>1</th> 
+            <td>Pete Jackson</td> 
+            <td>26</td> 
+            <td>Netherlands</td> 
+            <td>Libra</td>
+        </tr> 
+        <tr> 
+            <th>2</th> 
+            <td>Yi Sun</td> 
+            <td>23</td> 
+            <td>Japan</td> 
+            <td>Leo</td>
+        </tr> 
+        <tr> 
+            <th>3</th> 
+            <td>André Umstadt</td> 
+            <td>34</td> 
+            <td>Germany</td> 
+            <td>Virgo</td>
+        </tr> 
+    </tbody>
+</table>
+{% endhighlight %}
+<div class="uncollapse">
+    Show full example
+</div>
+</div>

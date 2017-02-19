@@ -1,0 +1,147 @@
+<p>The headings <code class="highlighter-rouge">h1</code> trough <code class="highlighter-rouge">h6</code> are available and accompanied by corresponding classes: <code class="highlighter-rouge">.h1</code> trough <code class="highlighter-rouge">.h6</code>.
+These classes come in handy when you want to bump up (or down) an element’s textual context to a certain heading size. For instance, giving a button the class <code class="highlighter-rouge">.h3</code> will give it a text size
+matching that of a <code class="highlighter-rouge">h3</code> heading.</p>
+
+<p>The font-sizes are set in EM’s and are relative the <code class="highlighter-rouge">body</code> font-size.</p>
+
+<p><br /></p>
+
+<div class="typo-example-no-margin">
+
+    <h1>The quick brown fox</h1> 
+    <h2>The quick brown fox</h2> 
+    <h3>The quick brown fox</h3> 
+    <h4>The quick brown fox</h4> 
+    <h5 class="not-bold">The quick brown fox</h5> 
+    <h6>The quick brown fox</h6> 
+    
+</div>
+
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Heading tags --&gt;</span>
+<span class="nt">&lt;h1&gt;</span>The quick brown fox<span class="nt">&lt;/h1&gt;</span> <span class="c">&lt;!-- font-size: 3.157em; margin-top: 0; --&gt;</span>
+<span class="nt">&lt;h2&gt;</span>The quick brown fox<span class="nt">&lt;/h2&gt;</span> <span class="c">&lt;!-- font-size: 2.369em; --&gt;</span>
+<span class="nt">&lt;h3&gt;</span>The quick brown fox<span class="nt">&lt;/h3&gt;</span> <span class="c">&lt;!-- font-size: 1.777em; --&gt;</span>
+<span class="nt">&lt;h4&gt;</span>The quick brown fox<span class="nt">&lt;/h4&gt;</span> <span class="c">&lt;!-- font-size: 1.333em; --&gt;</span>
+<span class="nt">&lt;h5&gt;</span>The quick brown fox<span class="nt">&lt;/h5&gt;</span> <span class="c">&lt;!-- font-size: 1em; --&gt;</span>
+<span class="nt">&lt;h6&gt;</span>The quick brown fox<span class="nt">&lt;/h6&gt;</span> <span class="c">&lt;!-- font-size: 0.75em; --&gt;</span>
+
+<span class="c">&lt;!-- Heading classes --&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>h1 wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>h2 wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>h3 wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>h4 wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h5 wannabe<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h6 wannabe<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h5 id="modular-typography-sizing">Modular typography sizing</h5>
+<p>Similair to Tim Brown’s <a href="http://modularscale.com/">Modular Scale</a> calculator, Pavilion has it’s own modular typography system.
+Pavilion uses a <code class="highlighter-rouge">$scale-ratio</code> and a <code class="highlighter-rouge">fontsize(index)</code> to calculate headings sizes. The default ratio is set to <code class="highlighter-rouge">1.200</code> (minor third). Head over the the <a data-scroll="true" href="#customizing">customizing</a> section to see how this concept is applied in Pavilion and how to create your own Pavilion build with beautiful custom heading sizes.</p>
+
+<h5 id="responsive-typography">Responsive typography</h5>
+<p>In Pavilion you can add a breakpoint abbreviation to a heading class to create responsive typographic elements. 
+For example: if we want a paragraph to have the size of an <code class="highlighter-rouge">h3</code> heading on tablet landscape size we just add the class <code class="highlighter-rouge">.h3-tl</code>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- h1 size on $phone-portrait-size --&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h1-pp"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+
+<span class="c">&lt;!-- h2 size on $tablet-landscape-size --&gt;</span>
+<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h2-tl"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h3&gt;</span> </code></pre></figure>
+
+<h5 id="paragraphs">Paragraphs</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi repellendus dolor deleniti earum doloribus dignissimos nulla quaerat cupiditate totam est in reiciendis, autem aliquam. Dolorum asperiores corporis, magnam doloribus! Voluptate.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;</span> <span class="c">&lt;!-- font-size: 1em; --&gt;</span></code></pre></figure>
+
+<h5 id="formatting">Formatting</h5>
+<p>Regular HTML formatting will behave as expected in Pavilion. Below you can find some examples.</p>
+
+<table style="margin-bottom: 3rem;"> 
+    <!-- Table body -->
+    <tbody> 
+        <tr> 
+            <td>Bold</td> 
+            <td><code>&lt;b&gt;</code></td> 
+            <td><b>Bold</b></td> 
+        </tr> 
+        <tr> 
+            <td>Strong</td> 
+            <td><code>&lt;strong&gt;</code></td> 
+            <td><strong>Strong</strong></td> 
+        </tr>
+        <tr> 
+            <td>Italic</td> 
+            <td><code>&lt;i&gt;</code></td> 
+            <td><i>Italic</i></td> 
+        </tr> 
+        <tr> 
+            <td>Emphasized</td> 
+            <td><code>&lt;em&gt;</code></td> 
+            <td><em>Emphasized</em></td> 
+        </tr> 
+        <tr> 
+            <td>Marked text</td> 
+            <td><code>&lt;mark&gt;</code></td> 
+            <td><mark>Marked text</mark></td> 
+        </tr> 
+        <tr> 
+            <td>Small text</td> 
+            <td><code>&lt;small&gt;</code></td> 
+            <td><small>Small text</small></td> 
+        </tr> 
+        <tr> 
+            <td>Deleted text</td> 
+            <td><code>&lt;del&gt;</code></td> 
+            <td><del>Deleted text</del></td> 
+        </tr> 
+        <tr> 
+            <td>Inserted text</td> 
+            <td><code>&lt;ins&gt;</code></td> 
+            <td><ins>Inserted text</ins></td> 
+        </tr> 
+        <tr> 
+            <td>Superscript</td> 
+            <td><code>&lt;sup&gt;</code></td> 
+            <td><sup>Superscript</sup></td> 
+        </tr> 
+        <tr> 
+            <td>Subscript</td> 
+            <td><code>&lt;sub&gt;</code></td> 
+            <td><sub>Subscript</sub></td> 
+        </tr> 
+        <tr> 
+            <td>Short quote</td> 
+            <td><code>&lt;q&gt;</code></td> 
+            <td><q>Short quote</q></td> 
+        </tr> 
+        <tr> 
+            <td>Code</td> 
+            <td><code>&lt;code&gt;</code></td> 
+            <td><code>code</code></td> 
+        </tr> 
+        <tr> 
+            <td>Keyboard input</td> 
+            <td><code>&lt;kbd&gt;</code></td> 
+            <td><kbd>kbd</kbd></td> 
+        </tr>
+        <tr> 
+            <td>Preformatted text</td> 
+            <td><code>&lt;pre&gt;</code></td> 
+            <td><pre class="example-pre">pre</pre></td> 
+        </tr> 
+    </tbody>
+</table>
+
+<h5 id="blockquotes">Blockquotes</h5>
+<blockquote>
+    Lorem ipsum ...
+    <footer>A.A. Bernansky</footer>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote&gt;</span>
+    Lorem ipsum ...
+    <span class="nt">&lt;footer&gt;</span>
+        A.A. Bernansky
+    <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body 
-    {% if page.layout == "documentation" %} data-spy="scroll" data-target="#sticky-sticky-wrapper" class="{{ page.vTag }}" data-offset="200"{% endif %} 
-    {% if page.layout == "templates" %} class="sticky-footer" {% endif %}
->
+<body {% if page.layout == "documentation" %} data-spy="scroll" data-target="#sticky-sticky-wrapper" class="{{ page.vTag }}" data-offset="200" {% endif %} {% if page.layout =="templates" %} class="sticky-footer" {% endif %}>
     {% include navbar.html %}
     
     {{ content }}

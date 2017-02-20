@@ -20,7 +20,7 @@ vTag: version1_0_31
     {% for post in site.categories.v1 %}
         <div id="{{ post.postid }}" class="documentation-section">
             <h3>{{ post.title }}</h3>
-            {{ post.output }}
+            {{ post.content }}
         </div>
         <div class="spacer"></div>
     {% endfor %}

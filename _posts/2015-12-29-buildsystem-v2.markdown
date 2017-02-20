@@ -4,7 +4,7 @@ date:   2016-03-31 17:06:26 +0200
 postid: gulp
 categories: v2
 ---
-Pavilion v1.1.0 ships with a GulpJS build system for compiling, autoprefixing and compressing Pavilion's SCSS files.
+Pavilion v2.0.1 ships with a GulpJS build system for compiling, autoprefixing and compressing Pavilion's SCSS files.
 The following tasks with subtasks are defined:
 
 <strong>Command: &nbsp;</strong> `gulp` (default task)

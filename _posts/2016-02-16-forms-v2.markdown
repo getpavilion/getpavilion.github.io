@@ -29,28 +29,6 @@ see fit.
                 <label for="passwordInput">Password input</label>
                 <input id="passwordInput" type="password" placeholder="'Password'">
             </div>
-                
-            <div class="form-part">
-                <!-- Input with button left -->
-                <div class="input-with-button button-left">
-                    <label for="buttonInputLeft">Text input with button on the left</label>
-                    <span class="button-wrapper">
-                        <button class="button button-default">Button</button>
-                    </span>
-                    <input id="buttonInputLeft" type="text" placeholder="'Placeholder'">
-                </div>
-            </div>
-            
-            <div class="form-part">
-                <!-- Input with button right -->
-                <div class="input-with-button button-right">
-                    <label for="buttonInputRight">Text input with button on the right</label>
-                    <input id="buttonInputRight" type="text" placeholder="'Placeholder'">
-                    <span class="button-wrapper">
-                        <button class="button button-default">Button</button>
-                    </span>
-                </div>
-            </div>
 
             <div class="form-part">
                 <!-- Selectbox -->
@@ -102,7 +80,7 @@ see fit.
                 </label>
                 <label for="checkBox4" class="checkbox disabled">
                     Option #4 — disabled
-                    <input type="checkbox" id="checkBox4">
+                    <input type="checkbox" id="checkBox4" disabled>
                 </label>
             </div>
             
@@ -118,7 +96,7 @@ see fit.
                 </label>
                 <label for="radio3" class="radio disabled">
                     Or maybe this! — disabled
-                    <input type="radio" name="frequencyBlock" id="radio3">
+                    <input type="radio" name="frequencyBlock" id="radio3" disabled>
                 </label>
             </div>
             
@@ -193,28 +171,6 @@ see fit.
         <label for="passwordInput">Password input</label>
         <input id="passwordInput" type="password" placeholder="'Password'">
     </div>
-        
-    <div class="form-part">
-        <!-- Input with button left -->
-        <div class="input-with-button button-left">
-            <label for="buttonInputLeft">Text input with button on the left</label>
-            <span class="button-wrapper">
-                <button class="button button-default">Button</button>
-            </span>
-            <input id="buttonInputLeft" type="text" placeholder="'Placeholder'">
-        </div>
-    </div>
-    
-    <div class="form-part">
-        <!-- Input with button right -->
-        <div class="input-with-button button-right">
-            <label for="buttonInputRight">Text input with button on the right</label>
-            <input id="buttonInputRight" type="text" placeholder="'Placeholder'">
-            <span class="button-wrapper">
-                <button class="button button-default">Button</button>
-            </span>
-        </div>
-    </div>
 
     <div class="form-part">
         <!-- Selectbox -->
@@ -266,7 +222,7 @@ see fit.
         </label>
         <label for="checkBox4" class="checkbox disabled">
             Option #4 — disabled
-            <input type="checkbox" id="checkBox4">
+            <input type="checkbox" id="checkBox4" disabled>
         </label>
     </div>
     
@@ -282,7 +238,7 @@ see fit.
         </label>
         <label for="radio3" class="radio disabled">
             Or maybe this! — disabled
-            <input type="radio" name="frequencyBlock" id="radio3">
+            <input type="radio" name="frequencyBlock" id="radio3" disabled>
         </label>
     </div>
     

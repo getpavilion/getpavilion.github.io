@@ -13,7 +13,7 @@ Typography is calculated trough a modular type calculator and common elements li
 
 Pavilion lays down the groundwork — the rest is up to you.
 
-##### TLDR;
+##### TL;DR
 
 - Lightweight. Only 26kb minified.
 - Versatile fully responsive grid system.

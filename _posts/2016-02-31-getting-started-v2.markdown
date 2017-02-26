@@ -17,7 +17,7 @@ First of all, thanks for checking out Pavilion! Now let's get you started. Here 
 
 ##### CDN link
 {% highlight html %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pavilion/2.0.2/pavilion.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pavilion/2.0.3/pavilion.min.css" />
 {% endhighlight %}
 
 ##### Install with NPM
